@@ -1,0 +1,8 @@
+# Build outputs
+/bin/
+/bin-*/
+/rust/target/
+/rust/Cargo.lock
+# Downloaded and generated data (Yahoo data must not be republished; synthetic data is regenerated)
+/data/
+/data-verify.log

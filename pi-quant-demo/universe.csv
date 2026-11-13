@@ -1,0 +1,125 @@
+# 120 large US stocks with long, clean price histories on Yahoo Finance, and their current GICS
+# sectors (applied to the whole history — a simplification).
+# WARNING: picking today's survivors builds in survivorship bias: none of these went bankrupt,
+# so the past looks kinder than it was. See README "What this demo gets wrong on purpose".
+ticker,sector
+AAPL,Information Technology
+MSFT,Information Technology
+NVDA,Information Technology
+INTC,Information Technology
+CSCO,Information Technology
+ORCL,Information Technology
+IBM,Information Technology
+QCOM,Information Technology
+TXN,Information Technology
+ADBE,Information Technology
+AMAT,Information Technology
+MU,Information Technology
+AMD,Information Technology
+ADI,Information Technology
+KLAC,Information Technology
+LRCX,Information Technology
+T,Communication Services
+VZ,Communication Services
+CMCSA,Communication Services
+DIS,Communication Services
+GOOGL,Communication Services
+NFLX,Communication Services
+AMZN,Consumer Discretionary
+HD,Consumer Discretionary
+LOW,Consumer Discretionary
+MCD,Consumer Discretionary
+NKE,Consumer Discretionary
+SBUX,Consumer Discretionary
+F,Consumer Discretionary
+TJX,Consumer Discretionary
+BKNG,Consumer Discretionary
+ROST,Consumer Discretionary
+KO,Consumer Staples
+PEP,Consumer Staples
+PG,Consumer Staples
+WMT,Consumer Staples
+COST,Consumer Staples
+CL,Consumer Staples
+KMB,Consumer Staples
+GIS,Consumer Staples
+HSY,Consumer Staples
+SYY,Consumer Staples
+KR,Consumer Staples
+CLX,Consumer Staples
+JNJ,Health Care
+PFE,Health Care
+MRK,Health Care
+AMGN,Health Care
+BMY,Health Care
+LLY,Health Care
+UNH,Health Care
+MDT,Health Care
+GILD,Health Care
+CVS,Health Care
+TMO,Health Care
+SYK,Health Care
+BDX,Health Care
+JPM,Financials
+BAC,Financials
+C,Financials
+WFC,Financials
+GS,Financials
+USB,Financials
+PNC,Financials
+SCHW,Financials
+AIG,Financials
+TRV,Financials
+ALL,Financials
+BRK-B,Financials
+PGR,Financials
+CB,Financials
+BLK,Financials
+MET,Financials
+AFL,Financials
+CME,Financials
+HON,Industrials
+CAT,Industrials
+DE,Industrials
+BA,Industrials
+LMT,Industrials
+UNP,Industrials
+UPS,Industrials
+FDX,Industrials
+EMR,Industrials
+ITW,Industrials
+GD,Industrials
+NOC,Industrials
+CSX,Industrials
+NSC,Industrials
+WM,Industrials
+ETN,Industrials
+PH,Industrials
+XOM,Energy
+CVX,Energy
+SLB,Energy
+OXY,Energy
+HAL,Energy
+EOG,Energy
+VLO,Energy
+APD,Materials
+ECL,Materials
+NEM,Materials
+FCX,Materials
+SHW,Materials
+NUE,Materials
+PPG,Materials
+SO,Utilities
+NEE,Utilities
+D,Utilities
+AEP,Utilities
+ED,Utilities
+XEL,Utilities
+SRE,Utilities
+SPG,Real Estate
+O,Real Estate
+PSA,Real Estate
+PLD,Real Estate
+WELL,Real Estate
+VTR,Real Estate
+AMT,Real Estate

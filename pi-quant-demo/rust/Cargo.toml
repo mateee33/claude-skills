@@ -1,0 +1,17 @@
+[package]
+name = "quant_pipeline"
+version = "0.1.0"
+edition = "2021"
+# Raspberry Pi OS Bookworm ships rustc 1.63 via `apt install cargo`; keep the code compatible with it.
+rust-version = "1.63"
+description = "Data, feature, synthetic-market and backtest stages of the pi-quant-demo pipeline"
+license = "MIT"
+publish = false
+
+# No dependencies on purpose: builds offline, fast on a Raspberry Pi, nothing to audit but this code.
+[dependencies]
+
+[profile.release]
+opt-level = 3
+codegen-units = 1
+debug = false
