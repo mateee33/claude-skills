@@ -101,3 +101,10 @@ M40J 2 500 / 226 / 1 270. T1100G and M40J lamina E2, G12 and ply thickness: NOT 
   https://quickparts.com/wp-content/uploads/2024/05/Aluminum-7075.pdf
 - Ti-6Al-4V annealed: 4.43 g/cm³, E 113.8 GPa, yield 880 MPa, ultimate 950 MPa, shear 550 MPa, fatigue 510 MPa at 10⁷ (unnotched), 240 MPa at Kt 3.3.
   https://www.aerospacemetals.com/wp-content/uploads/2023/07/Titanium-Ti-6Al-4V-Grade-5-Annealed.pdf
+
+### Bearings (catalogue values, checked by search on 2026-11-23)
+- SKF 6004 deep-groove ball bearing (20 × 42 × 12): basic dynamic load rating C 9.95 kN, basic static load rating C0 5 kN
+  (SKF specification sheet reproduced at https://cdn.shopify.com/s/files/1/0749/0302/8007/files/SKF_6004_specification.pdf; distributor listings agree).
+- GGB DU steel-backed PTFE plain bearing: maximum static load 250 N/mm², maximum dynamic load 140 N/mm²
+  (GGB datasheet rev. 003, Dec 2022: https://ggbearings.com/sites/default/files/2024-12/GGB-DU-Metal-Polymer-Anti-Friction-Plain-Bearings-Datasheet.pdf).
+- 17-4 PH H900 strength, headset-bearing static ratings, igus data: NOT VERIFIED in this session.

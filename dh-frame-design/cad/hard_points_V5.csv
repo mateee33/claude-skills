@@ -1,0 +1,37 @@
+point,description,state,x_mm,y_mm,z_mm (half-spacing; 0 = on centre plane)
+BB,bottom-bracket centre (origin),top-out,0.0,0.0,0.0
+P,main pivot axis,top-out,-25.0,120.0,±38.0
+R,rocker pivot axis,top-out,-49.7,278.0,±36.0
+M,shock eye on front triangle,top-out,38.9,77.0,0.0
+S,push-link eye on swingarm,top-out,-190.0,211.8,±50.0
+L,push-link eye on rocker,top-out,-125.4,325.0,±50.0
+K,shock eye on rocker,top-out,0.0,323.9,0.0
+A,rear axle,top-out,-439.9,11.0,±78.5
+BB,bottom-bracket centre (origin),sag (25 %),0.0,0.0,0.0
+P,main pivot axis,sag (25 %),-25.0,120.0,±38.0
+R,rocker pivot axis,sag (25 %),-49.7,278.0,±36.0
+M,shock eye on front triangle,sag (25 %),38.9,77.0,0.0
+S,push-link eye on swingarm,sag (25 %),-177.9,230.7,±50.0
+L,push-link eye on rocker,sag (25 %),-111.1,342.6,±50.0
+K,shock eye on rocker,sag (25 %),10.0,309.9,0.0
+A,rear axle,sag (25 %),-449.9,61.0,±78.5
+BB,bottom-bracket centre (origin),bottom-out,0.0,0.0,0.0
+P,main pivot axis,bottom-out,-25.0,120.0,±38.0
+R,rocker pivot axis,bottom-out,-49.7,278.0,±36.0
+M,shock eye on front triangle,bottom-out,38.9,77.0,0.0
+S,push-link eye on swingarm,bottom-out,-130.4,276.6,±50.0
+L,push-link eye on rocker,bottom-out,-35.5,366.0,±50.0
+K,shock eye on rocker,bottom-out,11.8,249.8,0.0
+A,rear axle,bottom-out,-444.2,211.0,±78.5
+HT_top,head-tube top centre (stack/reach point),fixed,475.0,632.5,0.0
+HT_bottom,head-tube bottom centre,fixed,534.0,516.7,0.0
+crown_race,fork crown-race seat,fixed,535.8,513.2,0.0
+front_axle,"front axle, fork at top-out",fixed,841.1,11.0,0.0
+idler,idler sprocket centre (14 T),fixed,-54.0,92.0,-56.5 (drive side)
+seat_mast_bottom,"seat-mast axis, lower end",fixed,-18.0,70.0,0.0
+seat_mast_top,"seat-mast axis, top (seat-tube top)",fixed,-82.0,400.0,0.0
+down_tube_bb_end,down-tube axis at BB end,fixed,20.0,-25.0,0.0
+down_tube_ht_end,down-tube axis at head tube,fixed,516.7,550.6,0.0
+top_tube_mast_end,top-tube axis at seat mast,fixed,-68.0,352.0,0.0
+top_tube_ht_end,top-tube axis at head tube,fixed,488.6,605.8,0.0
+ground,ground level under both tyres (y only),fixed,0.0,-345.0,0.0

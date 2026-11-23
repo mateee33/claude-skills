@@ -1,0 +1,19 @@
+{
+ "note": "Hot-spot strain index at ultimate load (12 mm / 10 mm patch average) versus mesh size, recorded from the runs in this study.",
+ "front_triangle_V3": {
+  "h_mm": [7.0, 5.5, 4.5], "nodes": [8350, 13709, 20422],
+  "LC1": [0.27, 0.26, 0.27], "LC2a": [0.63, 0.62, 0.64], "LC2b": [0.71, 0.69, 0.72], "LC2c": [0.70, 0.70, 0.71],
+  "LC2d": [0.78, 0.85, 0.84], "LC3": [0.72, 0.71, 0.76], "LC4": [0.21, 0.26, 0.22]
+ },
+ "swingarm_V4": {
+  "h_mm": [5.0, 4.0, 3.3], "nodes": [7267, 11499, 16987],
+  "LC1": [0.19, 0.20, 0.20], "LC2a": [0.35, 0.34, 0.35], "LC2b": [0.39, 0.38, 0.39], "LC2d": [0.27, 0.27, 0.28],
+  "LC3": [0.66, 0.72, 0.77], "LC4": [0.27, 0.27, 0.27],
+  "lateral_stiffness_N_per_mm": [628, 621, 613]
+ },
+ "verification": {
+  "cantilever_tube_tip_deflection_FE_over_beam_theory": {"h_mm": [10.0, 6.0, 4.0], "isotropic": [1.018, 0.9999, 0.9944], "quasi_isotropic_laminate": [1.0195, 1.0005, 0.9945]},
+  "axially_compressed_cylinder_buckling_FE_over_classical": 1.03
+ },
+ "buckling_V3_lowest_load_multiplier_on_ultimate": {"LC2b": 23.5, "LC2c": 18.9, "LC2d": 4.64, "LC3": 7.5}
+}

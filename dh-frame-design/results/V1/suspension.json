@@ -1,0 +1,157 @@
+{
+ "name": "V1",
+ "geometry": {
+  "reach": 475.0,
+  "stack": 632.5,
+  "head_angle": 63.0,
+  "head_tube_length": 129.9448764675102,
+  "wheelbase": 1280.914899825608,
+  "front_centre": 841.0524213166995,
+  "rear_centre_static": 439.8624785089085,
+  "chainstay_length_static": 440.0,
+  "rear_centre_at_sag": 449.89590865464794,
+  "rear_centre_at_bottom_out": 443.9881660498409,
+  "bb_height": 345.0,
+  "bb_drop": 11.000000000000004,
+  "trail": 132.00870556410482,
+  "standover_at_bb": 758.774741611672,
+  "standover_mid_top_tube": 854.6576037098982,
+  "seat_tube_length": 408.3185031320525,
+  "seat_tube_angle_effective": 78.41487377514495,
+  "seat_tube_angle_actual": 79.02434482718745,
+  "rear_travel": 200.8737872559173,
+  "front_travel": 200.0,
+  "crown_stack_needed": 142.9448764675102
+ },
+ "hard_points": {
+  "P": [
+   -25.0,
+   120.0
+  ],
+  "S": [
+   -185.0,
+   192.2
+  ],
+  "L": [
+   -139.6,
+   308.9
+  ],
+  "R": [
+   -55.5,
+   286.0
+  ],
+  "K": [
+   5.0,
+   333.0
+  ],
+  "M": [
+   40.8,
+   85.6
+  ],
+  "A": [
+   -439.86,
+   11.0
+  ]
+ },
+ "linkage": {
+  "link_length": 125.22000638875562,
+  "rocker_arm_link": 87.1620330189699,
+  "rocker_arm_shock": 76.61103053738411,
+  "e2e": 249.9767989234201,
+  "swingarm_rotation_deg": -27.088853937561048,
+  "rocker_rotation_deg": -58.61482738101172,
+  "lr_start": 3.079029275438946,
+  "lr_end": 2.303157531310717,
+  "lr_sag": 2.9086885482914946,
+  "progression": 0.2519858288835598,
+  "average_lr": 2.6783171634122307
+ },
+ "rear_static_load_N": 469.0239216503358,
+ "setup": {
+  "tokens": 2,
+  "pressure_psi": 201.54715578345753,
+  "pressure_bar": 13.896192678095515,
+  "pressure_frac": 0.6107489569195682,
+  "x_sag": 16.760041648833763,
+  "mid_ratio": 2.0628499789426136,
+  "end_ratio": 7.0636078445042125,
+  "end_ratio_fast": 8.527740672604423,
+  "energy_J": 184.11031775545345,
+  "drop_height": 0.39253929118931036,
+  "f_shock_end": 7630.363324682567,
+  "wheel_rate_sag": 6.930990306185775
+ },
+ "g1": {
+  "a_mid": 0.0,
+  "b_end": 1.0,
+  "c_energy": 0.0,
+  "d_pressure": true
+ },
+ "setups_by_tokens": {
+  "0": {
+   "pressure_psi": 203.27441774841196,
+   "pressure_frac": 0.6159830840860968,
+   "mid_ratio": 2.02993110144135,
+   "end_ratio": 6.8434191949005365,
+   "drop_height": 0.38385765425173535
+  },
+  "1": {
+   "pressure_psi": 202.42923140308676,
+   "pressure_frac": 0.6134219133426871,
+   "mid_ratio": 2.045870763116874,
+   "end_ratio": 6.94802708844818,
+   "drop_height": 0.3880204465055303
+  },
+  "2": {
+   "pressure_psi": 201.54715578345753,
+   "pressure_frac": 0.6107489569195682,
+   "mid_ratio": 2.0628499789426136,
+   "end_ratio": 7.0636078445042125,
+   "drop_height": 0.39253929118931036
+  },
+  "3": {
+   "pressure_psi": 200.62572575146504,
+   "pressure_frac": 0.6687524191715501,
+   "mid_ratio": 2.080974150074594,
+   "end_ratio": 7.1919860143799035,
+   "drop_height": 0.3974630418944979
+  },
+  "4": {
+   "pressure_psi": 199.66225192845553,
+   "pressure_frac": 0.6655408397615185,
+   "mid_ratio": 2.1003634546581558,
+   "end_ratio": 7.335414674164796,
+   "drop_height": 0.4028501388572454
+  }
+ },
+ "clearances": {
+  "rear tyre to seat-mast rear face, min over travel (centre plane)": 11.18444442287256,
+  "rear tyre to seat-tube top, min over travel": 51.95453702779071,
+  "shock air can to seat-mast front face, min over travel": 7.694553784294818,
+  "shock air can to main-pivot housing (24 mm radius), min over travel": 7.1951863725150815,
+  "shock eye (15 mm radius) to top-tube underside, min over travel": 4.570891594388321,
+  "shock mount M above down-tube surface": 15.514854892345937,
+  "link/rocker rear arm lateral position needed to clear tyre (|z|, mm)": 46.0,
+  "tyre top above BB at bottom-out (saddle underside must stay above this + 15)": 567.8737872559173
+ },
+ "steering_lock": {
+  "contact_angle_without_stops_deg": 73.97209886775252,
+  "stop_block_face_z_mm": 49.281608520741344,
+  "stop_block_x_behind_axis_mm": 29.97376436759177,
+  "lock_deg": 40.0,
+  "assumed": {
+   "stanchion_cc": 160.0,
+   "stanchion_fwd": 28.0
+  }
+ },
+ "kinematics_at_sag": {
+  "anti_rise": 133.8580781295669,
+  "anti_squat": 125.99756035928351,
+  "com_height": 946.2376163130796,
+  "axle_rearward": 10.03343014573942,
+  "max_rearward": 14.07764303944985,
+  "axle_rearward_bottom": 4.125687540932404,
+  "chain_growth_total": 0.42447703078613586,
+  "max_kickback_deg": 0.5489906949985465
+ }
+}

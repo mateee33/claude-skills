@@ -69,3 +69,12 @@ Fox
 Öhlins
 - DH38 m.2 Air: https://www.ohlins.com/en-us/bicycle/front-forks/am-dh38-m-2-air-ttx18-29-27-5-200
 - TTX2Air m.2 (sizes): https://www.ohlins.com/en-us/bicycle/rear-shocks/ttx2air-m-2-185x55-am
+
+## Frame-specific Vivid Air pressure anchor (used to calibrate the air-spring model)
+Commencal Supreme DH V5.2 Team Replica 2027 (RockShox Vivid Air Ultimate DH, 250 × 75, 220 mm rear travel) suspension-settings page:
+https://www.commencal.com/en/suspension-settings-supreme-dh-v52-team-replica-white-2027.html
+Rear shock, "Intermediate" rows, 2 tokens in every row: 60 kg 217 psi · 65 kg 229 · 70 kg 241 · 75 kg 252 · **80 kg 264 psi** · 85 kg 275 · 90 kg 287 · 100 kg 310 · 110 kg 333.
+("Beginner" is 3–5 psi lower, "Expert" 3–5 psi higher.) The page names no sag; Commencal's V5 tech page recommends 20–25 % / 15–19 mm of shock stroke.
+Caveat: these cell values were read through a page-summarising fetch tool, not copied verbatim from the page source, and the page does not
+name the shock; the build's shock comes from Commencal's product page. The 110 kg values exceed RockShox's documented 330 psi limit.
+Treat as an **estimated** calibration point (one frame, one manufacturer's chart), not as RockShox data.

@@ -1,0 +1,4130 @@
+{
+ "revisions": {
+  "V1": {
+   "suspension": {
+    "lr_start": 3.079029275438946,
+    "lr_end": 2.303157531310717,
+    "progression": 0.2519858288835598,
+    "travel": 200.8737872559173,
+    "setup": {
+     "tokens": 2,
+     "pressure_psi": 201.54715578345753,
+     "pressure_bar": 13.896192678095515,
+     "pressure_frac": 0.6107489569195682,
+     "x_sag": 16.760041648833763,
+     "mid_ratio": 2.0628499789426136,
+     "end_ratio": 7.0636078445042125,
+     "end_ratio_fast": 8.527740672604423,
+     "energy_J": 184.11031775545345,
+     "drop_height": 0.39253929118931036,
+     "f_shock_end": 7630.363324682567,
+     "wheel_rate_sag": 6.930990306185775
+    },
+    "g1": {
+     "a_mid": false,
+     "b_end": true,
+     "c_energy": false,
+     "d_pressure": true
+    },
+    "kin": {
+     "anti_rise": 133.8580781295669,
+     "anti_squat": 125.99756035928351,
+     "com_height": 946.2376163130796,
+     "axle_rearward": 10.03343014573942,
+     "max_rearward": 14.07764303944985,
+     "axle_rearward_bottom": 4.125687540932404,
+     "chain_growth_total": 0.42447703078613586,
+     "max_kickback_deg": 0.5489906949985465
+    },
+    "clearances": {
+     "rear tyre to seat-mast rear face, min over travel (centre plane)": 11.18444442287256,
+     "rear tyre to seat-tube top, min over travel": 51.95453702779071,
+     "shock air can to seat-mast front face, min over travel": 7.694553784294818,
+     "shock air can to main-pivot housing (24 mm radius), min over travel": 7.1951863725150815,
+     "shock eye (15 mm radius) to top-tube underside, min over travel": 4.570891594388321,
+     "shock mount M above down-tube surface": 15.514854892345937,
+     "link/rocker rear arm lateral position needed to clear tyre (|z|, mm)": 46.0,
+     "tyre top above BB at bottom-out (saddle underside must stay above this + 15)": 567.8737872559173
+    },
+    "w_rear": 469.0239216503358
+   },
+   "geometry": {
+    "reach": 475.0,
+    "stack": 632.5,
+    "head_angle": 63.0,
+    "head_tube_length": 129.9448764675102,
+    "wheelbase": 1280.914899825608,
+    "front_centre": 841.0524213166995,
+    "rear_centre_static": 439.8624785089085,
+    "chainstay_length_static": 440.0,
+    "rear_centre_at_sag": 449.89590865464794,
+    "rear_centre_at_bottom_out": 443.9881660498409,
+    "bb_height": 345.0,
+    "bb_drop": 11.000000000000004,
+    "trail": 132.00870556410482,
+    "standover_at_bb": 758.774741611672,
+    "standover_mid_top_tube": 854.6576037098982,
+    "seat_tube_length": 408.3185031320525,
+    "seat_tube_angle_effective": 78.41487377514495,
+    "seat_tube_angle_actual": 79.02434482718745,
+    "rear_travel": 200.8737872559173,
+    "front_travel": 200.0,
+    "crown_stack_needed": 142.9448764675102
+   },
+   "hard_points": {
+    "P": [
+     -25.0,
+     120.0
+    ],
+    "S": [
+     -185.0,
+     192.2
+    ],
+    "L": [
+     -139.6,
+     308.9
+    ],
+    "R": [
+     -55.5,
+     286.0
+    ],
+    "K": [
+     5.0,
+     333.0
+    ],
+    "M": [
+     40.8,
+     85.6
+    ],
+    "A": [
+     -439.86,
+     11.0
+    ]
+   },
+   "front_triangle": {
+    "LC1": {
+     "zone": "boss",
+     "fi": 0.3664930859003187,
+     "ms": 1.7285644353792442,
+     "mode": "fibre compression",
+     "at": [
+      53.59109595404999,
+      69.38248386745344,
+      18.07431618453251
+     ]
+    },
+    "LC2a": {
+     "zone": "down_tube",
+     "fi": 1.0216343159086334,
+     "ms": -0.021176183661559933,
+     "mode": "fibre tension",
+     "at": [
+      27.35179333946449,
+      46.919074329664994,
+      -8.156632169987917
+     ]
+    },
+    "LC2b": {
+     "zone": "down_tube",
+     "fi": 1.1939056391080862,
+     "ms": -0.1624128681165662,
+     "mode": "transverse tension (matrix)",
+     "at": [
+      26.158195741828262,
+      47.982219623011304,
+      -5.0897459145115524
+     ]
+    },
+    "LC2c": {
+     "zone": "down_tube",
+     "fi": 1.1525383209883922,
+     "ms": -0.13234989085445636,
+     "mode": "fibre tension",
+     "at": [
+      27.35179333946449,
+      46.919074329664994,
+      -8.156632169987917
+     ]
+    },
+    "LC2d": {
+     "zone": "ht_junction",
+     "fi": 1.7637324684899136,
+     "ms": -0.4330205868148541,
+     "mode": "transverse tension (matrix)",
+     "at": [
+      467.2402519717519,
+      556.4705841361675,
+      0.39665305645595
+     ]
+    },
+    "LC3": {
+     "zone": "ht_junction",
+     "fi": 1.8619155245759558,
+     "ms": -0.4629187056014551,
+     "mode": "fibre tension",
+     "at": [
+      494.4729389,
+      483.50298565167736,
+      26.24694667089364
+     ]
+    },
+    "LC4": {
+     "zone": "ht_junction",
+     "fi": 0.5456962301039473,
+     "ms": 0.8325213641470719,
+     "mode": "fibre tension",
+     "at": [
+      494.4729389,
+      483.50298565167736,
+      26.24694667089364
+     ]
+    }
+   },
+   "swingarm": {
+    "LC1": {
+     "zone": "node",
+     "fi": 0.2133163345653906,
+     "mode": "fibre compression",
+     "at": [
+      -419.19152509331644,
+      43.68891136877676,
+      -82.15835644455771
+     ]
+    },
+    "LC2a": {
+     "zone": "spar",
+     "fi": 0.5941500879940299,
+     "mode": "fibre tension",
+     "at": [
+      -74.22577785835783,
+      88.54284008899863,
+      53.48540758851839
+     ]
+    },
+    "LC2b": {
+     "zone": "spar",
+     "fi": 0.6585760011499989,
+     "mode": "fibre tension",
+     "at": [
+      -74.22577785835783,
+      88.54284008899863,
+      53.48540758851839
+     ]
+    },
+    "LC2c": {
+     "zone": "spar",
+     "fi": 0.6585760011499989,
+     "mode": "fibre tension",
+     "at": [
+      -74.22577785835783,
+      88.54284008899863,
+      53.48540758851839
+     ]
+    },
+    "LC2d": {
+     "zone": "spar",
+     "fi": 0.4735195023334379,
+     "mode": "fibre tension",
+     "at": [
+      -74.22577785835783,
+      88.54284008899863,
+      53.48540758851839
+     ]
+    },
+    "LC3": {
+     "zone": "spar",
+     "fi": 1.2893644824688772,
+     "mode": "fibre compression",
+     "at": [
+      -65.58630586110347,
+      90.29188326652536,
+      52.20213978630384
+     ]
+    },
+    "LC4": {
+     "zone": "node",
+     "fi": 0.3759417754070707,
+     "mode": "fibre compression",
+     "at": [
+      -69.94544085713507,
+      127.0389379267604,
+      -31.9270133482234
+     ]
+    }
+   },
+   "worst": {
+    "front_triangle": {
+     "case": "LC3",
+     "zone": "ht_junction",
+     "fi": 1.8619155245759558,
+     "mode": "fibre tension"
+    },
+    "swingarm": {
+     "case": "LC3",
+     "zone": "spar",
+     "fi": 1.2893644824688772,
+     "mode": "fibre compression"
+    },
+    "joint_margin": -0.8047501986049097
+   },
+   "structure_pass": false,
+   "interface_limit_forces": {
+    "shock": 21203.606715187696,
+    "link": 24318.035143693603,
+    "pivot": 16534.565012301373,
+    "pivot_bearing": 15719.06972047898,
+    "rocker": 43552.956120781135,
+    "ht_upper": 21304.007696990648,
+    "ht_lower": 23777.518395370975,
+    "dropout": 5854.6511627906975,
+    "feet": 14816.790084068498,
+    "idler": 7804.160716333255,
+    "chain_tension": 5093.804143111024
+   },
+   "joints": [
+    {
+     "item": "Shock eye pin bending (12.7 mm steel pin, both ends of the shock)",
+     "demand": 909.4059405367271,
+     "capacity": 1000.0,
+     "unit": "MPa",
+     "margin": 0.0996189439996451,
+     "note": "simply supported pin, load spread over the 22 mm eyelet; yield criterion; pin strength unverified",
+     "kind": "calculated"
+    },
+    {
+     "item": "Shock eye pin double shear",
+     "demand": 125.53755918278733,
+     "capacity": 580.0,
+     "unit": "MPa",
+     "margin": 3.6201312481748866,
+     "note": "",
+     "kind": "calculated"
+    },
+    {
+     "item": "Shock mount clevis tabs, bearing in 7075 inserts (2 x 8 mm)",
+     "demand": 156.52268736605092,
+     "capacity": 754.5,
+     "unit": "MPa",
+     "margin": 3.8203874639303423,
+     "note": "bearing yield taken as 1.5 x tensile yield",
+     "kind": "calculated"
+    },
+    {
+     "item": "Shock mount inserts, bond shear to carbon lug (2 x 600 mm2 bonded bushes)",
+     "demand": 26.504508393984622,
+     "capacity": 5.175,
+     "unit": "MPa",
+     "margin": -0.8047501986049097,
+     "note": "average adhesive shear if the bond is the load path",
+     "kind": "estimated"
+    },
+    {
+     "item": "Rocker pivot axle double shear (17 mm Ti-6Al-4V, 11 mm bore)",
+     "demand": 247.55958046024057,
+     "capacity": 550.0,
+     "unit": "MPa",
+     "margin": 1.2216873973428513,
+     "note": "",
+     "kind": "calculated"
+    },
+    {
+     "item": "Rocker pivot plain bearings, pressure at ultimate (2 x 17 x 12 mm)",
+     "demand": 160.12116220875419,
+     "capacity": 250.0,
+     "unit": "MPa",
+     "margin": 0.5613176706403642,
+     "note": "static rating",
+     "kind": "calculated"
+    },
+    {
+     "item": "Rocker pivot plain bearings, pressure at limit",
+     "demand": 106.74744147250279,
+     "capacity": 140.0,
+     "unit": "MPa",
+     "margin": 0.311506843337906,
+     "note": "dynamic rating",
+     "kind": "calculated"
+    },
+    {
+     "item": "Rocker pivot sleeve bearing on carbon seat mast (22 mm sleeve x 56 mm)",
+     "demand": 53.02713813406794,
+     "capacity": 250.0,
+     "unit": "MPa",
+     "margin": 3.7145670838944334,
+     "note": "",
+     "kind": "estimated"
+    },
+    {
+     "item": "Push link column buckling (each, 7075, 12 x 16 mm, 130 mm)",
+     "demand": 18238.526357770203,
+     "capacity": 96474.97422046617,
+     "unit": "N",
+     "margin": 4.2896255063592195,
+     "note": "Euler, pinned ends",
+     "kind": "calculated"
+    },
+    {
+     "item": "Push link compressive stress",
+     "demand": 94.99232478005314,
+     "capacity": 503.0,
+     "unit": "MPa",
+     "margin": 4.295164647929766,
+     "note": "",
+     "kind": "calculated"
+    },
+    {
+     "item": "Push link eye plain bearings at limit (12 x 10 mm)",
+     "demand": 101.32514643205668,
+     "capacity": 140.0,
+     "unit": "MPa",
+     "margin": 0.38169057662183237,
+     "note": "dynamic rating",
+     "kind": "calculated"
+    },
+    {
+     "item": "Main pivot axle bending (20/14 mm Ti-6Al-4V, 10 mm overhang)",
+     "demand": 395.0679268567497,
+     "capacity": 880.0,
+     "unit": "MPa",
+     "margin": 1.2274650513937697,
+     "note": "",
+     "kind": "calculated"
+    },
+    {
+     "item": "Main pivot plain bearing pressure at limit (20 x 16 mm each side)",
+     "demand": 49.12209287649681,
+     "capacity": 140.0,
+     "unit": "MPa",
+     "margin": 1.850041433535603,
+     "note": "dynamic rating",
+     "kind": "calculated"
+    },
+    {
+     "item": "Main pivot: same load on a 6004 ball bearing (for comparison)",
+     "demand": 15719.06972047898,
+     "capacity": 5000.0,
+     "unit": "N",
+     "margin": -0.6819150185786158,
+     "note": "static rating C0 of an SKF 6004; negative margin is why plain bearings are specified",
+     "kind": "calculated"
+    },
+    {
+     "item": "Main pivot sleeve bearing on carbon (26 mm sleeve x 56 mm)",
+     "demand": 17.034235933002787,
+     "capacity": 250.0,
+     "unit": "MPa",
+     "margin": 13.676326016809497,
+     "note": "",
+     "kind": "estimated"
+    },
+    {
+     "item": "Lower headset cup bearing on carbon head tube (56 x 12 mm)",
+     "demand": 53.074817846810205,
+     "capacity": 250.0,
+     "unit": "MPa",
+     "margin": 3.710331756984541,
+     "note": "",
+     "kind": "estimated"
+    },
+    {
+     "item": "Upper headset cup bearing on carbon head tube (56 x 12 mm)",
+     "demand": 47.55358860935412,
+     "capacity": 250.0,
+     "unit": "MPa",
+     "margin": 4.257226790047623,
+     "note": "",
+     "kind": "estimated"
+    },
+    {
+     "item": "BB shell bearing pressure on carbon (46 x 83 mm)",
+     "demand": 5.821159016789615,
+     "capacity": 250.0,
+     "unit": "MPa",
+     "margin": 41.946773877665976,
+     "note": "",
+     "kind": "estimated"
+    },
+    {
+     "item": "Dropout insert, axle bearing (12 x 10 mm)",
+     "demand": 73.18313953488372,
+     "capacity": 754.5,
+     "unit": "MPa",
+     "margin": 9.309751737835153,
+     "note": "",
+     "kind": "calculated"
+    },
+    {
+     "item": "Dropout insert bond shear (3600 mm2 each)",
+     "demand": 2.439437984496124,
+     "capacity": 5.175,
+     "unit": "MPa",
+     "margin": 1.1213902681231378,
+     "note": "average shear; insert is also wrapped by the spar laminate",
+     "kind": "estimated"
+    },
+    {
+     "item": "Idler stub bending (16 mm Ti-6Al-4V, 20 mm overhang)",
+     "demand": 582.2206662600114,
+     "capacity": 880.0,
+     "unit": "MPa",
+     "margin": 0.5114544209720728,
+     "note": "sprint load, 2.0 kN on one pedal",
+     "kind": "calculated"
+    }
+   ],
+   "mass_items": [
+    [
+     "Front triangle laminate (shell model area x areal mass)",
+     1.5559289312447409,
+     "calculated"
+    ],
+    [
+     "Front triangle overlaps, ply drops, resin fillets (+8 %)",
+     0.12447431449957927,
+     "estimated"
+    ],
+    [
+     "Front triangle inserts: BB sleeve, headset seats, pivot and rocker sleeves, shock and idler inserts",
+     0.29,
+     "estimated"
+    ],
+    [
+     "Main pivot axle (Ti 20/14 x 110) and rocker axle (Ti 17/11 x 80)",
+     0.125,
+     "calculated"
+    ],
+    [
+     "Swingarm laminate (shell model)",
+     0.6149283456102005,
+     "calculated"
+    ],
+    [
+     "Swingarm overlaps and fillets (+8 %)",
+     0.04919426764881604,
+     "estimated"
+    ],
+    [
+     "Swingarm inserts: dropouts, brake mount, pivot and link bushes",
+     0.175,
+     "estimated"
+    ],
+    [
+     "Rocker (7075-T6 yoke) with bushes",
+     0.195,
+     "estimated"
+    ],
+    [
+     "Push links (2 x 7075) with bushes",
+     0.16,
+     "estimated"
+    ],
+    [
+     "Pins, bolts, idler sprocket and stub",
+     0.215,
+     "estimated"
+    ],
+    [
+     "Frame protection (down-tube guard, spar and chain protection) and paint",
+     0.25,
+     "estimated"
+    ]
+   ],
+   "frame_mass": 3.7545258590033366,
+   "laminate_mass": {
+    "front_triangle": 1.5559289312447409,
+    "swingarm": 0.6149283456102005,
+    "ft_zones": {
+     "down_tube": {
+      "area_mm2": 145952.65683335825,
+      "thickness": 2.26,
+      "mass_kg": 0.4994324773649319
+     },
+     "top_tube": {
+      "area_mm2": 84530.42086241904,
+      "thickness": 1.956,
+      "mass_kg": 0.2502702314124144
+     },
+     "seat_mast": {
+      "area_mm2": 15160.345499824114,
+      "thickness": 2.26,
+      "mass_kg": 0.05187688305893814
+     },
+     "head_tube": {
+      "area_mm2": 16675.759131888393,
+      "thickness": 3.78,
+      "mass_kg": 0.09551407909489978
+     },
+     "ht_junction": {
+      "area_mm2": 30784.00492812077,
+      "thickness": 3.1719999999999997,
+      "mass_kg": 0.14792896473751269
+     },
+     "core": {
+      "area_mm2": 23754.12823542022,
+      "thickness": 3.476,
+      "mass_kg": 0.12510235156650884
+     },
+     "boss": {
+      "area_mm2": 54252.81836284937,
+      "thickness": 4.692,
+      "mass_kg": 0.38580394400953516
+     }
+    },
+    "sa_zones": {
+     "spar": 0.4466333403588036,
+     "node": 0.13488710167814222,
+     "web": 0.03340790357325471
+    }
+   },
+   "swingarm_lateral_stiffness": 386.77399749257927,
+   "ht_lateral_deflection_LC3": 7.681875480428399,
+   "case_forces": {
+    "LC1": {
+     "rear": [
+      -500.0,
+      1573.5043552764703,
+      0.0
+     ],
+     "front": [
+      -1500.0,
+      3000.0,
+      0.0
+     ],
+     "hands": [
+      800.0,
+      -1200.0,
+      0.0
+     ],
+     "bb": [
+      1200.0000000069533,
+      -3373.5043552675584,
+      -8.70997496349446e-10,
+      -4.791585865859815e-07,
+      1.5597557023738773e-07,
+      8.651996665776096e-07
+     ],
+     "shock": 6344.615503834774,
+     "link": 5059.370915680862,
+     "pivot": 3901.9638119631763,
+     "rocker": 11065.012698938874,
+     "ht_upper": 3546.1105232950504,
+     "ht_lower": 3352.6321906957237,
+     "balance": 1.1336901081414045e-08
+    },
+    "LC2a": {
+     "rear": [
+      0.0,
+      8300.0,
+      0.0
+     ],
+     "front": [
+      0.0,
+      6089.983113462231,
+      0.0
+     ],
+     "hands": [
+      0.0,
+      -2000.0,
+      0.0
+     ],
+     "bb": [
+      2.2011297673429908e-08,
+      -12389.983113463828,
+      4.589081115113913e-09,
+      2.476392637618119e-06,
+      -2.0507135332081816e-06,
+      -1.3631115706402852e-05
+     ],
+     "shock": 19129.34084087585,
+     "link": 21939.09692311488,
+     "pivot": 14917.053217619716,
+     "rocker": 39292.34084809601,
+     "ht_upper": 11563.816571245517,
+     "ht_lower": 13420.630048852545,
+     "balance": 2.2541240692267703e-08
+    },
+    "LC2b": {
+     "rear": [
+      0.0,
+      9200.0,
+      0.0
+     ],
+     "front": [
+      0.0,
+      4616.790084071803,
+      0.0
+     ],
+     "hands": [
+      0.0,
+      1000.0,
+      0.0
+     ],
+     "bb": [
+      2.2855433101653944e-08,
+      -14816.790084068498,
+      3.4482070532249054e-09,
+      1.8780389154926524e-06,
+      -1.7161670768928161e-06,
+      -1.110228366485444e-05
+     ],
+     "shock": 21203.606715187696,
+     "link": 24318.035143693603,
+     "pivot": 16534.565012301373,
+     "rocker": 43552.956120781135,
+     "ht_upper": 8365.964919314087,
+     "ht_lower": 10915.934256513976,
+     "balance": 2.3349189812914646e-08
+    },
+    "LC2c": {
+     "rear": [
+      0.0,
+      9200.0,
+      0.0
+     ],
+     "front": [
+      0.0,
+      7244.211526104503,
+      0.0
+     ],
+     "hands": [
+      0.0,
+      -3000.0,
+      0.0
+     ],
+     "bb": [
+      2.486442696181257e-08,
+      -13444.211526107629,
+      5.5501558904325066e-09,
+      2.9765199087705696e-06,
+      -2.4221560579462675e-06,
+      -1.6180724600189933e-05
+     ],
+     "shock": 21203.606715187696,
+     "link": 24318.035143693603,
+     "pivot": 16534.565012301373,
+     "rocker": 43552.956120781135,
+     "ht_upper": 14006.420908979972,
+     "ht_lower": 15933.2526207165,
+     "balance": 2.566728914919833e-08
+    },
+    "LC2d": {
+     "rear": [
+      0.0,
+      7003.8456990509085,
+      0.0
+     ],
+     "front": [
+      -5660.0,
+      5660.0,
+      0.0
+     ],
+     "hands": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "bb": [
+      5660.0000000223245,
+      -12663.845699006564,
+      -6.98479851735101e-09,
+      -3.726905106304912e-06,
+      1.8316058003620128e-06,
+      1.1798897276094067e-05
+     ],
+     "shock": 18980.78496084158,
+     "link": 17919.509706314864,
+     "pivot": 11622.906379560196,
+     "rocker": 35946.68500615658,
+     "ht_upper": 21304.007696990648,
+     "ht_lower": 23777.518395370975,
+     "balance": 5.013480969730727e-08
+    },
+    "LC3": {
+     "rear": [
+      0.0,
+      5500.0,
+      1500.0
+     ],
+     "front": [
+      0.0,
+      3225.848543930905,
+      1500.0
+     ],
+     "hands": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "bb": [
+      6.975058752800578e-09,
+      -8725.848543923039,
+      -3000.000000010861,
+      457695.3716703726,
+      630973.4483700389,
+      -1.1000093365964858e-05
+     ],
+     "shock": 13027.869108586605,
+     "link": 14568.737309945056,
+     "pivot": 9917.715524800382,
+     "rocker": 26608.086843927198,
+     "ht_upper": 10246.090777773778,
+     "ht_lower": 12313.464731385511,
+     "balance": 1.5115551735806398e-08
+    },
+    "LC4": {
+     "rear": [
+      0.0,
+      1710.0,
+      600.0
+     ],
+     "front": [
+      0.0,
+      975.3000890584698,
+      400.0
+     ],
+     "hands": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "bb": [
+      3.947958404637575e-09,
+      -2685.300089055527,
+      -1000.0000000016872,
+      216000.2817902364,
+      87900.65987535333,
+      -4.726174978486597e-06
+     ],
+     "shock": 4487.370119952105,
+     "link": 4431.606485692261,
+     "pivot": 2961.5803639801443,
+     "rocker": 8681.888445087403,
+     "ht_upper": 3167.1401748412923,
+     "ht_lower": 3756.826606967013,
+     "balance": 5.2050375322445596e-09
+    }
+   }
+  },
+  "V2": {
+   "suspension": {
+    "lr_start": 3.4761930377956864,
+    "lr_end": 2.1670657994369926,
+    "progression": 0.37659796913603905,
+    "travel": 199.9867070468161,
+    "setup": {
+     "tokens": 2,
+     "pressure_psi": 228.84281007558673,
+     "pressure_bar": 15.778162531967522,
+     "pressure_frac": 0.6934630608351113,
+     "x_sag": 15.304248437787107,
+     "mid_ratio": 2.306073093734688,
+     "end_ratio": 8.075252998150654,
+     "end_ratio_fast": 9.827752268646194,
+     "energy_J": 205.87003582903438,
+     "drop_height": 0.438932912216178,
+     "f_shock_end": 8207.733174051882,
+     "wheel_rate_sag": 7.883564255247458
+    },
+    "g1": {
+     "a_mid": true,
+     "b_end": true,
+     "c_energy": false,
+     "d_pressure": true
+    },
+    "kin": {
+     "anti_rise": 133.8894822491617,
+     "anti_squat": 125.9733599466023,
+     "com_height": 946.3729752439656,
+     "axle_rearward": 10.002681932532107,
+     "max_rearward": 14.079044856183579,
+     "axle_rearward_bottom": 4.319218628897659,
+     "chain_growth_total": 0.40963708249262254,
+     "max_kickback_deg": 0.5488638858072008
+    },
+    "clearances": {
+     "rear tyre to seat-mast rear face, min over travel (centre plane)": 11.543328348128455,
+     "rear tyre to seat-tube top, min over travel": 52.53593067761818,
+     "shock air can to seat-mast front face, min over travel": 4.328963011727325,
+     "shock air can to main-pivot housing (24 mm radius), min over travel": 3.429111280235439,
+     "shock eye (15 mm radius) to top-tube underside, min over travel": 10.776790353609456,
+     "shock mount M above down-tube surface": 11.334362898049648,
+     "link/rocker rear arm lateral position needed to clear tyre (|z|, mm)": 46.0,
+     "tyre top above BB at bottom-out (saddle underside must stay above this + 15)": 566.986707046816
+    },
+    "w_rear": 469.0239216503358
+   },
+   "geometry": {
+    "reach": 475.0,
+    "stack": 632.5,
+    "head_angle": 63.0,
+    "head_tube_length": 129.9448764675102,
+    "wheelbase": 1280.914899825608,
+    "front_centre": 841.0524213166995,
+    "rear_centre_static": 439.8624785089085,
+    "chainstay_length_static": 440.0,
+    "rear_centre_at_sag": 449.8651604414406,
+    "rear_centre_at_bottom_out": 444.18169713780617,
+    "bb_height": 345.0,
+    "bb_drop": 11.000000000000004,
+    "trail": 132.00870556410482,
+    "standover_at_bb": 758.774741611672,
+    "standover_mid_top_tube": 854.6576037098982,
+    "seat_tube_length": 408.3185031320525,
+    "seat_tube_angle_effective": 78.41487377514495,
+    "seat_tube_angle_actual": 79.02434482718745,
+    "rear_travel": 199.9867070468161,
+    "front_travel": 200.0,
+    "crown_stack_needed": 142.9448764675102
+   },
+   "hard_points": {
+    "P": [
+     -25.0,
+     120.0
+    ],
+    "S": [
+     -190.0,
+     211.8
+    ],
+    "L": [
+     -125.4,
+     325.0
+    ],
+    "R": [
+     -49.7,
+     278.0
+    ],
+    "K": [
+     0.0,
+     323.9
+    ],
+    "M": [
+     38.9,
+     77.0
+    ],
+    "A": [
+     -439.86,
+     11.0
+    ]
+   },
+   "front_triangle": {
+    "LC1": {
+     "zone": "ht_junction",
+     "fi": 0.3241160488830116,
+     "ms": 2.085314668762194,
+     "mode": "transverse tension (matrix)",
+     "at": [
+      467.2402519717519,
+      556.4705841361675,
+      0.39665305645595
+     ]
+    },
+    "LC2a": {
+     "zone": "boss",
+     "fi": 0.6860635218172085,
+     "ms": 0.45759097838528606,
+     "mode": "fibre compression",
+     "at": [
+      42.02724853935786,
+      55.507593088751634,
+      17.988842097894004
+     ]
+    },
+    "LC2b": {
+     "zone": "seat_mast",
+     "fi": 0.7714958800651232,
+     "ms": 0.2961832018021775,
+     "mode": "transverse tension (matrix)",
+     "at": [
+      -28.43739147640599,
+      245.64440206715128,
+      -6.245019589832932
+     ]
+    },
+    "LC2c": {
+     "zone": "top_tube",
+     "fi": 0.7910266065992951,
+     "ms": 0.2641799803664038,
+     "mode": "fibre compression",
+     "at": [
+      385.24762634766563,
+      588.4479652937963,
+      7.006655040381658
+     ]
+    },
+    "LC2d": {
+     "zone": "ht_junction",
+     "fi": 1.7699602884681196,
+     "ms": -0.4350155726570065,
+     "mode": "transverse tension (matrix)",
+     "at": [
+      467.2402519717519,
+      556.4705841361675,
+      0.39665305645595
+     ]
+    },
+    "LC3": {
+     "zone": "ht_junction",
+     "fi": 1.8630378722312533,
+     "ms": -0.46324225883698356,
+     "mode": "fibre tension",
+     "at": [
+      494.4729389,
+      483.50298565167736,
+      26.24694667089364
+     ]
+    },
+    "LC4": {
+     "zone": "ht_junction",
+     "fi": 0.5461864015479394,
+     "ms": 0.8308767797329148,
+     "mode": "fibre tension",
+     "at": [
+      494.4729389,
+      483.50298565167736,
+      26.24694667089364
+     ]
+    }
+   },
+   "swingarm": {
+    "LC1": {
+     "zone": "node",
+     "fi": 0.2006889070279082,
+     "mode": "fibre compression",
+     "at": [
+      -420.4172253477095,
+      45.42894879062907,
+      -82.01586418141551
+     ]
+    },
+    "LC2a": {
+     "zone": "spar",
+     "fi": 0.479017966057813,
+     "mode": "in-plane shear",
+     "at": [
+      -79.56068190297226,
+      86.85467647565171,
+      -56.28821684373821
+     ]
+    },
+    "LC2b": {
+     "zone": "spar",
+     "fi": 0.5309596732207043,
+     "mode": "in-plane shear",
+     "at": [
+      -79.56068190297226,
+      86.85467647565171,
+      -56.28821684373821
+     ]
+    },
+    "LC2c": {
+     "zone": "spar",
+     "fi": 0.5309596732207043,
+     "mode": "in-plane shear",
+     "at": [
+      -79.56068190297226,
+      86.85467647565171,
+      -56.28821684373821
+     ]
+    },
+    "LC2d": {
+     "zone": "spar",
+     "fi": 0.37579674925547557,
+     "mode": "in-plane shear",
+     "at": [
+      -79.56068190297226,
+      86.85467647565171,
+      -56.28821684373821
+     ]
+    },
+    "LC3": {
+     "zone": "spar",
+     "fi": 1.0656161521244347,
+     "mode": "fibre tension",
+     "at": [
+      -73.70659427979983,
+      87.70685142652258,
+      52.46024297583531
+     ]
+    },
+    "LC4": {
+     "zone": "spar",
+     "fi": 0.3990409773452056,
+     "mode": "fibre tension",
+     "at": [
+      -73.70659427979983,
+      87.70685142652258,
+      52.46024297583531
+     ]
+    }
+   },
+   "worst": {
+    "front_triangle": {
+     "case": "LC3",
+     "zone": "ht_junction",
+     "fi": 1.8630378722312533,
+     "mode": "fibre tension"
+    },
+    "swingarm": {
+     "case": "LC3",
+     "zone": "spar",
+     "fi": 1.0656161521244347,
+     "mode": "fibre tension"
+    },
+    "joint_margin": -0.792354226907264
+   },
+   "structure_pass": false,
+   "interface_limit_forces": {
+    "shock": 19937.800506784446,
+    "link": 20697.494537691306,
+    "pivot": 15875.315569605067,
+    "pivot_bearing": 15458.866412090876,
+    "rocker": 35939.4920885345,
+    "ht_upper": 21304.007696990648,
+    "ht_lower": 23777.518395370975,
+    "dropout": 5854.6511627906975,
+    "feet": 14816.82389561488,
+    "idler": 7804.160716333255,
+    "chain_tension": 5093.804143111024
+   },
+   "joints": [
+    {
+     "item": "Shock eye pin bending (12.7 mm steel pin, both ends of the shock)",
+     "demand": 855.1165122827285,
+     "capacity": 1000.0,
+     "unit": "MPa",
+     "margin": 0.1694312829143081,
+     "note": "simply supported pin, load spread over the 22 mm eyelet; yield criterion; pin strength unverified",
+     "kind": "calculated"
+    },
+    {
+     "item": "Shock eye pin double shear",
+     "demand": 118.04325767381142,
+     "capacity": 580.0,
+     "unit": "MPa",
+     "margin": 3.9134530123076763,
+     "note": "",
+     "kind": "calculated"
+    },
+    {
+     "item": "Shock mount clevis tabs, bearing in 7075 inserts (2 x 8 mm)",
+     "demand": 147.17864547331038,
+     "capacity": 754.5,
+     "unit": "MPa",
+     "margin": 4.12642304577278,
+     "note": "bearing yield taken as 1.5 x tensile yield",
+     "kind": "calculated"
+    },
+    {
+     "item": "Shock mount inserts, bond shear to carbon lug (2 x 600 mm2 bonded bushes)",
+     "demand": 24.922250633480555,
+     "capacity": 5.175,
+     "unit": "MPa",
+     "margin": -0.792354226907264,
+     "note": "average adhesive shear if the bond is the load path",
+     "kind": "estimated"
+    },
+    {
+     "item": "Rocker pivot axle double shear (17 mm Ti-6Al-4V, 11 mm bore)",
+     "demand": 204.2838506465118,
+     "capacity": 550.0,
+     "unit": "MPa",
+     "margin": 1.6923322536724044,
+     "note": "",
+     "kind": "calculated"
+    },
+    {
+     "item": "Rocker pivot plain bearings, pressure at ultimate (2 x 17 x 12 mm)",
+     "demand": 132.13048561961213,
+     "capacity": 250.0,
+     "unit": "MPa",
+     "margin": 0.8920690318184412,
+     "note": "static rating",
+     "kind": "calculated"
+    },
+    {
+     "item": "Rocker pivot plain bearings, pressure at limit",
+     "demand": 88.08699041307474,
+     "capacity": 140.0,
+     "unit": "MPa",
+     "margin": 0.5893379867274908,
+     "note": "dynamic rating",
+     "kind": "calculated"
+    },
+    {
+     "item": "Rocker pivot sleeve bearing on carbon seat mast (22 mm sleeve x 56 mm)",
+     "demand": 43.757498484417006,
+     "capacity": 250.0,
+     "unit": "MPa",
+     "margin": 4.713306488236078,
+     "note": "",
+     "kind": "estimated"
+    },
+    {
+     "item": "Push link column buckling (each, 7075, 12 x 16 mm, 130 mm)",
+     "demand": 15523.120903268478,
+     "capacity": 96474.97422046617,
+     "unit": "N",
+     "margin": 5.214921266261145,
+     "note": "Euler, pinned ends",
+     "kind": "calculated"
+    },
+    {
+     "item": "Push link compressive stress",
+     "demand": 80.84958803785666,
+     "capacity": 503.0,
+     "unit": "MPa",
+     "margin": 5.2214293505673455,
+     "note": "",
+     "kind": "calculated"
+    },
+    {
+     "item": "Push link eye plain bearings at limit (12 x 10 mm)",
+     "demand": 86.23956057371377,
+     "capacity": 140.0,
+     "unit": "MPa",
+     "margin": 0.6233848951530101,
+     "note": "dynamic rating",
+     "kind": "calculated"
+    },
+    {
+     "item": "Main pivot axle bending (20/14 mm Ti-6Al-4V, 10 mm overhang)",
+     "demand": 388.5282280428797,
+     "capacity": 880.0,
+     "unit": "MPa",
+     "margin": 1.2649576954364288,
+     "note": "",
+     "kind": "calculated"
+    },
+    {
+     "item": "Main pivot plain bearing pressure at limit (20 x 16 mm each side)",
+     "demand": 48.30895753778399,
+     "capacity": 140.0,
+     "unit": "MPa",
+     "margin": 1.898013269909654,
+     "note": "dynamic rating",
+     "kind": "calculated"
+    },
+    {
+     "item": "Main pivot: same load on a 6004 ball bearing (for comparison)",
+     "demand": 15458.866412090876,
+     "capacity": 5000.0,
+     "unit": "N",
+     "margin": -0.6765610189832976,
+     "note": "static rating C0 of an SKF 6004; negative margin is why plain bearings are specified",
+     "kind": "calculated"
+    },
+    {
+     "item": "Main pivot sleeve bearing on carbon (26 mm sleeve x 56 mm)",
+     "demand": 16.355064117038186,
+     "capacity": 250.0,
+     "unit": "MPa",
+     "margin": 14.285785381884132,
+     "note": "",
+     "kind": "estimated"
+    },
+    {
+     "item": "Lower headset cup bearing on carbon head tube (56 x 12 mm)",
+     "demand": 53.074817846810205,
+     "capacity": 250.0,
+     "unit": "MPa",
+     "margin": 3.710331756984541,
+     "note": "",
+     "kind": "estimated"
+    },
+    {
+     "item": "Upper headset cup bearing on carbon head tube (56 x 12 mm)",
+     "demand": 47.55358860935412,
+     "capacity": 250.0,
+     "unit": "MPa",
+     "margin": 4.257226790047623,
+     "note": "",
+     "kind": "estimated"
+    },
+    {
+     "item": "BB shell bearing pressure on carbon (46 x 83 mm)",
+     "demand": 5.821172300529681,
+     "capacity": 250.0,
+     "unit": "MPa",
+     "margin": 41.946675874419995,
+     "note": "",
+     "kind": "estimated"
+    },
+    {
+     "item": "Dropout insert, axle bearing (12 x 10 mm)",
+     "demand": 73.18313953488372,
+     "capacity": 754.5,
+     "unit": "MPa",
+     "margin": 9.309751737835153,
+     "note": "",
+     "kind": "calculated"
+    },
+    {
+     "item": "Dropout insert bond shear (3600 mm2 each)",
+     "demand": 2.439437984496124,
+     "capacity": 5.175,
+     "unit": "MPa",
+     "margin": 1.1213902681231378,
+     "note": "average shear; insert is also wrapped by the spar laminate",
+     "kind": "estimated"
+    },
+    {
+     "item": "Idler stub bending (16 mm Ti-6Al-4V, 20 mm overhang)",
+     "demand": 582.2206662600114,
+     "capacity": 880.0,
+     "unit": "MPa",
+     "margin": 0.5114544209720728,
+     "note": "sprint load, 2.0 kN on one pedal",
+     "kind": "calculated"
+    }
+   ],
+   "mass_items": [
+    [
+     "Front triangle laminate (shell model area x areal mass)",
+     1.556656721048645,
+     "calculated"
+    ],
+    [
+     "Front triangle overlaps, ply drops, resin fillets (+8 %)",
+     0.12453253768389161,
+     "estimated"
+    ],
+    [
+     "Front triangle inserts: BB sleeve, headset seats, pivot and rocker sleeves, shock and idler inserts",
+     0.29,
+     "estimated"
+    ],
+    [
+     "Main pivot axle (Ti 20/14 x 110) and rocker axle (Ti 17/11 x 80)",
+     0.125,
+     "calculated"
+    ],
+    [
+     "Swingarm laminate (shell model)",
+     0.634764870632847,
+     "calculated"
+    ],
+    [
+     "Swingarm overlaps and fillets (+8 %)",
+     0.050781189650627764,
+     "estimated"
+    ],
+    [
+     "Swingarm inserts: dropouts, brake mount, pivot and link bushes",
+     0.175,
+     "estimated"
+    ],
+    [
+     "Rocker (7075-T6 yoke) with bushes",
+     0.195,
+     "estimated"
+    ],
+    [
+     "Push links (2 x 7075) with bushes",
+     0.16,
+     "estimated"
+    ],
+    [
+     "Pins, bolts, idler sprocket and stub",
+     0.215,
+     "estimated"
+    ],
+    [
+     "Frame protection (down-tube guard, spar and chain protection) and paint",
+     0.25,
+     "estimated"
+    ]
+   ],
+   "frame_mass": 3.7767353190160113,
+   "laminate_mass": {
+    "front_triangle": 1.556656721048645,
+    "swingarm": 0.634764870632847,
+    "ft_zones": {
+     "down_tube": {
+      "area_mm2": 145296.0660537473,
+      "thickness": 2.26,
+      "mass_kg": 0.4971857025079967
+     },
+     "top_tube": {
+      "area_mm2": 84532.81114018286,
+      "thickness": 1.956,
+      "mass_kg": 0.25027730833647305
+     },
+     "seat_mast": {
+      "area_mm2": 14278.715566465406,
+      "thickness": 2.26,
+      "mass_kg": 0.04886005122257664
+     },
+     "head_tube": {
+      "area_mm2": 16675.759131888393,
+      "thickness": 3.78,
+      "mass_kg": 0.09551407909489978
+     },
+     "ht_junction": {
+      "area_mm2": 30784.00492812077,
+      "thickness": 3.1719999999999997,
+      "mass_kg": 0.14792896473751269
+     },
+     "core": {
+      "area_mm2": 24280.95450378228,
+      "thickness": 3.476,
+      "mass_kg": 0.12787690950380357
+     },
+     "boss": {
+      "area_mm2": 54704.1839274621,
+      "thickness": 4.692,
+      "mass_kg": 0.38901370564538273
+     }
+    },
+    "sa_zones": {
+     "spar": 0.46595184233147374,
+     "node": 0.13536250596196503,
+     "web": 0.033450522339408255
+    }
+   },
+   "swingarm_lateral_stiffness": 346.0407160568454,
+   "ht_lateral_deflection_LC3": 7.593117879396641,
+   "case_forces": {
+    "LC1": {
+     "rear": [
+      -500.0,
+      1573.5047613659558,
+      0.0
+     ],
+     "front": [
+      -1500.0,
+      3000.0,
+      0.0
+     ],
+     "hands": [
+      800.0,
+      -1200.0,
+      0.0
+     ],
+     "bb": [
+      1200.0000000040159,
+      -3373.504761376547,
+      1.5060184210824445e-09,
+      9.111350891544134e-07,
+      -6.049550194120457e-07,
+      -5.220866327704243e-06
+     ],
+     "shock": 6964.662197547975,
+     "link": 4677.53675283548,
+     "pivot": 3768.039294963919,
+     "rocker": 11028.794615595209,
+     "ht_upper": 3546.1105232950504,
+     "ht_lower": 3352.6321906957237,
+     "balance": 1.1426969933441244e-08
+    },
+    "LC2a": {
+     "rear": [
+      0.0,
+      8300.0,
+      0.0
+     ],
+     "front": [
+      0.0,
+      6090.014901642499,
+      0.0
+     ],
+     "hands": [
+      0.0,
+      -2000.0,
+      0.0
+     ],
+     "bb": [
+      -1.1958665169231608e-09,
+      -12390.014901669354,
+      -3.004242188353601e-09,
+      -1.8780258415063145e-06,
+      1.0709158289046172e-06,
+      -1.1030441072534813e-05
+     ],
+     "shock": 17987.36350068597,
+     "link": 18672.739637264982,
+     "pivot": 14322.295568230658,
+     "rocker": 32423.672210308294,
+     "ht_upper": 11563.870585269566,
+     "ht_lower": 13420.698494408438,
+     "balance": 2.7049522117930138e-08
+    },
+    "LC2b": {
+     "rear": [
+      0.0,
+      9200.0,
+      0.0
+     ],
+     "front": [
+      0.0,
+      4616.823895586513,
+      0.0
+     ],
+     "hands": [
+      0.0,
+      1000.0,
+      0.0
+     ],
+     "bb": [
+      -1.288260609300096e-10,
+      -14816.82389561488,
+      -1.250556103116196e-09,
+      -1.0114578969933063e-06,
+      6.729645463110501e-07,
+      -1.1144481650404714e-05
+     ],
+     "shock": 19937.800506784446,
+     "link": 20697.494537691306,
+     "pivot": 15875.315569605067,
+     "rocker": 35939.4920885345,
+     "ht_upper": 8366.03064030746,
+     "ht_lower": 10916.015327613808,
+     "balance": 2.83949837862335e-08
+    },
+    "LC2c": {
+     "rear": [
+      0.0,
+      9200.0,
+      0.0
+     ],
+     "front": [
+      0.0,
+      7244.246867480806,
+      0.0
+     ],
+     "hands": [
+      0.0,
+      -3000.0,
+      0.0
+     ],
+     "bb": [
+      -1.6199859231846858e-09,
+      -13444.246867510985,
+      -3.898847467098676e-09,
+      -2.3724234097244334e-06,
+      1.3232448452527024e-06,
+      -1.250188881840586e-05
+     ],
+     "shock": 19937.800506784446,
+     "link": 20697.494537691306,
+     "pivot": 15875.315569605067,
+     "rocker": 35939.4920885345,
+     "ht_upper": 14006.480343180552,
+     "ht_lower": 15933.328099566168,
+     "balance": 3.0474552325160215e-08
+    },
+    "LC2d": {
+     "rear": [
+      0.0,
+      7003.846273443256,
+      0.0
+     ],
+     "front": [
+      -5660.0,
+      5660.0,
+      0.0
+     ],
+     "hands": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "bb": [
+      5660.000000015793,
+      -12663.84627347078,
+      1.1074561712121067e-08,
+      5.9989274632243905e-06,
+      -3.3005245541062322e-06,
+      -1.2544408605208446e-05
+     ],
+     "shock": 18841.35003275119,
+     "link": 16108.369636308335,
+     "pivot": 10976.172784829805,
+     "rocker": 32903.73701960032,
+     "ht_upper": 21304.007696990648,
+     "ht_lower": 23777.518395370975,
+     "balance": 3.360951112699082e-08
+    },
+    "LC3": {
+     "rear": [
+      0.0,
+      5500.0,
+      1500.0
+     ],
+     "front": [
+      0.0,
+      3225.8487968447444,
+      1500.0
+     ],
+     "hands": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "bb": [
+      3.4672479998221206e-08,
+      -8725.848796871016,
+      -2999.999999979413,
+      457695.37169028696,
+      630973.3956674973,
+      -3.0516640947553242e-05
+     ],
+     "shock": 12117.460253774047,
+     "link": 12533.702098523816,
+     "pivot": 9403.623733987464,
+     "rocker": 22330.647526528955,
+     "ht_upper": 10246.091026971208,
+     "ht_lower": 12313.465058827978,
+     "balance": 4.812691868742523e-08
+    },
+    "LC4": {
+     "rear": [
+      0.0,
+      1710.0,
+      600.0
+     ],
+     "front": [
+      0.0,
+      975.3000778540867,
+      400.0
+     ],
+     "hands": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "bb": [
+      9.483151153233393e-09,
+      -2685.300077865435,
+      -999.9999999978227,
+      216000.28179275928,
+      87900.66300194664,
+      -1.0119451729906359e-05
+     ],
+     "shock": 4356.067444131507,
+     "link": 3944.7765201229054,
+     "pivot": 2795.61379254005,
+     "rocker": 7776.287829335063,
+     "ht_upper": 3167.14016085141,
+     "ht_lower": 3756.82658925539,
+     "balance": 1.4948345175211617e-08
+    }
+   }
+  },
+  "V3": {
+   "suspension": {
+    "lr_start": 3.4761930377956864,
+    "lr_end": 2.1670657994369926,
+    "progression": 0.37659796913603905,
+    "travel": 199.9867070468161,
+    "setup": {
+     "tokens": 2,
+     "pressure_psi": 228.84281007558673,
+     "pressure_bar": 15.778162531967522,
+     "pressure_frac": 0.6934630608351113,
+     "x_sag": 15.304248437787107,
+     "mid_ratio": 2.306073093734688,
+     "end_ratio": 8.075252998150654,
+     "end_ratio_fast": 9.827752268646194,
+     "energy_J": 205.87003582903438,
+     "drop_height": 0.438932912216178,
+     "f_shock_end": 8207.733174051882,
+     "wheel_rate_sag": 7.883564255247458
+    },
+    "g1": {
+     "a_mid": true,
+     "b_end": true,
+     "c_energy": false,
+     "d_pressure": true
+    },
+    "kin": {
+     "anti_rise": 133.8894822491617,
+     "anti_squat": 125.9733599466023,
+     "com_height": 946.3729752439656,
+     "axle_rearward": 10.002681932532107,
+     "max_rearward": 14.079044856183579,
+     "axle_rearward_bottom": 4.319218628897659,
+     "chain_growth_total": 0.40963708249262254,
+     "max_kickback_deg": 0.5488638858072008
+    },
+    "clearances": {
+     "rear tyre to seat-mast rear face, min over travel (centre plane)": 11.543328348128455,
+     "rear tyre to seat-tube top, min over travel": 52.53593067761818,
+     "shock air can to seat-mast front face, min over travel": 4.328963011727325,
+     "shock air can to main-pivot housing (24 mm radius), min over travel": 3.429111280235439,
+     "shock eye (15 mm radius) to top-tube underside, min over travel": 10.776790353609456,
+     "shock mount M above down-tube surface": 11.334362898049648,
+     "link/rocker rear arm lateral position needed to clear tyre (|z|, mm)": 46.0,
+     "tyre top above BB at bottom-out (saddle underside must stay above this + 15)": 566.986707046816
+    },
+    "w_rear": 469.0239216503358
+   },
+   "geometry": {
+    "reach": 475.0,
+    "stack": 632.5,
+    "head_angle": 63.0,
+    "head_tube_length": 129.9448764675102,
+    "wheelbase": 1280.914899825608,
+    "front_centre": 841.0524213166995,
+    "rear_centre_static": 439.8624785089085,
+    "chainstay_length_static": 440.0,
+    "rear_centre_at_sag": 449.8651604414406,
+    "rear_centre_at_bottom_out": 444.18169713780617,
+    "bb_height": 345.0,
+    "bb_drop": 11.000000000000004,
+    "trail": 132.00870556410482,
+    "standover_at_bb": 758.774741611672,
+    "standover_mid_top_tube": 854.6576037098982,
+    "seat_tube_length": 408.3185031320525,
+    "seat_tube_angle_effective": 78.41487377514495,
+    "seat_tube_angle_actual": 79.02434482718745,
+    "rear_travel": 199.9867070468161,
+    "front_travel": 200.0,
+    "crown_stack_needed": 142.9448764675102
+   },
+   "hard_points": {
+    "P": [
+     -25.0,
+     120.0
+    ],
+    "S": [
+     -190.0,
+     211.8
+    ],
+    "L": [
+     -125.4,
+     325.0
+    ],
+    "R": [
+     -49.7,
+     278.0
+    ],
+    "K": [
+     0.0,
+     323.9
+    ],
+    "M": [
+     38.9,
+     77.0
+    ],
+    "A": [
+     -439.86,
+     11.0
+    ]
+   },
+   "front_triangle": {
+    "LC1": {
+     "zone": "boss",
+     "fi": 0.2856803728572396,
+     "ms": 2.500415481814429,
+     "mode": "fibre compression",
+     "at": [
+      42.02724853935786,
+      55.507593088751634,
+      17.988842097894004
+     ]
+    },
+    "LC2a": {
+     "zone": "boss",
+     "fi": 0.6643270665654951,
+     "ms": 0.505282639122173,
+     "mode": "fibre compression",
+     "at": [
+      42.02724853935786,
+      55.507593088751634,
+      17.988842097894004
+     ]
+    },
+    "LC2b": {
+     "zone": "boss",
+     "fi": 0.7406326072328038,
+     "ms": 0.3501971020912249,
+     "mode": "fibre compression",
+     "at": [
+      42.02724853935786,
+      55.507593088751634,
+      17.988842097894004
+     ]
+    },
+    "LC2c": {
+     "zone": "boss",
+     "fi": 0.7352718269970733,
+     "ms": 0.36004123003611355,
+     "mode": "fibre compression",
+     "at": [
+      42.02724853935786,
+      55.507593088751634,
+      17.988842097894004
+     ]
+    },
+    "LC2d": {
+     "zone": "boss",
+     "fi": 0.8411266560049457,
+     "ms": 0.1888815945385045,
+     "mode": "fibre compression",
+     "at": [
+      42.02724853935786,
+      55.507593088751634,
+      17.988842097894004
+     ]
+    },
+    "LC3": {
+     "zone": "ht_junction",
+     "fi": 0.7405847583811405,
+     "ms": 0.350284337725125,
+     "mode": "transverse tension (matrix)",
+     "at": [
+      493.5955731500007,
+      488.8735137190774,
+      28.99661014500265
+     ]
+    },
+    "LC4": {
+     "zone": "ht_junction",
+     "fi": 0.21998184050810224,
+     "ms": 3.545829772540559,
+     "mode": "transverse tension (matrix)",
+     "at": [
+      493.5955731500007,
+      488.8735137190774,
+      28.99661014500265
+     ]
+    }
+   },
+   "swingarm": {
+    "LC1": {
+     "zone": "node",
+     "fi": 0.2006889070279082,
+     "mode": "fibre compression",
+     "at": [
+      -420.4172253477095,
+      45.42894879062907,
+      -82.01586418141551
+     ]
+    },
+    "LC2a": {
+     "zone": "spar",
+     "fi": 0.479017966057813,
+     "mode": "in-plane shear",
+     "at": [
+      -79.56068190297226,
+      86.85467647565171,
+      -56.28821684373821
+     ]
+    },
+    "LC2b": {
+     "zone": "spar",
+     "fi": 0.5309596732207043,
+     "mode": "in-plane shear",
+     "at": [
+      -79.56068190297226,
+      86.85467647565171,
+      -56.28821684373821
+     ]
+    },
+    "LC2c": {
+     "zone": "spar",
+     "fi": 0.5309596732207043,
+     "mode": "in-plane shear",
+     "at": [
+      -79.56068190297226,
+      86.85467647565171,
+      -56.28821684373821
+     ]
+    },
+    "LC2d": {
+     "zone": "spar",
+     "fi": 0.37579674925547557,
+     "mode": "in-plane shear",
+     "at": [
+      -79.56068190297226,
+      86.85467647565171,
+      -56.28821684373821
+     ]
+    },
+    "LC3": {
+     "zone": "spar",
+     "fi": 1.0656161521244347,
+     "mode": "fibre tension",
+     "at": [
+      -73.70659427979983,
+      87.70685142652258,
+      52.46024297583531
+     ]
+    },
+    "LC4": {
+     "zone": "spar",
+     "fi": 0.3990409773452056,
+     "mode": "fibre tension",
+     "at": [
+      -73.70659427979983,
+      87.70685142652258,
+      52.46024297583531
+     ]
+    }
+   },
+   "worst": {
+    "front_triangle": {
+     "case": "LC2d",
+     "zone": "boss",
+     "fi": 0.8411266560049457,
+     "mode": "fibre compression"
+    },
+    "swingarm": {
+     "case": "LC3",
+     "zone": "spar",
+     "fi": 1.0656161521244347,
+     "mode": "fibre tension"
+    },
+    "joint_margin": -0.792354226907264
+   },
+   "structure_pass": false,
+   "interface_limit_forces": {
+    "shock": 19937.800506784446,
+    "link": 20697.494537691306,
+    "pivot": 15875.315569605067,
+    "pivot_bearing": 15458.866412090876,
+    "rocker": 35939.4920885345,
+    "ht_upper": 21304.007696990648,
+    "ht_lower": 23777.518395370975,
+    "dropout": 5854.6511627906975,
+    "feet": 14816.823895573796,
+    "idler": 7804.160716333255,
+    "chain_tension": 5093.804143111024
+   },
+   "joints": [
+    {
+     "item": "Shock eye pin bending (12.7 mm steel pin, both ends of the shock)",
+     "demand": 855.1165122827285,
+     "capacity": 1000.0,
+     "unit": "MPa",
+     "margin": 0.1694312829143081,
+     "note": "simply supported pin, load spread over the 22 mm eyelet; yield criterion; pin strength unverified",
+     "kind": "calculated"
+    },
+    {
+     "item": "Shock eye pin double shear",
+     "demand": 118.04325767381142,
+     "capacity": 580.0,
+     "unit": "MPa",
+     "margin": 3.9134530123076763,
+     "note": "",
+     "kind": "calculated"
+    },
+    {
+     "item": "Shock mount clevis tabs, bearing in 7075 inserts (2 x 8 mm)",
+     "demand": 147.17864547331038,
+     "capacity": 754.5,
+     "unit": "MPa",
+     "margin": 4.12642304577278,
+     "note": "bearing yield taken as 1.5 x tensile yield",
+     "kind": "calculated"
+    },
+    {
+     "item": "Shock mount inserts, bond shear to carbon lug (2 x 600 mm2 bonded bushes)",
+     "demand": 24.922250633480555,
+     "capacity": 5.175,
+     "unit": "MPa",
+     "margin": -0.792354226907264,
+     "note": "average adhesive shear if the bond is the load path",
+     "kind": "estimated"
+    },
+    {
+     "item": "Rocker pivot axle double shear (17 mm Ti-6Al-4V, 11 mm bore)",
+     "demand": 204.2838506465118,
+     "capacity": 550.0,
+     "unit": "MPa",
+     "margin": 1.6923322536724044,
+     "note": "",
+     "kind": "calculated"
+    },
+    {
+     "item": "Rocker pivot plain bearings, pressure at ultimate (2 x 17 x 12 mm)",
+     "demand": 132.13048561961213,
+     "capacity": 250.0,
+     "unit": "MPa",
+     "margin": 0.8920690318184412,
+     "note": "static rating",
+     "kind": "calculated"
+    },
+    {
+     "item": "Rocker pivot plain bearings, pressure at limit",
+     "demand": 88.08699041307474,
+     "capacity": 140.0,
+     "unit": "MPa",
+     "margin": 0.5893379867274908,
+     "note": "dynamic rating",
+     "kind": "calculated"
+    },
+    {
+     "item": "Rocker pivot sleeve bearing on carbon seat mast (22 mm sleeve x 56 mm)",
+     "demand": 43.757498484417006,
+     "capacity": 250.0,
+     "unit": "MPa",
+     "margin": 4.713306488236078,
+     "note": "",
+     "kind": "estimated"
+    },
+    {
+     "item": "Push link column buckling (each, 7075, 12 x 16 mm, 130 mm)",
+     "demand": 15523.120903268478,
+     "capacity": 96474.97422046617,
+     "unit": "N",
+     "margin": 5.214921266261145,
+     "note": "Euler, pinned ends",
+     "kind": "calculated"
+    },
+    {
+     "item": "Push link compressive stress",
+     "demand": 80.84958803785666,
+     "capacity": 503.0,
+     "unit": "MPa",
+     "margin": 5.2214293505673455,
+     "note": "",
+     "kind": "calculated"
+    },
+    {
+     "item": "Push link eye plain bearings at limit (12 x 10 mm)",
+     "demand": 86.23956057371377,
+     "capacity": 140.0,
+     "unit": "MPa",
+     "margin": 0.6233848951530101,
+     "note": "dynamic rating",
+     "kind": "calculated"
+    },
+    {
+     "item": "Main pivot axle bending (20/14 mm Ti-6Al-4V, 10 mm overhang)",
+     "demand": 388.5282280428797,
+     "capacity": 880.0,
+     "unit": "MPa",
+     "margin": 1.2649576954364288,
+     "note": "",
+     "kind": "calculated"
+    },
+    {
+     "item": "Main pivot plain bearing pressure at limit (20 x 16 mm each side)",
+     "demand": 48.30895753778399,
+     "capacity": 140.0,
+     "unit": "MPa",
+     "margin": 1.898013269909654,
+     "note": "dynamic rating",
+     "kind": "calculated"
+    },
+    {
+     "item": "Main pivot: same load on a 6004 ball bearing (for comparison)",
+     "demand": 15458.866412090876,
+     "capacity": 5000.0,
+     "unit": "N",
+     "margin": -0.6765610189832976,
+     "note": "static rating C0 of an SKF 6004; negative margin is why plain bearings are specified",
+     "kind": "calculated"
+    },
+    {
+     "item": "Main pivot sleeve bearing on carbon (26 mm sleeve x 56 mm)",
+     "demand": 16.355064117038186,
+     "capacity": 250.0,
+     "unit": "MPa",
+     "margin": 14.285785381884132,
+     "note": "",
+     "kind": "estimated"
+    },
+    {
+     "item": "Lower headset cup bearing on carbon head tube (56 x 12 mm)",
+     "demand": 53.074817846810205,
+     "capacity": 250.0,
+     "unit": "MPa",
+     "margin": 3.710331756984541,
+     "note": "",
+     "kind": "estimated"
+    },
+    {
+     "item": "Upper headset cup bearing on carbon head tube (56 x 12 mm)",
+     "demand": 47.55358860935412,
+     "capacity": 250.0,
+     "unit": "MPa",
+     "margin": 4.257226790047623,
+     "note": "",
+     "kind": "estimated"
+    },
+    {
+     "item": "BB shell bearing pressure on carbon (46 x 83 mm)",
+     "demand": 5.821172300513539,
+     "capacity": 250.0,
+     "unit": "MPa",
+     "margin": 41.94667587453908,
+     "note": "",
+     "kind": "estimated"
+    },
+    {
+     "item": "Dropout insert, axle bearing (12 x 10 mm)",
+     "demand": 73.18313953488372,
+     "capacity": 754.5,
+     "unit": "MPa",
+     "margin": 9.309751737835153,
+     "note": "",
+     "kind": "calculated"
+    },
+    {
+     "item": "Dropout insert bond shear (3600 mm2 each)",
+     "demand": 2.439437984496124,
+     "capacity": 5.175,
+     "unit": "MPa",
+     "margin": 1.1213902681231378,
+     "note": "average shear; insert is also wrapped by the spar laminate",
+     "kind": "estimated"
+    },
+    {
+     "item": "Idler stub bending (16 mm Ti-6Al-4V, 20 mm overhang)",
+     "demand": 582.2206662600114,
+     "capacity": 880.0,
+     "unit": "MPa",
+     "margin": 0.5114544209720728,
+     "note": "sprint load, 2.0 kN on one pedal",
+     "kind": "calculated"
+    }
+   ],
+   "mass_items": [
+    [
+     "Front triangle laminate (shell model area x areal mass)",
+     2.103040961547192,
+     "calculated"
+    ],
+    [
+     "Front triangle overlaps, ply drops, resin fillets (+8 %)",
+     0.16824327692377536,
+     "estimated"
+    ],
+    [
+     "Front triangle inserts: BB sleeve, headset seats, pivot and rocker sleeves, shock and idler inserts",
+     0.29,
+     "estimated"
+    ],
+    [
+     "Main pivot axle (Ti 20/14 x 110) and rocker axle (Ti 17/11 x 80)",
+     0.125,
+     "calculated"
+    ],
+    [
+     "Swingarm laminate (shell model)",
+     0.634764870632847,
+     "calculated"
+    ],
+    [
+     "Swingarm overlaps and fillets (+8 %)",
+     0.050781189650627764,
+     "estimated"
+    ],
+    [
+     "Swingarm inserts: dropouts, brake mount, pivot and link bushes",
+     0.175,
+     "estimated"
+    ],
+    [
+     "Rocker (7075-T6 yoke) with bushes",
+     0.195,
+     "estimated"
+    ],
+    [
+     "Push links (2 x 7075) with bushes",
+     0.16,
+     "estimated"
+    ],
+    [
+     "Pins, bolts, idler sprocket and stub",
+     0.215,
+     "estimated"
+    ],
+    [
+     "Frame protection (down-tube guard, spar and chain protection) and paint",
+     0.25,
+     "estimated"
+    ]
+   ],
+   "frame_mass": 4.366830298754442,
+   "laminate_mass": {
+    "front_triangle": 2.103040961547192,
+    "swingarm": 0.634764870632847,
+    "ft_zones": {
+     "down_tube": {
+      "area_mm2": 133742.45525243555,
+      "thickness": 3.1719999999999997,
+      "mass_kg": 0.6426838545907698
+     },
+     "top_tube": {
+      "area_mm2": 76418.99640606763,
+      "thickness": 2.564,
+      "mass_kg": 0.29673863115658805
+     },
+     "seat_mast": {
+      "area_mm2": 14278.715566465406,
+      "thickness": 3.1719999999999997,
+      "mass_kg": 0.0686147113236438
+     },
+     "head_tube": {
+      "area_mm2": 16675.759131888393,
+      "thickness": 4.9959999999999996,
+      "mass_kg": 0.1262753850442386
+     },
+     "ht_junction": {
+      "area_mm2": 50451.430463547746,
+      "thickness": 5.9079999999999995,
+      "mass_kg": 0.45183776428276534
+     },
+     "core": {
+      "area_mm2": 24280.95450378228,
+      "thickness": 3.476,
+      "mass_kg": 0.12787690950380357
+     },
+     "boss": {
+      "area_mm2": 54704.1839274621,
+      "thickness": 4.692,
+      "mass_kg": 0.38901370564538273
+     }
+    },
+    "sa_zones": {
+     "spar": 0.46595184233147374,
+     "node": 0.13536250596196503,
+     "web": 0.033450522339408255
+    }
+   },
+   "swingarm_lateral_stiffness": 346.0407160568454,
+   "ht_lateral_deflection_LC3": 4.967342050770011,
+   "case_forces": {
+    "LC1": {
+     "rear": [
+      -500.0,
+      1573.5047613659558,
+      0.0
+     ],
+     "front": [
+      -1500.0,
+      3000.0,
+      0.0
+     ],
+     "hands": [
+      800.0,
+      -1200.0,
+      0.0
+     ],
+     "bb": [
+      1200.000000003322,
+      -3373.504761360152,
+      -1.4629408795485688e-10,
+      -6.409583761524118e-07,
+      -1.9573852227949828e-07,
+      8.968728764102707e-07
+     ],
+     "shock": 6964.662197547975,
+     "link": 4677.53675283548,
+     "pivot": 3768.039294963919,
+     "rocker": 11028.794615595209,
+     "ht_upper": 3546.1105232950504,
+     "ht_lower": 3352.6321906957237,
+     "balance": 6.6885770582663115e-09
+    },
+    "LC2a": {
+     "rear": [
+      0.0,
+      8300.0,
+      0.0
+     ],
+     "front": [
+      0.0,
+      6090.014901642499,
+      0.0
+     ],
+     "hands": [
+      0.0,
+      -2000.0,
+      0.0
+     ],
+     "bb": [
+      -5.156389981664233e-09,
+      -12390.014901629409,
+      -3.863658726288577e-09,
+      -2.7728990517061902e-06,
+      1.122633932482131e-06,
+      8.165142943994397e-06
+     ],
+     "shock": 17987.36350068597,
+     "link": 18672.739637264982,
+     "pivot": 14322.295568230658,
+     "rocker": 32423.672210308294,
+     "ht_upper": 11563.870585269566,
+     "ht_lower": 13420.698494408438,
+     "balance": 1.4589374857808539e-08
+    },
+    "LC2b": {
+     "rear": [
+      0.0,
+      9200.0,
+      0.0
+     ],
+     "front": [
+      0.0,
+      4616.823895586513,
+      0.0
+     ],
+     "hands": [
+      0.0,
+      1000.0,
+      0.0
+     ],
+     "bb": [
+      -1.6216161746740454e-09,
+      -14816.823895573796,
+      -2.232042106697918e-09,
+      -2.305168912641875e-06,
+      9.573307604426873e-07,
+      6.769873786893754e-06
+     ],
+     "shock": 19937.800506784446,
+     "link": 20697.494537691306,
+     "pivot": 15875.315569605067,
+     "rocker": 35939.4920885345,
+     "ht_upper": 8366.03064030746,
+     "ht_lower": 10916.015327613808,
+     "balance": 1.3012394861139979e-08
+    },
+    "LC2c": {
+     "rear": [
+      0.0,
+      9200.0,
+      0.0
+     ],
+     "front": [
+      0.0,
+      7244.246867480806,
+      0.0
+     ],
+     "hands": [
+      0.0,
+      -3000.0,
+      0.0
+     ],
+     "bb": [
+      -6.8543659637043675e-09,
+      -13444.246867465918,
+      -4.822716448416031e-09,
+      -3.2759390933279064e-06,
+      1.3157552416487306e-06,
+      9.672173433727949e-06
+     ],
+     "shock": 19937.800506784446,
+     "link": 20697.494537691306,
+     "pivot": 15875.315569605067,
+     "rocker": 35939.4920885345,
+     "ht_upper": 14006.480343180552,
+     "ht_lower": 15933.328099566168,
+     "balance": 1.708367824915013e-08
+    },
+    "LC2d": {
+     "rear": [
+      0.0,
+      7003.846273443256,
+      0.0
+     ],
+     "front": [
+      -5660.0,
+      5660.0,
+      0.0
+     ],
+     "hands": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "bb": [
+      5660.0000000225755,
+      -12663.84627343045,
+      5.622805332450298e-09,
+      3.527015906001907e-07,
+      -1.4717246585860266e-06,
+      -4.200160219625104e-06
+     ],
+     "shock": 18841.35003275119,
+     "link": 16108.369636308335,
+     "pivot": 10976.172784829805,
+     "rocker": 32903.73701960032,
+     "ht_upper": 21304.007696990648,
+     "ht_lower": 23777.518395370975,
+     "balance": 2.6556613153403288e-08
+    },
+    "LC3": {
+     "rear": [
+      0.0,
+      5500.0,
+      1500.0
+     ],
+     "front": [
+      0.0,
+      3225.8487968447444,
+      1500.0
+     ],
+     "hands": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "bb": [
+      -7.210212871200383e-09,
+      -8725.84879681795,
+      -2999.999999951797,
+      457695.37169992854,
+      630973.3956599106,
+      1.3014330193072965e-05
+     ],
+     "shock": 12117.460253774047,
+     "link": 12533.702098523816,
+     "pivot": 9403.623733987464,
+     "rocker": 22330.647526528955,
+     "ht_upper": 10246.091026971208,
+     "ht_lower": 12313.465058827978,
+     "balance": 5.561870742499421e-08
+    },
+    "LC4": {
+     "rear": [
+      0.0,
+      1710.0,
+      600.0
+     ],
+     "front": [
+      0.0,
+      975.3000778540867,
+      400.0
+     ],
+     "hands": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "bb": [
+      -4.54199700072877e-09,
+      -2685.300077844879,
+      -999.9999999898472,
+      216000.2817952853,
+      87900.66300025156,
+      5.517929395182364e-06
+     ],
+     "shock": 4356.067444131507,
+     "link": 3944.7765201229054,
+     "pivot": 2795.61379254005,
+     "rocker": 7776.287829335063,
+     "ht_upper": 3167.14016085141,
+     "ht_lower": 3756.82658925539,
+     "balance": 1.4439229005823255e-08
+    }
+   }
+  },
+  "V4": {
+   "suspension": {
+    "lr_start": 3.4761930377956864,
+    "lr_end": 2.1670657994369926,
+    "progression": 0.37659796913603905,
+    "travel": 199.9867070468161,
+    "setup": {
+     "tokens": 2,
+     "pressure_psi": 228.84281007558673,
+     "pressure_bar": 15.778162531967522,
+     "pressure_frac": 0.6934630608351113,
+     "x_sag": 15.304248437787107,
+     "mid_ratio": 2.306073093734688,
+     "end_ratio": 8.075252998150654,
+     "end_ratio_fast": 9.827752268646194,
+     "energy_J": 205.87003582903438,
+     "drop_height": 0.438932912216178,
+     "f_shock_end": 8207.733174051882,
+     "wheel_rate_sag": 7.883564255247458
+    },
+    "g1": {
+     "a_mid": true,
+     "b_end": true,
+     "c_energy": false,
+     "d_pressure": true
+    },
+    "kin": {
+     "anti_rise": 133.8894822491617,
+     "anti_squat": 125.9733599466023,
+     "com_height": 946.3729752439656,
+     "axle_rearward": 10.002681932532107,
+     "max_rearward": 14.079044856183579,
+     "axle_rearward_bottom": 4.319218628897659,
+     "chain_growth_total": 0.40963708249262254,
+     "max_kickback_deg": 0.5488638858072008
+    },
+    "clearances": {
+     "rear tyre to seat-mast rear face, min over travel (centre plane)": 11.543328348128455,
+     "rear tyre to seat-tube top, min over travel": 52.53593067761818,
+     "shock air can to seat-mast front face, min over travel": 4.328963011727325,
+     "shock air can to main-pivot housing (24 mm radius), min over travel": 3.429111280235439,
+     "shock eye (15 mm radius) to top-tube underside, min over travel": 10.776790353609456,
+     "shock mount M above down-tube surface": 11.334362898049648,
+     "link/rocker rear arm lateral position needed to clear tyre (|z|, mm)": 46.0,
+     "tyre top above BB at bottom-out (saddle underside must stay above this + 15)": 566.986707046816
+    },
+    "w_rear": 469.0239216503358
+   },
+   "geometry": {
+    "reach": 475.0,
+    "stack": 632.5,
+    "head_angle": 63.0,
+    "head_tube_length": 129.9448764675102,
+    "wheelbase": 1280.914899825608,
+    "front_centre": 841.0524213166995,
+    "rear_centre_static": 439.8624785089085,
+    "chainstay_length_static": 440.0,
+    "rear_centre_at_sag": 449.8651604414406,
+    "rear_centre_at_bottom_out": 444.18169713780617,
+    "bb_height": 345.0,
+    "bb_drop": 11.000000000000004,
+    "trail": 132.00870556410482,
+    "standover_at_bb": 758.774741611672,
+    "standover_mid_top_tube": 854.6576037098982,
+    "seat_tube_length": 408.3185031320525,
+    "seat_tube_angle_effective": 78.41487377514495,
+    "seat_tube_angle_actual": 79.02434482718745,
+    "rear_travel": 199.9867070468161,
+    "front_travel": 200.0,
+    "crown_stack_needed": 142.9448764675102
+   },
+   "hard_points": {
+    "P": [
+     -25.0,
+     120.0
+    ],
+    "S": [
+     -190.0,
+     211.8
+    ],
+    "L": [
+     -125.4,
+     325.0
+    ],
+    "R": [
+     -49.7,
+     278.0
+    ],
+    "K": [
+     0.0,
+     323.9
+    ],
+    "M": [
+     38.9,
+     77.0
+    ],
+    "A": [
+     -439.86,
+     11.0
+    ]
+   },
+   "front_triangle": {
+    "LC1": {
+     "zone": "boss",
+     "fi": 0.2856803728572396,
+     "ms": 2.500415481814429,
+     "mode": "fibre compression",
+     "at": [
+      42.02724853935786,
+      55.507593088751634,
+      17.988842097894004
+     ]
+    },
+    "LC2a": {
+     "zone": "boss",
+     "fi": 0.6643270665654951,
+     "ms": 0.505282639122173,
+     "mode": "fibre compression",
+     "at": [
+      42.02724853935786,
+      55.507593088751634,
+      17.988842097894004
+     ]
+    },
+    "LC2b": {
+     "zone": "boss",
+     "fi": 0.7406326072328038,
+     "ms": 0.3501971020912249,
+     "mode": "fibre compression",
+     "at": [
+      42.02724853935786,
+      55.507593088751634,
+      17.988842097894004
+     ]
+    },
+    "LC2c": {
+     "zone": "boss",
+     "fi": 0.7352718269970733,
+     "ms": 0.36004123003611355,
+     "mode": "fibre compression",
+     "at": [
+      42.02724853935786,
+      55.507593088751634,
+      17.988842097894004
+     ]
+    },
+    "LC2d": {
+     "zone": "boss",
+     "fi": 0.8411266560049457,
+     "ms": 0.1888815945385045,
+     "mode": "fibre compression",
+     "at": [
+      42.02724853935786,
+      55.507593088751634,
+      17.988842097894004
+     ]
+    },
+    "LC3": {
+     "zone": "ht_junction",
+     "fi": 0.7405847583811405,
+     "ms": 0.350284337725125,
+     "mode": "transverse tension (matrix)",
+     "at": [
+      493.5955731500007,
+      488.8735137190774,
+      28.99661014500265
+     ]
+    },
+    "LC4": {
+     "zone": "ht_junction",
+     "fi": 0.21998184050810224,
+     "ms": 3.545829772540559,
+     "mode": "transverse tension (matrix)",
+     "at": [
+      493.5955731500007,
+      488.8735137190774,
+      28.99661014500265
+     ]
+    }
+   },
+   "swingarm": {
+    "LC1": {
+     "zone": "node",
+     "fi": 0.1952727350604829,
+     "mode": "fibre compression",
+     "at": [
+      -429.71234453364195,
+      37.07384191752566,
+      -79.73884934873298
+     ]
+    },
+    "LC2a": {
+     "zone": "node",
+     "fi": 0.3401522467187923,
+     "mode": "transverse tension (matrix)",
+     "at": [
+      -57.89563586964743,
+      93.08746578226554,
+      49.11055705517984
+     ]
+    },
+    "LC2b": {
+     "zone": "node",
+     "fi": 0.3770362252786648,
+     "mode": "transverse tension (matrix)",
+     "at": [
+      -57.89563586964743,
+      93.08746578226554,
+      49.11055705517984
+     ]
+    },
+    "LC2c": {
+     "zone": "node",
+     "fi": 0.3770362252786648,
+     "mode": "transverse tension (matrix)",
+     "at": [
+      -57.89563586964743,
+      93.08746578226554,
+      49.11055705517984
+     ]
+    },
+    "LC2d": {
+     "zone": "node",
+     "fi": 0.26740508309612415,
+     "mode": "transverse tension (matrix)",
+     "at": [
+      -57.89563586964743,
+      93.08746578226554,
+      49.11055705517984
+     ]
+    },
+    "LC3": {
+     "zone": "knee",
+     "fi": 0.7219779246346387,
+     "mode": "fibre tension",
+     "at": [
+      -64.4887489735637,
+      90.0377983769875,
+      51.45610658205515
+     ]
+    },
+    "LC4": {
+     "zone": "knee",
+     "fi": 0.27053706696595076,
+     "mode": "fibre tension",
+     "at": [
+      -64.4887489735637,
+      90.0377983769875,
+      51.45610658205515
+     ]
+    }
+   },
+   "worst": {
+    "front_triangle": {
+     "case": "LC2d",
+     "zone": "boss",
+     "fi": 0.8411266560049457,
+     "mode": "fibre compression"
+    },
+    "swingarm": {
+     "case": "LC3",
+     "zone": "knee",
+     "fi": 0.7219779246346387,
+     "mode": "fibre tension"
+    },
+    "joint_margin": -0.792354226907264
+   },
+   "structure_pass": false,
+   "interface_limit_forces": {
+    "shock": 19937.800506784446,
+    "link": 20697.494537691306,
+    "pivot": 15875.315569605067,
+    "pivot_bearing": 15458.866412090876,
+    "rocker": 35939.4920885345,
+    "ht_upper": 21304.007696990648,
+    "ht_lower": 23777.518395370975,
+    "dropout": 5854.6511627906975,
+    "feet": 14816.823895573796,
+    "idler": 7804.160716333255,
+    "chain_tension": 5093.804143111024
+   },
+   "joints": [
+    {
+     "item": "Shock eye pin bending (12.7 mm steel pin, both ends of the shock)",
+     "demand": 855.1165122827285,
+     "capacity": 1000.0,
+     "unit": "MPa",
+     "margin": 0.1694312829143081,
+     "note": "simply supported pin, load spread over the 22 mm eyelet; yield criterion; pin strength unverified",
+     "kind": "calculated"
+    },
+    {
+     "item": "Shock eye pin double shear",
+     "demand": 118.04325767381142,
+     "capacity": 580.0,
+     "unit": "MPa",
+     "margin": 3.9134530123076763,
+     "note": "",
+     "kind": "calculated"
+    },
+    {
+     "item": "Shock mount clevis tabs, bearing in 7075 inserts (2 x 8 mm)",
+     "demand": 147.17864547331038,
+     "capacity": 754.5,
+     "unit": "MPa",
+     "margin": 4.12642304577278,
+     "note": "bearing yield taken as 1.5 x tensile yield",
+     "kind": "calculated"
+    },
+    {
+     "item": "Shock mount inserts, bond shear to carbon lug (2 x 600 mm2 bonded bushes)",
+     "demand": 24.922250633480555,
+     "capacity": 5.175,
+     "unit": "MPa",
+     "margin": -0.792354226907264,
+     "note": "average adhesive shear if the bond is the load path",
+     "kind": "estimated"
+    },
+    {
+     "item": "Rocker pivot axle double shear (17 mm Ti-6Al-4V, 11 mm bore)",
+     "demand": 204.2838506465118,
+     "capacity": 550.0,
+     "unit": "MPa",
+     "margin": 1.6923322536724044,
+     "note": "",
+     "kind": "calculated"
+    },
+    {
+     "item": "Rocker pivot plain bearings, pressure at ultimate (2 x 17 x 12 mm)",
+     "demand": 132.13048561961213,
+     "capacity": 250.0,
+     "unit": "MPa",
+     "margin": 0.8920690318184412,
+     "note": "static rating",
+     "kind": "calculated"
+    },
+    {
+     "item": "Rocker pivot plain bearings, pressure at limit",
+     "demand": 88.08699041307474,
+     "capacity": 140.0,
+     "unit": "MPa",
+     "margin": 0.5893379867274908,
+     "note": "dynamic rating",
+     "kind": "calculated"
+    },
+    {
+     "item": "Rocker pivot sleeve bearing on carbon seat mast (22 mm sleeve x 56 mm)",
+     "demand": 43.757498484417006,
+     "capacity": 250.0,
+     "unit": "MPa",
+     "margin": 4.713306488236078,
+     "note": "",
+     "kind": "estimated"
+    },
+    {
+     "item": "Push link column buckling (each, 7075, 12 x 16 mm, 130 mm)",
+     "demand": 15523.120903268478,
+     "capacity": 96474.97422046617,
+     "unit": "N",
+     "margin": 5.214921266261145,
+     "note": "Euler, pinned ends",
+     "kind": "calculated"
+    },
+    {
+     "item": "Push link compressive stress",
+     "demand": 80.84958803785666,
+     "capacity": 503.0,
+     "unit": "MPa",
+     "margin": 5.2214293505673455,
+     "note": "",
+     "kind": "calculated"
+    },
+    {
+     "item": "Push link eye plain bearings at limit (12 x 10 mm)",
+     "demand": 86.23956057371377,
+     "capacity": 140.0,
+     "unit": "MPa",
+     "margin": 0.6233848951530101,
+     "note": "dynamic rating",
+     "kind": "calculated"
+    },
+    {
+     "item": "Main pivot axle bending (20/14 mm Ti-6Al-4V, 10 mm overhang)",
+     "demand": 388.5282280428797,
+     "capacity": 880.0,
+     "unit": "MPa",
+     "margin": 1.2649576954364288,
+     "note": "",
+     "kind": "calculated"
+    },
+    {
+     "item": "Main pivot plain bearing pressure at limit (20 x 16 mm each side)",
+     "demand": 48.30895753778399,
+     "capacity": 140.0,
+     "unit": "MPa",
+     "margin": 1.898013269909654,
+     "note": "dynamic rating",
+     "kind": "calculated"
+    },
+    {
+     "item": "Main pivot: same load on a 6004 ball bearing (for comparison)",
+     "demand": 15458.866412090876,
+     "capacity": 5000.0,
+     "unit": "N",
+     "margin": -0.6765610189832976,
+     "note": "static rating C0 of an SKF 6004; negative margin is why plain bearings are specified",
+     "kind": "calculated"
+    },
+    {
+     "item": "Main pivot sleeve bearing on carbon (26 mm sleeve x 56 mm)",
+     "demand": 16.355064117038186,
+     "capacity": 250.0,
+     "unit": "MPa",
+     "margin": 14.285785381884132,
+     "note": "",
+     "kind": "estimated"
+    },
+    {
+     "item": "Lower headset cup bearing on carbon head tube (56 x 12 mm)",
+     "demand": 53.074817846810205,
+     "capacity": 250.0,
+     "unit": "MPa",
+     "margin": 3.710331756984541,
+     "note": "",
+     "kind": "estimated"
+    },
+    {
+     "item": "Upper headset cup bearing on carbon head tube (56 x 12 mm)",
+     "demand": 47.55358860935412,
+     "capacity": 250.0,
+     "unit": "MPa",
+     "margin": 4.257226790047623,
+     "note": "",
+     "kind": "estimated"
+    },
+    {
+     "item": "BB shell bearing pressure on carbon (46 x 83 mm)",
+     "demand": 5.821172300513539,
+     "capacity": 250.0,
+     "unit": "MPa",
+     "margin": 41.94667587453908,
+     "note": "",
+     "kind": "estimated"
+    },
+    {
+     "item": "Dropout insert, axle bearing (12 x 10 mm)",
+     "demand": 73.18313953488372,
+     "capacity": 754.5,
+     "unit": "MPa",
+     "margin": 9.309751737835153,
+     "note": "",
+     "kind": "calculated"
+    },
+    {
+     "item": "Dropout insert bond shear (3600 mm2 each)",
+     "demand": 2.439437984496124,
+     "capacity": 5.175,
+     "unit": "MPa",
+     "margin": 1.1213902681231378,
+     "note": "average shear; insert is also wrapped by the spar laminate",
+     "kind": "estimated"
+    },
+    {
+     "item": "Idler stub bending (16 mm Ti-6Al-4V, 20 mm overhang)",
+     "demand": 582.2206662600114,
+     "capacity": 880.0,
+     "unit": "MPa",
+     "margin": 0.5114544209720728,
+     "note": "sprint load, 2.0 kN on one pedal",
+     "kind": "calculated"
+    }
+   ],
+   "mass_items": [
+    [
+     "Front triangle laminate (shell model area x areal mass)",
+     2.103040961547192,
+     "calculated"
+    ],
+    [
+     "Front triangle overlaps, ply drops, resin fillets (+8 %)",
+     0.16824327692377536,
+     "estimated"
+    ],
+    [
+     "Front triangle inserts: BB sleeve, headset seats, pivot and rocker sleeves, shock and idler inserts",
+     0.29,
+     "estimated"
+    ],
+    [
+     "Main pivot axle (Ti 20/14 x 110) and rocker axle (Ti 17/11 x 80)",
+     0.125,
+     "calculated"
+    ],
+    [
+     "Swingarm laminate (shell model)",
+     0.8379430207592246,
+     "calculated"
+    ],
+    [
+     "Swingarm overlaps and fillets (+8 %)",
+     0.06703544166073797,
+     "estimated"
+    ],
+    [
+     "Swingarm inserts: dropouts, brake mount, pivot and link bushes",
+     0.175,
+     "estimated"
+    ],
+    [
+     "Rocker (7075-T6 yoke) with bushes",
+     0.195,
+     "estimated"
+    ],
+    [
+     "Push links (2 x 7075) with bushes",
+     0.16,
+     "estimated"
+    ],
+    [
+     "Pins, bolts, idler sprocket and stub",
+     0.215,
+     "estimated"
+    ],
+    [
+     "Frame protection (down-tube guard, spar and chain protection) and paint",
+     0.25,
+     "estimated"
+    ]
+   ],
+   "frame_mass": 4.58626270089093,
+   "laminate_mass": {
+    "front_triangle": 2.103040961547192,
+    "swingarm": 0.8379430207592246,
+    "ft_zones": {
+     "down_tube": {
+      "area_mm2": 133742.45525243555,
+      "thickness": 3.1719999999999997,
+      "mass_kg": 0.6426838545907698
+     },
+     "top_tube": {
+      "area_mm2": 76418.99640606763,
+      "thickness": 2.564,
+      "mass_kg": 0.29673863115658805
+     },
+     "seat_mast": {
+      "area_mm2": 14278.715566465406,
+      "thickness": 3.1719999999999997,
+      "mass_kg": 0.0686147113236438
+     },
+     "head_tube": {
+      "area_mm2": 16675.759131888393,
+      "thickness": 4.9959999999999996,
+      "mass_kg": 0.1262753850442386
+     },
+     "ht_junction": {
+      "area_mm2": 50451.430463547746,
+      "thickness": 5.9079999999999995,
+      "mass_kg": 0.45183776428276534
+     },
+     "core": {
+      "area_mm2": 24280.95450378228,
+      "thickness": 3.476,
+      "mass_kg": 0.12787690950380357
+     },
+     "boss": {
+      "area_mm2": 54704.1839274621,
+      "thickness": 4.692,
+      "mass_kg": 0.38901370564538273
+     }
+    },
+    "sa_zones": {
+     "spar": 0.5249060615143661,
+     "node": 0.14093743557325605,
+     "web": 0.04062847546615592,
+     "knee": 0.13147104820544647
+    }
+   },
+   "swingarm_lateral_stiffness": 620.876416934931,
+   "ht_lateral_deflection_LC3": 4.967342050770011,
+   "case_forces": {
+    "LC1": {
+     "rear": [
+      -500.0,
+      1573.5047613659558,
+      0.0
+     ],
+     "front": [
+      -1500.0,
+      3000.0,
+      0.0
+     ],
+     "hands": [
+      800.0,
+      -1200.0,
+      0.0
+     ],
+     "bb": [
+      1200.000000003322,
+      -3373.504761360152,
+      -1.4629408795485688e-10,
+      -6.409583761524118e-07,
+      -1.9573852227949828e-07,
+      8.968728764102707e-07
+     ],
+     "shock": 6964.662197547975,
+     "link": 4677.53675283548,
+     "pivot": 3768.039294963919,
+     "rocker": 11028.794615595209,
+     "ht_upper": 3546.1105232950504,
+     "ht_lower": 3352.6321906957237,
+     "balance": 6.6885770582663115e-09
+    },
+    "LC2a": {
+     "rear": [
+      0.0,
+      8300.0,
+      0.0
+     ],
+     "front": [
+      0.0,
+      6090.014901642499,
+      0.0
+     ],
+     "hands": [
+      0.0,
+      -2000.0,
+      0.0
+     ],
+     "bb": [
+      -5.156389981664233e-09,
+      -12390.014901629409,
+      -3.863658726288577e-09,
+      -2.7728990517061902e-06,
+      1.122633932482131e-06,
+      8.165142943994397e-06
+     ],
+     "shock": 17987.36350068597,
+     "link": 18672.739637264982,
+     "pivot": 14322.295568230658,
+     "rocker": 32423.672210308294,
+     "ht_upper": 11563.870585269566,
+     "ht_lower": 13420.698494408438,
+     "balance": 1.4589374857808539e-08
+    },
+    "LC2b": {
+     "rear": [
+      0.0,
+      9200.0,
+      0.0
+     ],
+     "front": [
+      0.0,
+      4616.823895586513,
+      0.0
+     ],
+     "hands": [
+      0.0,
+      1000.0,
+      0.0
+     ],
+     "bb": [
+      -1.6216161746740454e-09,
+      -14816.823895573796,
+      -2.232042106697918e-09,
+      -2.305168912641875e-06,
+      9.573307604426873e-07,
+      6.769873786893754e-06
+     ],
+     "shock": 19937.800506784446,
+     "link": 20697.494537691306,
+     "pivot": 15875.315569605067,
+     "rocker": 35939.4920885345,
+     "ht_upper": 8366.03064030746,
+     "ht_lower": 10916.015327613808,
+     "balance": 1.3012394861139979e-08
+    },
+    "LC2c": {
+     "rear": [
+      0.0,
+      9200.0,
+      0.0
+     ],
+     "front": [
+      0.0,
+      7244.246867480806,
+      0.0
+     ],
+     "hands": [
+      0.0,
+      -3000.0,
+      0.0
+     ],
+     "bb": [
+      -6.8543659637043675e-09,
+      -13444.246867465918,
+      -4.822716448416031e-09,
+      -3.2759390933279064e-06,
+      1.3157552416487306e-06,
+      9.672173433727949e-06
+     ],
+     "shock": 19937.800506784446,
+     "link": 20697.494537691306,
+     "pivot": 15875.315569605067,
+     "rocker": 35939.4920885345,
+     "ht_upper": 14006.480343180552,
+     "ht_lower": 15933.328099566168,
+     "balance": 1.708367824915013e-08
+    },
+    "LC2d": {
+     "rear": [
+      0.0,
+      7003.846273443256,
+      0.0
+     ],
+     "front": [
+      -5660.0,
+      5660.0,
+      0.0
+     ],
+     "hands": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "bb": [
+      5660.0000000225755,
+      -12663.84627343045,
+      5.622805332450298e-09,
+      3.527015906001907e-07,
+      -1.4717246585860266e-06,
+      -4.200160219625104e-06
+     ],
+     "shock": 18841.35003275119,
+     "link": 16108.369636308335,
+     "pivot": 10976.172784829805,
+     "rocker": 32903.73701960032,
+     "ht_upper": 21304.007696990648,
+     "ht_lower": 23777.518395370975,
+     "balance": 2.6556613153403288e-08
+    },
+    "LC3": {
+     "rear": [
+      0.0,
+      5500.0,
+      1500.0
+     ],
+     "front": [
+      0.0,
+      3225.8487968447444,
+      1500.0
+     ],
+     "hands": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "bb": [
+      -7.210212871200383e-09,
+      -8725.84879681795,
+      -2999.999999951797,
+      457695.37169992854,
+      630973.3956599106,
+      1.3014330193072965e-05
+     ],
+     "shock": 12117.460253774047,
+     "link": 12533.702098523816,
+     "pivot": 9403.623733987464,
+     "rocker": 22330.647526528955,
+     "ht_upper": 10246.091026971208,
+     "ht_lower": 12313.465058827978,
+     "balance": 5.561870742499421e-08
+    },
+    "LC4": {
+     "rear": [
+      0.0,
+      1710.0,
+      600.0
+     ],
+     "front": [
+      0.0,
+      975.3000778540867,
+      400.0
+     ],
+     "hands": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "bb": [
+      -4.54199700072877e-09,
+      -2685.300077844879,
+      -999.9999999898472,
+      216000.2817952853,
+      87900.66300025156,
+      5.517929395182364e-06
+     ],
+     "shock": 4356.067444131507,
+     "link": 3944.7765201229054,
+     "pivot": 2795.61379254005,
+     "rocker": 7776.287829335063,
+     "ht_upper": 3167.14016085141,
+     "ht_lower": 3756.82658925539,
+     "balance": 1.4439229005823255e-08
+    }
+   }
+  },
+  "V5": {
+   "suspension": {
+    "lr_start": 3.4761930377956864,
+    "lr_end": 2.1670657994369926,
+    "progression": 0.37659796913603905,
+    "travel": 199.9867070468161,
+    "setup": {
+     "tokens": 2,
+     "pressure_psi": 228.84281007558673,
+     "pressure_bar": 15.778162531967522,
+     "pressure_frac": 0.6934630608351113,
+     "x_sag": 15.304248437787107,
+     "mid_ratio": 2.306073093734688,
+     "end_ratio": 8.075252998150654,
+     "end_ratio_fast": 9.827752268646194,
+     "energy_J": 205.87003582903438,
+     "drop_height": 0.438932912216178,
+     "f_shock_end": 8207.733174051882,
+     "wheel_rate_sag": 7.883564255247458
+    },
+    "g1": {
+     "a_mid": true,
+     "b_end": true,
+     "c_energy": false,
+     "d_pressure": true
+    },
+    "kin": {
+     "anti_rise": 133.8894822491617,
+     "anti_squat": 125.9733599466023,
+     "com_height": 946.3729752439656,
+     "axle_rearward": 10.002681932532107,
+     "max_rearward": 14.079044856183579,
+     "axle_rearward_bottom": 4.319218628897659,
+     "chain_growth_total": 0.40963708249262254,
+     "max_kickback_deg": 0.5488638858072008
+    },
+    "clearances": {
+     "rear tyre to seat-mast rear face, min over travel (centre plane)": 11.543328348128455,
+     "rear tyre to seat-tube top, min over travel": 52.53593067761818,
+     "shock air can to seat-mast front face, min over travel": 4.328963011727325,
+     "shock air can to main-pivot housing (24 mm radius), min over travel": 3.429111280235439,
+     "shock eye (15 mm radius) to top-tube underside, min over travel": 10.776790353609456,
+     "shock mount M above down-tube surface": 11.334362898049648,
+     "link/rocker rear arm lateral position needed to clear tyre (|z|, mm)": 46.0,
+     "tyre top above BB at bottom-out (saddle underside must stay above this + 15)": 566.986707046816
+    },
+    "w_rear": 469.0239216503358
+   },
+   "geometry": {
+    "reach": 475.0,
+    "stack": 632.5,
+    "head_angle": 63.0,
+    "head_tube_length": 129.9448764675102,
+    "wheelbase": 1280.914899825608,
+    "front_centre": 841.0524213166995,
+    "rear_centre_static": 439.8624785089085,
+    "chainstay_length_static": 440.0,
+    "rear_centre_at_sag": 449.8651604414406,
+    "rear_centre_at_bottom_out": 444.18169713780617,
+    "bb_height": 345.0,
+    "bb_drop": 11.000000000000004,
+    "trail": 132.00870556410482,
+    "standover_at_bb": 758.774741611672,
+    "standover_mid_top_tube": 854.6576037098982,
+    "seat_tube_length": 408.3185031320525,
+    "seat_tube_angle_effective": 78.41487377514495,
+    "seat_tube_angle_actual": 79.02434482718745,
+    "rear_travel": 199.9867070468161,
+    "front_travel": 200.0,
+    "crown_stack_needed": 142.9448764675102
+   },
+   "hard_points": {
+    "P": [
+     -25.0,
+     120.0
+    ],
+    "S": [
+     -190.0,
+     211.8
+    ],
+    "L": [
+     -125.4,
+     325.0
+    ],
+    "R": [
+     -49.7,
+     278.0
+    ],
+    "K": [
+     0.0,
+     323.9
+    ],
+    "M": [
+     38.9,
+     77.0
+    ],
+    "A": [
+     -439.86,
+     11.0
+    ]
+   },
+   "front_triangle": {
+    "LC1": {
+     "zone": "boss",
+     "fi": 0.2856803728572396,
+     "ms": 2.500415481814429,
+     "mode": "fibre compression",
+     "at": [
+      42.02724853935786,
+      55.507593088751634,
+      17.988842097894004
+     ]
+    },
+    "LC2a": {
+     "zone": "boss",
+     "fi": 0.6643270665654951,
+     "ms": 0.505282639122173,
+     "mode": "fibre compression",
+     "at": [
+      42.02724853935786,
+      55.507593088751634,
+      17.988842097894004
+     ]
+    },
+    "LC2b": {
+     "zone": "boss",
+     "fi": 0.7406326072328038,
+     "ms": 0.3501971020912249,
+     "mode": "fibre compression",
+     "at": [
+      42.02724853935786,
+      55.507593088751634,
+      17.988842097894004
+     ]
+    },
+    "LC2c": {
+     "zone": "boss",
+     "fi": 0.7352718269970733,
+     "ms": 0.36004123003611355,
+     "mode": "fibre compression",
+     "at": [
+      42.02724853935786,
+      55.507593088751634,
+      17.988842097894004
+     ]
+    },
+    "LC2d": {
+     "zone": "boss",
+     "fi": 0.8411266560049457,
+     "ms": 0.1888815945385045,
+     "mode": "fibre compression",
+     "at": [
+      42.02724853935786,
+      55.507593088751634,
+      17.988842097894004
+     ]
+    },
+    "LC3": {
+     "zone": "ht_junction",
+     "fi": 0.7405847583811405,
+     "ms": 0.350284337725125,
+     "mode": "transverse tension (matrix)",
+     "at": [
+      493.5955731500007,
+      488.8735137190774,
+      28.99661014500265
+     ]
+    },
+    "LC4": {
+     "zone": "ht_junction",
+     "fi": 0.21998184050810224,
+     "ms": 3.545829772540559,
+     "mode": "transverse tension (matrix)",
+     "at": [
+      493.5955731500007,
+      488.8735137190774,
+      28.99661014500265
+     ]
+    }
+   },
+   "swingarm": {
+    "LC1": {
+     "zone": "node",
+     "fi": 0.1952727350604829,
+     "mode": "fibre compression",
+     "at": [
+      -429.71234453364195,
+      37.07384191752566,
+      -79.73884934873298
+     ]
+    },
+    "LC2a": {
+     "zone": "node",
+     "fi": 0.3401522467187923,
+     "mode": "transverse tension (matrix)",
+     "at": [
+      -57.89563586964743,
+      93.08746578226554,
+      49.11055705517984
+     ]
+    },
+    "LC2b": {
+     "zone": "node",
+     "fi": 0.3770362252786648,
+     "mode": "transverse tension (matrix)",
+     "at": [
+      -57.89563586964743,
+      93.08746578226554,
+      49.11055705517984
+     ]
+    },
+    "LC2c": {
+     "zone": "node",
+     "fi": 0.3770362252786648,
+     "mode": "transverse tension (matrix)",
+     "at": [
+      -57.89563586964743,
+      93.08746578226554,
+      49.11055705517984
+     ]
+    },
+    "LC2d": {
+     "zone": "node",
+     "fi": 0.26740508309612415,
+     "mode": "transverse tension (matrix)",
+     "at": [
+      -57.89563586964743,
+      93.08746578226554,
+      49.11055705517984
+     ]
+    },
+    "LC3": {
+     "zone": "knee",
+     "fi": 0.7219779246346387,
+     "mode": "fibre tension",
+     "at": [
+      -64.4887489735637,
+      90.0377983769875,
+      51.45610658205515
+     ]
+    },
+    "LC4": {
+     "zone": "knee",
+     "fi": 0.27053706696595076,
+     "mode": "fibre tension",
+     "at": [
+      -64.4887489735637,
+      90.0377983769875,
+      51.45610658205515
+     ]
+    }
+   },
+   "worst": {
+    "front_triangle": {
+     "case": "LC2d",
+     "zone": "boss",
+     "fi": 0.8411266560049457,
+     "mode": "fibre compression"
+    },
+    "swingarm": {
+     "case": "LC3",
+     "zone": "knee",
+     "fi": 0.7219779246346387,
+     "mode": "fibre tension"
+    },
+    "joint_margin": 0.1694312829143081
+   },
+   "structure_pass": true,
+   "interface_limit_forces": {
+    "shock": 19937.800506784446,
+    "link": 20697.494537691306,
+    "pivot": 15875.315569605067,
+    "pivot_bearing": 15458.866412090876,
+    "rocker": 35939.4920885345,
+    "ht_upper": 21304.007696990648,
+    "ht_lower": 23777.518395370975,
+    "dropout": 5854.6511627906975,
+    "feet": 14816.823895573796,
+    "idler": 7804.160716333255,
+    "chain_tension": 5093.804143111024
+   },
+   "joints": [
+    {
+     "item": "Shock eye pin bending (12.7 mm steel pin, both ends of the shock)",
+     "demand": 855.1165122827285,
+     "capacity": 1000.0,
+     "unit": "MPa",
+     "margin": 0.1694312829143081,
+     "note": "simply supported pin, load spread over the 22 mm eyelet; yield criterion; pin strength unverified",
+     "kind": "calculated"
+    },
+    {
+     "item": "Shock eye pin double shear",
+     "demand": 118.04325767381142,
+     "capacity": 580.0,
+     "unit": "MPa",
+     "margin": 3.9134530123076763,
+     "note": "",
+     "kind": "calculated"
+    },
+    {
+     "item": "Shock mount clevis tabs, bearing in 7075 inserts (2 x 8 mm)",
+     "demand": 147.17864547331038,
+     "capacity": 754.5,
+     "unit": "MPa",
+     "margin": 4.12642304577278,
+     "note": "bearing yield taken as 1.5 x tensile yield",
+     "kind": "calculated"
+    },
+    {
+     "item": "Shock mount top-hat bushes bearing on carbon lug walls (2 x 20 mm OD x 8 mm wall)",
+     "demand": 93.45843987555209,
+     "capacity": 250.0,
+     "unit": "MPa",
+     "margin": 1.6749858047373398,
+     "note": "load carried in bearing; the bond only retains the bushes",
+     "kind": "estimated"
+    },
+    {
+     "item": "Rocker pivot axle double shear (17 mm Ti-6Al-4V, 11 mm bore)",
+     "demand": 204.2838506465118,
+     "capacity": 550.0,
+     "unit": "MPa",
+     "margin": 1.6923322536724044,
+     "note": "",
+     "kind": "calculated"
+    },
+    {
+     "item": "Rocker pivot plain bearings, pressure at ultimate (2 x 17 x 12 mm)",
+     "demand": 132.13048561961213,
+     "capacity": 250.0,
+     "unit": "MPa",
+     "margin": 0.8920690318184412,
+     "note": "static rating",
+     "kind": "calculated"
+    },
+    {
+     "item": "Rocker pivot plain bearings, pressure at limit",
+     "demand": 88.08699041307474,
+     "capacity": 140.0,
+     "unit": "MPa",
+     "margin": 0.5893379867274908,
+     "note": "dynamic rating",
+     "kind": "calculated"
+    },
+    {
+     "item": "Rocker pivot sleeve bearing on carbon seat mast (22 mm sleeve x 56 mm)",
+     "demand": 43.757498484417006,
+     "capacity": 250.0,
+     "unit": "MPa",
+     "margin": 4.713306488236078,
+     "note": "",
+     "kind": "estimated"
+    },
+    {
+     "item": "Push link column buckling (each, 7075, 12 x 16 mm, 130 mm)",
+     "demand": 15523.120903268478,
+     "capacity": 96474.97422046617,
+     "unit": "N",
+     "margin": 5.214921266261145,
+     "note": "Euler, pinned ends",
+     "kind": "calculated"
+    },
+    {
+     "item": "Push link compressive stress",
+     "demand": 80.84958803785666,
+     "capacity": 503.0,
+     "unit": "MPa",
+     "margin": 5.2214293505673455,
+     "note": "",
+     "kind": "calculated"
+    },
+    {
+     "item": "Push link eye plain bearings at limit (12 x 10 mm)",
+     "demand": 86.23956057371377,
+     "capacity": 140.0,
+     "unit": "MPa",
+     "margin": 0.6233848951530101,
+     "note": "dynamic rating",
+     "kind": "calculated"
+    },
+    {
+     "item": "Main pivot axle bending (20/14 mm Ti-6Al-4V, 10 mm overhang)",
+     "demand": 388.5282280428797,
+     "capacity": 880.0,
+     "unit": "MPa",
+     "margin": 1.2649576954364288,
+     "note": "",
+     "kind": "calculated"
+    },
+    {
+     "item": "Main pivot plain bearing pressure at limit (20 x 16 mm each side)",
+     "demand": 48.30895753778399,
+     "capacity": 140.0,
+     "unit": "MPa",
+     "margin": 1.898013269909654,
+     "note": "dynamic rating",
+     "kind": "calculated"
+    },
+    {
+     "item": "Main pivot: same load on a 6004 ball bearing (for comparison)",
+     "demand": 15458.866412090876,
+     "capacity": 5000.0,
+     "unit": "N",
+     "margin": -0.6765610189832976,
+     "note": "static rating C0 of an SKF 6004; negative margin is why plain bearings are specified",
+     "kind": "calculated"
+    },
+    {
+     "item": "Main pivot sleeve bearing on carbon (26 mm sleeve x 56 mm)",
+     "demand": 16.355064117038186,
+     "capacity": 250.0,
+     "unit": "MPa",
+     "margin": 14.285785381884132,
+     "note": "",
+     "kind": "estimated"
+    },
+    {
+     "item": "Lower headset cup bearing on carbon head tube (56 x 12 mm)",
+     "demand": 53.074817846810205,
+     "capacity": 250.0,
+     "unit": "MPa",
+     "margin": 3.710331756984541,
+     "note": "",
+     "kind": "estimated"
+    },
+    {
+     "item": "Upper headset cup bearing on carbon head tube (56 x 12 mm)",
+     "demand": 47.55358860935412,
+     "capacity": 250.0,
+     "unit": "MPa",
+     "margin": 4.257226790047623,
+     "note": "",
+     "kind": "estimated"
+    },
+    {
+     "item": "BB shell bearing pressure on carbon (46 x 83 mm)",
+     "demand": 5.821172300513539,
+     "capacity": 250.0,
+     "unit": "MPa",
+     "margin": 41.94667587453908,
+     "note": "",
+     "kind": "estimated"
+    },
+    {
+     "item": "Dropout insert, axle bearing (12 x 10 mm)",
+     "demand": 73.18313953488372,
+     "capacity": 754.5,
+     "unit": "MPa",
+     "margin": 9.309751737835153,
+     "note": "",
+     "kind": "calculated"
+    },
+    {
+     "item": "Dropout insert bond shear (3600 mm2 each)",
+     "demand": 2.439437984496124,
+     "capacity": 5.175,
+     "unit": "MPa",
+     "margin": 1.1213902681231378,
+     "note": "average shear; insert is also wrapped by the spar laminate",
+     "kind": "estimated"
+    },
+    {
+     "item": "Idler stub bending (16 mm Ti-6Al-4V, 20 mm overhang)",
+     "demand": 582.2206662600114,
+     "capacity": 880.0,
+     "unit": "MPa",
+     "margin": 0.5114544209720728,
+     "note": "sprint load, 2.0 kN on one pedal",
+     "kind": "calculated"
+    }
+   ],
+   "mass_items": [
+    [
+     "Front triangle laminate (shell model area x areal mass)",
+     2.103040961547192,
+     "calculated"
+    ],
+    [
+     "Front triangle overlaps, ply drops, resin fillets (+8 %)",
+     0.16824327692377536,
+     "estimated"
+    ],
+    [
+     "Front triangle inserts: BB sleeve, headset seats, pivot and rocker sleeves, shock and idler inserts",
+     0.29,
+     "estimated"
+    ],
+    [
+     "Main pivot axle (Ti 20/14 x 110) and rocker axle (Ti 17/11 x 80)",
+     0.125,
+     "calculated"
+    ],
+    [
+     "Swingarm laminate (shell model)",
+     0.8379430207592246,
+     "calculated"
+    ],
+    [
+     "Swingarm overlaps and fillets (+8 %)",
+     0.06703544166073797,
+     "estimated"
+    ],
+    [
+     "Swingarm inserts: dropouts, brake mount, pivot and link bushes",
+     0.175,
+     "estimated"
+    ],
+    [
+     "Rocker (7075-T6 yoke) with bushes",
+     0.195,
+     "estimated"
+    ],
+    [
+     "Push links (2 x 7075) with bushes",
+     0.16,
+     "estimated"
+    ],
+    [
+     "Pins, bolts, idler sprocket and stub",
+     0.215,
+     "estimated"
+    ],
+    [
+     "Frame protection (down-tube guard, spar and chain protection) and paint",
+     0.25,
+     "estimated"
+    ],
+    [
+     "Shock-mount lug wall build-up to 8 mm and top-hat bushes",
+     0.02,
+     "estimated"
+    ]
+   ],
+   "frame_mass": 4.60626270089093,
+   "laminate_mass": {
+    "front_triangle": 2.103040961547192,
+    "swingarm": 0.8379430207592246,
+    "ft_zones": {
+     "down_tube": {
+      "area_mm2": 133742.45525243555,
+      "thickness": 3.1719999999999997,
+      "mass_kg": 0.6426838545907698
+     },
+     "top_tube": {
+      "area_mm2": 76418.99640606763,
+      "thickness": 2.564,
+      "mass_kg": 0.29673863115658805
+     },
+     "seat_mast": {
+      "area_mm2": 14278.715566465406,
+      "thickness": 3.1719999999999997,
+      "mass_kg": 0.0686147113236438
+     },
+     "head_tube": {
+      "area_mm2": 16675.759131888393,
+      "thickness": 4.9959999999999996,
+      "mass_kg": 0.1262753850442386
+     },
+     "ht_junction": {
+      "area_mm2": 50451.430463547746,
+      "thickness": 5.9079999999999995,
+      "mass_kg": 0.45183776428276534
+     },
+     "core": {
+      "area_mm2": 24280.95450378228,
+      "thickness": 3.476,
+      "mass_kg": 0.12787690950380357
+     },
+     "boss": {
+      "area_mm2": 54704.1839274621,
+      "thickness": 4.692,
+      "mass_kg": 0.38901370564538273
+     }
+    },
+    "sa_zones": {
+     "spar": 0.5249060615143661,
+     "node": 0.14093743557325605,
+     "web": 0.04062847546615592,
+     "knee": 0.13147104820544647
+    }
+   },
+   "swingarm_lateral_stiffness": 620.876416934931,
+   "ht_lateral_deflection_LC3": 4.967342050770011,
+   "case_forces": {
+    "LC1": {
+     "rear": [
+      -500.0,
+      1573.5047613659558,
+      0.0
+     ],
+     "front": [
+      -1500.0,
+      3000.0,
+      0.0
+     ],
+     "hands": [
+      800.0,
+      -1200.0,
+      0.0
+     ],
+     "bb": [
+      1200.000000003322,
+      -3373.504761360152,
+      -1.4629408795485688e-10,
+      -6.409583761524118e-07,
+      -1.9573852227949828e-07,
+      8.968728764102707e-07
+     ],
+     "shock": 6964.662197547975,
+     "link": 4677.53675283548,
+     "pivot": 3768.039294963919,
+     "rocker": 11028.794615595209,
+     "ht_upper": 3546.1105232950504,
+     "ht_lower": 3352.6321906957237,
+     "balance": 6.6885770582663115e-09
+    },
+    "LC2a": {
+     "rear": [
+      0.0,
+      8300.0,
+      0.0
+     ],
+     "front": [
+      0.0,
+      6090.014901642499,
+      0.0
+     ],
+     "hands": [
+      0.0,
+      -2000.0,
+      0.0
+     ],
+     "bb": [
+      -5.156389981664233e-09,
+      -12390.014901629409,
+      -3.863658726288577e-09,
+      -2.7728990517061902e-06,
+      1.122633932482131e-06,
+      8.165142943994397e-06
+     ],
+     "shock": 17987.36350068597,
+     "link": 18672.739637264982,
+     "pivot": 14322.295568230658,
+     "rocker": 32423.672210308294,
+     "ht_upper": 11563.870585269566,
+     "ht_lower": 13420.698494408438,
+     "balance": 1.4589374857808539e-08
+    },
+    "LC2b": {
+     "rear": [
+      0.0,
+      9200.0,
+      0.0
+     ],
+     "front": [
+      0.0,
+      4616.823895586513,
+      0.0
+     ],
+     "hands": [
+      0.0,
+      1000.0,
+      0.0
+     ],
+     "bb": [
+      -1.6216161746740454e-09,
+      -14816.823895573796,
+      -2.232042106697918e-09,
+      -2.305168912641875e-06,
+      9.573307604426873e-07,
+      6.769873786893754e-06
+     ],
+     "shock": 19937.800506784446,
+     "link": 20697.494537691306,
+     "pivot": 15875.315569605067,
+     "rocker": 35939.4920885345,
+     "ht_upper": 8366.03064030746,
+     "ht_lower": 10916.015327613808,
+     "balance": 1.3012394861139979e-08
+    },
+    "LC2c": {
+     "rear": [
+      0.0,
+      9200.0,
+      0.0
+     ],
+     "front": [
+      0.0,
+      7244.246867480806,
+      0.0
+     ],
+     "hands": [
+      0.0,
+      -3000.0,
+      0.0
+     ],
+     "bb": [
+      -6.8543659637043675e-09,
+      -13444.246867465918,
+      -4.822716448416031e-09,
+      -3.2759390933279064e-06,
+      1.3157552416487306e-06,
+      9.672173433727949e-06
+     ],
+     "shock": 19937.800506784446,
+     "link": 20697.494537691306,
+     "pivot": 15875.315569605067,
+     "rocker": 35939.4920885345,
+     "ht_upper": 14006.480343180552,
+     "ht_lower": 15933.328099566168,
+     "balance": 1.708367824915013e-08
+    },
+    "LC2d": {
+     "rear": [
+      0.0,
+      7003.846273443256,
+      0.0
+     ],
+     "front": [
+      -5660.0,
+      5660.0,
+      0.0
+     ],
+     "hands": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "bb": [
+      5660.0000000225755,
+      -12663.84627343045,
+      5.622805332450298e-09,
+      3.527015906001907e-07,
+      -1.4717246585860266e-06,
+      -4.200160219625104e-06
+     ],
+     "shock": 18841.35003275119,
+     "link": 16108.369636308335,
+     "pivot": 10976.172784829805,
+     "rocker": 32903.73701960032,
+     "ht_upper": 21304.007696990648,
+     "ht_lower": 23777.518395370975,
+     "balance": 2.6556613153403288e-08
+    },
+    "LC3": {
+     "rear": [
+      0.0,
+      5500.0,
+      1500.0
+     ],
+     "front": [
+      0.0,
+      3225.8487968447444,
+      1500.0
+     ],
+     "hands": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "bb": [
+      -7.210212871200383e-09,
+      -8725.84879681795,
+      -2999.999999951797,
+      457695.37169992854,
+      630973.3956599106,
+      1.3014330193072965e-05
+     ],
+     "shock": 12117.460253774047,
+     "link": 12533.702098523816,
+     "pivot": 9403.623733987464,
+     "rocker": 22330.647526528955,
+     "ht_upper": 10246.091026971208,
+     "ht_lower": 12313.465058827978,
+     "balance": 5.561870742499421e-08
+    },
+    "LC4": {
+     "rear": [
+      0.0,
+      1710.0,
+      600.0
+     ],
+     "front": [
+      0.0,
+      975.3000778540867,
+      400.0
+     ],
+     "hands": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "bb": [
+      -4.54199700072877e-09,
+      -2685.300077844879,
+      -999.9999999898472,
+      216000.2817952853,
+      87900.66300025156,
+      5.517929395182364e-06
+     ],
+     "shock": 4356.067444131507,
+     "link": 3944.7765201229054,
+     "pivot": 2795.61379254005,
+     "rocker": 7776.287829335063,
+     "ht_upper": 3167.14016085141,
+     "ht_lower": 3756.82658925539,
+     "balance": 1.4439229005823255e-08
+    }
+   }
+  }
+ },
+ "mesh": {
+  "front_triangle_h": 6.0,
+  "swingarm_h": 4.0
+ },
+ "benchmarks_g1": {
+  "sender_32.7": {
+   "name": "Canyon Sender CFR (Gen 3) size M, +8 mm cup, BB high",
+   "lr": [
+    3.229438934453897,
+    2.1734124028874726
+   ],
+   "stroke_check": 75.00001273980894,
+   "w_rear": 470.14865339578455,
+   "tokens": 0,
+   "pressure_psi": 213.9103151776016,
+   "pressure_frac": 0.6482130762957624,
+   "mid_ratio": 2.112685548204862,
+   "end_ratio": 7.441673862647386,
+   "drop_height": 0.4004052201863535,
+   "energy_J": 188.24997508325671,
+   "checks": {
+    "a_mid": false,
+    "b_end": true,
+    "c_energy": false,
+    "d_pressure": true
+   }
+  },
+  "sender_37": {
+   "name": "Canyon Sender CFR (Gen 3) size M, +8 mm cup, BB high",
+   "lr": [
+    3.3299852943896115,
+    2.0978907354654552
+   ],
+   "stroke_check": 75.00001758718267,
+   "w_rear": 470.14865339578455,
+   "tokens": 0,
+   "pressure_psi": 222.42821920001217,
+   "pressure_frac": 0.6740249066667036,
+   "mid_ratio": 2.1701686823558552,
+   "end_ratio": 7.881370967195438,
+   "drop_height": 0.41440215120858204,
+   "energy_J": 194.83061335503115,
+   "checks": {
+    "a_mid": false,
+    "b_end": true,
+    "c_energy": false,
+    "d_pressure": true
+   }
+  },
+  "supreme": {
+   "name": "Commencal Supreme DH V5 size L, Low",
+   "lr": [
+    3.45,
+    2.6
+   ],
+   "stroke_check": 73.21155084072473,
+   "w_rear": 467.5089816933638,
+   "tokens": 0,
+   "pressure_psi": 231.19978656019748,
+   "pressure_frac": 0.7006054138187803,
+   "mid_ratio": 2.0160629834920627,
+   "end_ratio": 5.522123437912604,
+   "drop_height": 0.4031886442045862,
+   "energy_J": 188.49431248241407,
+   "checks": {
+    "a_mid": false,
+    "b_end": false,
+    "c_energy": false,
+    "d_pressure": true
+   }
+  }
+ },
+ "g3": {
+  "custom": {
+   "moment_Nm": 307.0586819106208,
+   "upper_bearing_kN": 2.362991833597948,
+   "arm_mm": 307.0586819106208
+  },
+  "sender": {
+   "moment_Nm": 322.8125535991791,
+   "upper_bearing_kN": 3.0744052723731348,
+   "arm_mm": 322.8125535991791
+  },
+  "supreme": {
+   "moment_Nm": 320.09058235012867,
+   "upper_bearing_kN": 2.857951628126149,
+   "arm_mm": 320.09058235012867
+  },
+  "supreme_612": {
+   "moment_Nm": 323.2358153404399,
+   "upper_bearing_kN": 2.886034065539642,
+   "arm_mm": 323.2358153404399
+  }
+ }
+}
