@@ -1,21 +1,28 @@
-# Custom carbon downhill frame for a 68 kg rider on Red Bull Rampage terrain — design study (V1 → V5)
+# Custom carbon downhill frame for a 68 kg rider on Red Bull Rampage terrain — design study (V1 → V6)
 
 **Status: a paper design with numerical analysis. Nothing here has been built or physically tested. It is not ready to ride.**
 Any prototype and any riding trial depend on review by a qualified composite-structures engineer and on the bench tests in section 5.8 passing.
+
+**The current revision is V6**, the first one modelled and checked as a 3-D assembly. It is documented in [`DESIGN_V6.md`](DESIGN_V6.md), with solid
+models in `cad/V6/` and a manufacturing package in `mfg/`. Sections 0, 6 and 7 of this report carry the V6 numbers. **Sections 3 to 5 describe V5**, the last
+revision of the idealised side-view model, and are kept as the record of that stage: V6 has the same geometry, hard points, suspension curve and load cases,
+but different structure and hardware, and it corrects an error in the V1–V5 structural model that is explained in `DESIGN_V6.md`, section 3.
 
 Every result carries one of five labels: **measured** (by someone, on hardware), **simulated** (numerical model run in this study),
 **calculated** (closed-form from stated inputs), **estimated** (engineering judgement or third-party reconstruction), **unknown**.
 
 ## 0. The short answer
 
-The final revision, V5, is a 27.5"-wheeled, 200/200 mm frame with a linkage-driven single pivot and an idler, built around a RockShox BoXXer Ultimate
+The final revision, V6, is a 27.5"-wheeled, 200/200 mm frame with a linkage-driven single pivot and an idler, built around a RockShox BoXXer Ultimate
 fork and a Vivid Ultimate DH air shock. Against the three goals fixed before design:
 
-| Goal | Result for V5 | Verdict |
+| Goal | Result for V6 | Verdict |
 |---|---|---|
-| G1 rear-wheel force curve for 68 kg at 25 % sag | Meets three of four checks. Mid-stroke ratio 2.31 (target 2.3–2.8), bottom-out ratio 8.08 (≥ 6.5), pressure 69 % of maximum (≤ 75 %). Misses the spring-energy check: 0.44 m against a 0.50 m target. | Better than the Supreme estimate on bottom-out resistance (8.1 vs 5.5). Against the Sender the differences are 3–6 %, inside the ±15 % model band: **inconclusive**. |
-| G2 frame mass with all structural targets met | 4.61 kg (±12 %: 4.06–5.16 kg), every structural check passing | Sender CFR claims 4.61 kg: **no advantage shown**. Supreme DH V5 claims 5.3 kg: lighter by the rule only if that figure excludes the shock, which Commencal does not state. |
+| G1 rear-wheel force curve for 68 kg at 25 % sag | Meets three of four checks. Mid-stroke ratio 2.31 (target 2.3–2.8), bottom-out ratio 8.08 (≥ 6.5), pressure 69% of maximum (≤ 75 %). Misses the spring-energy check: 0.44 m against a 0.50 m target. | Better than the Supreme estimate on bottom-out resistance (8.1 vs 5.5). Against the Sender the differences are 3–6 %, inside the ±15 % model band: **inconclusive**. |
+| G2 frame mass with all structural targets met | 4.77 kg (±12 %: 4.20–5.34 kg), every structural check passing | Sender CFR claims 4.61 kg: V6 is +3 % on paper, inside my ±12 % band: **no advantage shown**. Supreme DH V5 claims 5.3 kg: V6 is −10 %, but my upper bound (5.34 kg) reaches that figure, so by the rule fixed at the start: **inconclusive**. |
 | G3 head-tube loading per kN of front-wheel force | Bending moment 307 N m; upper-bearing force 2.36 kN | **Advantage**: upper-bearing force 23 % lower than the Sender (3.07 kN) and 17–18 % lower than the Supreme (2.86–2.89 kN); moment 5 % lower. This is a geometry metric, not a strength comparison. |
+
+Making the design real cost mass: V5, the idealised model, came out at 4.61 kg and V6 at 4.77 kg, and the one mass comparison that V5 appeared to win is no longer a win.
 
 Where a production bike wins is in section 7.3. The largest one is not a number: both benchmarks exist, have been raced and lab-tested, and carry a warranty. This design has none of that.
 
@@ -45,7 +52,7 @@ Charts, manuals and independent tests are linked in [`sources/canyon_sender_cfr.
 Neither maker publishes pivot coordinates or leverage curves. The Sender curve used here is **estimated** from its published progression and travel (a straight-line assumption);
 the Supreme curve is an **estimated** third-party reconstruction from a photograph. No independent stiffness or timed-run data was found for either bike.
 
-## 3. The design (V5)
+## 3. The design (V5; for V6 see `DESIGN_V6.md`)
 
 ### 3.1 Components and why
 
@@ -387,6 +394,9 @@ Each revision answers the worst finding of the analysis before it.
 | V3 → V4 | Swingarm fails the sideways landing (1.07–1.14) | Lower spar too narrow where it turns inward ahead of the tyre | Lower spar 22 → 30 mm wide, upright 22 → 26 mm, spar laminate 2.56 → 3.17 mm, 4.39 mm knee build-up, thicker yoke web | index 1.07 → 0.72; lateral stiffness at the axle 346 → 621 N/mm | swingarm laminate 0.64 → 0.84 kg | yes |
 | V4 → V5 | Joint check: shock-mount inserts at 24.9 MPa bond shear against a 5.2 MPa allowance | The bond was the only load path for 30 kN | Flanged bushes bearing on lug walls built up to 8 mm; the bond only retains them | worst joint margin −79 % → +17 % (now the shock pin in bending) | +0.02 kg | yes |
 | stop | — | — | A mass-trimming pass could remove perhaps 0.15–0.25 kg from low-stressed zones | smaller than the ±12 % mass band | — | not pursued: any gain would be inconclusive |
+| V5 → V6, packaging | First 3-D assembly with manufacturers' component envelopes: ten clashes or impossibilities (shock and reservoir, rocker, fork crown, rotor, cassette, chain, crank arms, idler mount) | V1–V5 were checked in side view only, with placeholder envelopes | Solid model of every part; shock turned round; bolted aluminium shock fitting; rocker plates outside the seat mast; spars rerouted around rotor, cassette, chain and cranks; idler on a carrier on ISCG tabs | clashes 10 → 0; tightest clearance 2.9 mm | swingarm members narrower than the ones analysed; 30–32-tooth ring only; Tall fork crown only | yes |
+| model | Re-checking the narrowed swingarm | The shell model sat on the modelled surface, half the wall outside it; a tool surface has the wall inside | Analysis mesh moved to the laminate mid-plane; accurate distance function for flat tubes | V6 as first packaged: swingarm 0.75 → 1.24, lateral stiffness 408 → 208 N/mm, head-tube zone 0.75 → 1.03 | V1–V5 results describe parts half a wall larger than drawn | yes (correction) |
+| V6, structure | Swingarm 1.24 and head tube 1.03 on the corrected model | Sections smaller than the analysis had assumed | Asymmetric swingarm (31 mm non-drive pivot eye, 15.5 mm drive side), wider spars, longer yoke, 3.5–5.6 mm laminate; head tube 70.8 mm outside diameter with a 7.4 mm wall; sideways landing run from both sides | swingarm 1.24 → 0.69; front triangle 0.82 (up to 0.93 across mesh sizes); lateral stiffness 407 N/mm | frame mass 4.61 → 4.77 kg | yes |
 
 **Table E. Revision log**
 | Rev | Leverage start → end | Pressure at 25 % sag | Mid-stroke ratio | End ratio | Spring drop height | Shock force at limit | Front triangle worst index | Swingarm worst index | Worst joint margin | Frame mass | All structural checks |
@@ -396,6 +406,7 @@ Each revision answers the worst finding of the analysis before it.
 | V3 | 3.48 → 2.17 | 229 psi / 15.8 bar (69% of max) | 2.31 | 8.08 | 0.439 m | 19.9 kN | 0.84 (LC2d, boss) | 1.07 (LC3) | -79% | 4.37 kg | FAIL |
 | V4 | 3.48 → 2.17 | 229 psi / 15.8 bar (69% of max) | 2.31 | 8.08 | 0.439 m | 19.9 kN | 0.84 (LC2d, boss) | 0.72 (LC3) | -79% | 4.59 kg | FAIL |
 | V5 | 3.48 → 2.17 | 229 psi / 15.8 bar (69% of max) | 2.31 | 8.08 | 0.439 m | 19.9 kN | 0.84 (LC2d, boss) | 0.72 (LC3) | +17% | 4.61 kg | pass |
+| V6 | 3.48 → 2.17 | 229 psi / 15.8 bar (69% of max) | 2.31 | 8.08 | 0.439 m | 19.9 kN | 0.82 (LC2d, ht_junction) | 0.69 (LC3) | +17% | 4.77 kg | pass |
 
 
 ![Revision history](results/figures/revision_history.png)
@@ -407,7 +418,7 @@ Each revision answers the worst finding of the analysis before it.
 **Table F. Goal G1 with the same shock model and rule (25 % sag, 68 kg)**
 | Bike | Leverage curve used | Tokens | Pressure | a. Force at 60 % ÷ W (2.3–2.8) | b. Force at 100 % ÷ W (≥ 6.5) | c. Spring drop height (≥ 0.50 m) | d. Pressure ÷ max (≤ 75 %) |
 |---|---|---|---|---|---|---|---|
-| Custom V5 | simulated from the hard points, 3.48 → 2.17 | 2 | 229 psi | 2.31 | 8.08 | 0.439 | 69% |
+| Custom V5 and V6 (same linkage) | simulated from the hard points, 3.48 → 2.17 | 2 | 229 psi | 2.31 | 8.08 | 0.439 | 69% |
 | Sender CFR, 32.7 % chip | estimated, 3.23 → 2.17 | 0 | 214 psi | 2.11 | 7.44 | 0.400 | 65% |
 | Sender CFR, 37 % chip | estimated, 3.33 → 2.10 | 0 | 222 psi | 2.17 | 7.88 | 0.414 | 67% |
 | Supreme DH V5 | estimated, 3.45 → 2.60 | 0 | 231 psi | 2.02 | 5.52 | 0.403 | 70% |
@@ -415,13 +426,13 @@ Each revision answers the worst finding of the analysis before it.
 
 ![Goal G1](results/figures/g1_force_curves.png)
 
-| Metric | Custom V5 | Sender CFR | Supreme DH V5 | Method / source | Margin and verdict |
+| Metric | Custom V6 | Sender CFR | Supreme DH V5 | Method / source | Margin and verdict |
 |---|---|---|---|---|---|
 | G1a mid-stroke ratio | 2.31 | 2.11 (2.17 with 37 % chip) | 2.02 | same estimated shock model; custom curve simulated, others estimated | +6 to +9 % vs Sender, +14 % vs Supreme: inside ±15 %, **inconclusive** |
 | G1b bottom-out ratio | 8.08 | 7.44 (7.88) | 5.52 | as above | +3 to +9 % vs Sender: **inconclusive**. +46 % vs Supreme: **advantage, if the third-party curve is right** |
 | G1c spring drop height | 0.44 m | 0.40 (0.41) m | 0.40 m | as above | target 0.50 m missed by all; +6 to +10 %: **inconclusive** |
 | G1d pressure ÷ maximum | 69 % | 65 % (67 %) | 70 % | as above | all pass; no meaningful difference |
-| G2 frame mass | 4.61 kg ±12 % | 4.614 kg claimed, size M | 5.3 kg claimed | custom calculated/estimated; others manufacturer; shock inclusion unstated for both | vs Sender 0 %: **no advantage**. vs Supreme −13 %: advantage only if 5.3 kg excludes the shock |
+| G2 frame mass | 4.77 kg ±12 % | 4.614 kg claimed, size M | 5.3 kg claimed | custom calculated from the bill of materials; others manufacturer; shock inclusion unstated for both | vs Sender +3 %: **no advantage**. vs Supreme −10 %: upper bound 5.34 kg is not below 5.3 kg: **inconclusive** |
 | G3 moment at lower head-tube bearing per kN | 307 N m | 323 N m | 320–323 N m | calculated from geometry and fork length | −5 %: small **advantage** |
 | G3 upper head-tube bearing force per kN | 2.36 kN | 3.07 kN | 2.86–2.89 kN | as above | −23 % and −17 to −18 %: **advantage** |
 
@@ -430,16 +441,16 @@ At 25 % sag the 75 % pressure cap limits it to about 0.47 m with this shock, so 
 
 ### 7.2 Reported, not scored
 
-| Metric | Custom V5 | Sender CFR | Supreme DH V5 | Source |
+| Metric | Custom V6 | Sender CFR | Supreme DH V5 | Source |
 |---|---|---|---|---|
 | Rear-centre growth to sag | 10 mm | ≈17.5 mm | unknown at sag | simulated; independent outlets repeating Canyon |
 | Maximum rearward axle travel | 14 mm | ≈24 mm | ≈14 mm | simulated; repeated; third-party estimate |
 | Anti-rise at sag | 134 % | 124–130 % | ≈93 % | calculated; manufacturer and repeated; third-party estimate |
-| Anti-squat at sag | 126 % (32/17) | ≈125 % | 83–94 % (34/14–18) | calculated; repeated; third-party estimate |
-| Chain growth / kickback | 0.4 mm / 0.55° | 0.1 mm / 0.5° | about −5° at full travel | calculated; repeated; third-party estimate |
+| Anti-squat at sag | 117 % (32/17) | ≈125 % | 83–94 % (34/14–18) | calculated; repeated; third-party estimate |
+| Chain growth / kickback | −5.2 mm / −4.6° | 0.1 mm / 0.5° | about −5° at full travel | calculated; repeated; third-party estimate |
 | Rear travel | 200 mm | 200 mm | 220 mm | manufacturer |
 | Head tube length | 130 mm | 105 mm | 112 mm | manufacturer |
-| Frame stiffness | swingarm 621 N/mm lateral at the axle (simulated) | unknown | unknown | no published data found |
+| Frame stiffness | swingarm 407 N/mm lateral at the axle (simulated) | unknown | unknown | no published data found |
 | Structural margins at Rampage-class loads | positive in this model | unknown | unknown | makers publish none |
 | Lab certification | none | Canyon Category 5 (in-house) | none found for V5; EFBE Cat 5 for V5.2 | manufacturer |
 
@@ -452,7 +463,7 @@ At 25 % sag the 75 % pressure cap limits it to about 0.47 m with this shock, so 
 
 **Inconclusive**
 - Mid-stroke support and spring energy against the Sender: differences of 3–9 % inside a ±15 % model band.
-- Frame mass against the Sender: identical within rounding, with a ±12 % band on mine.
+- Frame mass: 4.77 kg ±12 % against the Sender's 4.61 kg and the Supreme's 5.3 kg. My band covers both figures, so no claim either way.
 - Less rear-centre growth than the Sender (10 mm against 17.5 mm) may help pop and manuals, which Sender reviews criticise. That is a hypothesis, not a result.
 
 **The production bikes win**
@@ -460,7 +471,7 @@ At 25 % sag the 75 % pressure cap limits it to about 0.47 m with this shock, so 
 - **Front wheel.** Both use a 29" front wheel, which rolls over holes better and is more stable at speed. My 27.5" front follows Rampage practice and trades that away.
 - **Supreme:** 20 mm more rear travel, about 30 mm more wheelbase, and lower anti-rise (≈93 % against 134 %), so its rear suspension stays more active under braking on rough ground.
 - **Sender:** ±8 mm reach, BB-height and progression adjustments, the same claimed mass, a kinematic tune developed with race teams, and ball-bearing pivots with less friction than my plain bearings.
-- **Packaging risks that are mine alone:** 3.4–4.3 mm shock clearances, a seat post limited to about 110 mm insertion, a rocker and links that straddle the seat mast and have not been checked in 3-D, an unpublished shock reservoir envelope, and a drivetrain restricted to a 30–32-tooth ring with a small idler.
+- **Open design items that are mine alone (V6):** no rear brake mount, cable routing or lower chain guide designed yet; a drive-side pivot lug only 15.5 mm wide that a shell model cannot judge; clearances of 4–6 mm that partly rest on estimated envelopes (fork crowns, 2027 shock reservoir, cassette, rotor); a seat post limited to about 107 mm insertion; and a drivetrain restricted to a 30–32-tooth ring with a small idler on a cantilevered carrier.
 
 ### 7.4 Questions only physical testing can answer
 
@@ -492,19 +503,25 @@ Only after an independent engineering review and after the bench tests in 5.8 ha
 |---|---|
 | `01_rider_benchmarks_criteria.md` | rider inputs, benchmark configurations, fixed goals |
 | `sources/` | manufacturer charts, manuals, standards, measured data and material data, each with its URL and source type |
-| `cad/hard_points_V5.csv`, `cad/side_view_V5.dxf` | coordinate table (top-out, sag, bottom-out) and layered side view |
-| `cad/*_surface_V5.stl` | the idealised surfaces that were analysed (not production surfaces) |
-| `results/summary.json` | every number in the tables above, for all five revisions |
-| `results/V1…V5/` | kinematics table, suspension results, finite-element results per revision |
+| `DESIGN_V6.md` | the current revision: what the 3-D check changed, parts, clearances, structure, open items |
+| `cad/V6/` | STEP solids of every V6 part and of the assembly at top-out, sag and bottom-out |
+| `mfg/` | V6 ply book, laminate zones, bill of materials, interface control, manufacturing notes |
+| `cad/hard_points_V5.csv`, `cad/side_view_V5.dxf` (and `_V6`) | coordinate table (top-out, sag, bottom-out) and layered side view |
+| `cad/*_surface_V5.stl`, `cad/*_analysis_midplane_V6.stl` | the surfaces that were analysed (not production surfaces) |
+| `results/summary.json` | every number in the tables above, for all six revisions |
+| `results/V1…V6/` | kinematics table, suspension results, finite-element results per revision; clearances and checks for V6 |
 | `results/convergence.json`, `results/landing_simulation.json` | mesh, verification and landing-model records |
 | `src/` | all code; `python3 src/run_all.py && python3 src/make_figures.py && python3 src/make_report.py` reproduces the results |
 
 Software: Python 3.13 with numpy, scipy, matplotlib, pyfe3d 0.12 (shell elements), scikit-image and gpytoolbox (surface meshing), ezdxf.
-A general CAD kernel and a commercial solver were not available in this environment, so there is no parametric CAD model: the geometry is the coordinate table, the DXF and the code.
+V1–V5 had no CAD kernel behind them: their geometry is the coordinate table, the DXF and the code. V6 adds solid models built with build123d 0.13 (OpenCascade).
+No commercial solver or solid-element laminate analysis was available.
 
 ## 9. Limits of this study
 
 - The structural geometry is an idealisation built from tube axes. Real frame surfaces, insert shapes and ply drops will change local strains.
+- V1–V5 were analysed with the shell on the modelled surface; V6 on the laminate mid-plane. Indices of V6 and of earlier revisions are therefore not on the same footing (`DESIGN_V6.md`, section 3).
+- Thin-shell elements are a poor model of nearly solid parts such as the V6 drive-side pivot lug, and of load introduction at bosses.
 - Material limits, the air-spring curve, the landing model's parameters, side loads, brake limits and half of the mass budget are estimates, each labelled where used.
 - Competitor kinematics are estimates or unknown. No claim against either bike rests on measured data from that bike beyond its published geometry and mass.
 - Nothing here replaces testing, and nothing here makes the frame safe to ride.

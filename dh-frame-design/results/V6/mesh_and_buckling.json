@@ -1,0 +1,92 @@
+{
+ "note": "V6 hot-spot index at ultimate load (patch average) versus mesh size, and the lowest linear buckling load multipliers. Shell meshes on the laminate mid-plane.",
+ "front_triangle": {
+  "h=7.0": {
+   "nodes": 7602,
+   "laminate_kg": 1.9643226743036892,
+   "LC1": 0.271,
+   "LC2a": 0.662,
+   "LC2b": 0.799,
+   "LC2c": 0.75,
+   "LC2d": 0.891,
+   "LC3": 0.774,
+   "LC4": 0.258
+  },
+  "h=6.0": {
+   "nodes": 10495,
+   "laminate_kg": 1.9730604618553977,
+   "LC1": 0.296,
+   "LC2a": 0.652,
+   "LC2b": 0.704,
+   "LC2c": 0.733,
+   "LC2d": 0.825,
+   "LC3": 0.808,
+   "LC4": 0.257
+  },
+  "h=4.5": {
+   "nodes": 18593,
+   "laminate_kg": 1.986599103073648,
+   "LC1": 0.298,
+   "LC2a": 0.648,
+   "LC2b": 0.702,
+   "LC2c": 0.733,
+   "LC2d": 0.925,
+   "LC3": 0.741,
+   "LC4": 0.257
+  }
+ },
+ "swingarm": {
+  "h=5.0": {
+   "nodes": 6810,
+   "laminate_kg": 0.9308288849776609,
+   "lateral_stiffness_N_per_mm": 422,
+   "LC1": 0.125,
+   "LC2a": 0.41,
+   "LC2b": 0.454,
+   "LC2c": 0.454,
+   "LC2d": 0.348,
+   "LC3": 0.651,
+   "LC4": 0.249,
+   "LC3m": 0.645
+  },
+  "h=4.0": {
+   "nodes": 11158,
+   "laminate_kg": 0.9441054308081014,
+   "lateral_stiffness_N_per_mm": 407,
+   "LC1": 0.117,
+   "LC2a": 0.372,
+   "LC2b": 0.413,
+   "LC2c": 0.413,
+   "LC2d": 0.29,
+   "LC3": 0.695,
+   "LC4": 0.269,
+   "LC3m": 0.602
+  },
+  "h=3.3": {
+   "nodes": 16150,
+   "laminate_kg": 0.9509733906289735,
+   "lateral_stiffness_N_per_mm": 397,
+   "LC1": 0.125,
+   "LC2a": 0.389,
+   "LC2b": 0.431,
+   "LC2c": 0.431,
+   "LC2d": 0.302,
+   "LC3": 0.689,
+   "LC4": 0.272,
+   "LC3m": 0.693
+  }
+ },
+ "buckling_multiplier_on_ultimate": {
+  "front_triangle (h=6)": {
+   "LC2b": 17.18,
+   "LC2c": 16.56,
+   "LC2d": 9.25,
+   "LC3": 6.7
+  },
+  "swingarm (h=4)": {
+   "LC2b": 12.17,
+   "LC3": 17.07,
+   "LC3m": 17.76
+  }
+ }
+}

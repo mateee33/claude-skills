@@ -120,5 +120,63 @@ def v5():
     return d
 
 
-REVISIONS = ["v1", "v2", "v3", "v4", "v5"]
-FINAL = "v5"
+def v6():
+    """V6: first revision defined and checked as a 3-D assembly against manufacturers' interface drawings (DESIGN_V6.md)."""
+    F, U = "F", "U"
+    d = v5()
+    d["name"] = "V6"
+    d["upper_headset_stack"] = 8.0                               # Cane Creek Forty ZS56 short cover
+    d["idler"] = dict(teeth=14, centre=(30.0, 100.5))            # on a bolt-on carrier ahead of the pivot; chain line through the pivot
+    d["rev6"] = True
+    d["shell_inset"] = "half_thickness"      # solid model = tool (outer) surface; shell analysis runs on the laminate mid-plane
+    d["dt_ht_offset"] = 62.0                                     # down tube joins the head tube higher so the fork's lower crown can swing under it
+    # down tube tapers toward the head tube; narrower seat mast between the swingarm arms; head tube 70.8 mm outside
+    # diameter so that a 7.4 mm wall remains around the 55.9 mm headset bore; rocker boss sized for its bush sleeve
+    d["sections"] = dict(dt_hd=(41.0, 34.0), sm_hw=26.0, ht_r=35.4, rocker_r=17.5)
+    import frame_fe as FE
+    Lf = FE.base_layups()
+    Lf.update(d.get("layups") or {})
+    Lf["head_tube"] = _sym([(F, 45)] + [(U, 0), (U, 90), (U, 45), (U, -45)] * 5 + [(U, 0), (U, 90), (U, 0)])       # 48 plies, 7.43 mm
+    d["layups"] = Lf
+    A = (-439.86, 11.0); S = d["pts"]["S"]; P = d["pts"]["P"]
+    ux, uy = (S[0] - A[0]), (S[1] - A[1]); un = (ux ** 2 + uy ** 2) ** 0.5
+    U1 = (A[0] + 115.0 * ux / un, A[1] + 115.0 * uy / un)
+    up = lambda f: (P[0] + f * (S[0] - P[0]), P[1] + f * (S[1] - P[1]))        # point on the pivot -> link-lug line
+    # Swingarm stations: (x, y, |z|, half-depth, half-width) of the tool surface. L = non-drive side, R = drive side.
+    # The drive side is boxed in between the seat mast (|z| < 26) and the chain (|z| > 51) around the pivot, so the
+    # non-drive side is made wider there and carries more of the side load.
+    d["swingarm"] = dict(
+        layout="v6",
+        lower_path=[(A[0], A[1] - 12.0, 89.5, 15.0, 10.5),       # leaves the dropout below the axle, outboard of the hub end
+                    (-330.0, 20.0, 83.0, 17.0, 13.5),            # outboard of the 220 mm rotor / cassette
+                    (-260.0, 34.0, 57.5, 18.0, 13.5),            # between spokes and crank arm, below the chain in every gear
+                    (-80.0, 72.0, 54.0, 20.0, 15.5)],            # between tyre and crank arm, into the yoke
+        upper_path=[(A[0], A[1], 89.5, 14.0, 10.5),
+                    (U1[0], U1[1], 86.0, 14.5, 10.0),
+                    (S[0], S[1], 51.0, 15.0, 11.0)],
+        upright_path=dict(
+            # drive side: narrow where the chain crosses it (pivot to 36 % of its length), wider above
+            R=[(S[0], S[1], 51.0, 16.0, 10.0), (*up(0.58), 44.5, 18.0, 12.5), (*up(0.36), 38.75, 19.0, 7.5), (P[0], P[1], 38.75, 19.0, 7.5)],
+            L=[(S[0], S[1], 51.0, 16.0, 10.0), (*up(0.45), 47.0, 18.0, 13.0), (P[0], P[1], 46.5, 18.0, 15.5)]),
+        strut_path=dict(                                          # continues the lower spar line from the yoke to the pivot eye
+            R=[(-80.0, 72.0, 52.0, 16.0, 14.0), (-62.0, 87.7, 42.0, 15.0, 9.0), (P[0], P[1], 38.75, 15.0, 7.5)],
+            L=[(-80.0, 72.0, 54.0, 16.0, 15.5), (P[0], P[1], 46.5, 15.0, 15.5)]),
+        yoke_box=(-80.0, -54.0, 56.0, 96.0, (-58.0, 68.0)),      # x0, x1, y0, y1, (z0, z1) of the cross-member ahead of the tyre
+        eye_r=22.0, eye_z=dict(R=(31.0, 46.5), L=(31.0, 62.0)), lug_r=16.0, lug_z=(38.5, 63.5), drop_r=19.0, drop_z=(78.5, 100.0),
+        knee_patches=[((-80.0, 68.0), 50.0)])
+    import swingarm_fe as SW
+    L = SW.sw_layups()
+    L["spar"] = _sym([(F, 45), (U, 0), (U, 0), (U, 45), (U, -45), (U, 0), (U, 0), (U, 90), (U, 0), (U, 45), (U, -45)])                     # 22 plies, 3.48 mm
+    L["strut"] = _sym([(F, 45), (U, 0), (U, 0), (U, 45), (U, -45), (U, 0), (U, 0), (U, 45), (U, -45), (U, 0), (U, 90)])                    # 22 plies
+    L["node"] = _sym([(F, 45), (U, 0), (U, 0), (U, 45), (U, -45), (U, 0), (U, 90), (U, 45), (U, -45), (U, 0), (U, 0), (U, 90),
+                      (U, 0), (U, 45), (U, -45), (U, 0)])                                                                                   # 32 plies, 5.00 mm
+    L["knee"] = _sym([(F, 45), (U, 0), (U, 0), (U, 45), (U, -45), (U, 0), (U, 90), (U, 45), (U, -45), (U, 0), (U, 0), (U, 90),
+                      (U, 45), (U, -45), (U, 0), (U, 0), (U, 45), (U, -45)])                                                                # 36 plies, 5.60 mm
+    L["yoke"] = _sym([(F, 45), (U, 45), (U, -45), (U, 0), (U, 90), (U, 45), (U, -45), (U, 0), (U, 90), (U, 45), (U, -45), (U, 0), (U, 90),
+                      (U, 45), (U, -45), (U, 0), (U, 90)])                                                                                  # 34 plies, 5.30 mm
+    d["sw_layups"] = L
+    return d
+
+
+REVISIONS = ["v1", "v2", "v3", "v4", "v5", "v6"]
+FINAL = "v6"

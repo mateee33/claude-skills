@@ -38,7 +38,21 @@ def smin(a, b, k):
     return np.minimum(a, b) - h * h * k * 0.25
 
 
-def sd_tube(P, a, b, hd, hw):
+def ellipse_dist(u, w, hd, hw, accurate=False):
+    """Signed distance to an ellipse with semi-axes hd, hw at local coordinates (u, w).
+
+    The default is the cheap lower bound used for V1-V5 (exact only along the minor axis). `accurate` switches to the
+    first-order distance (q - 1) / |grad q|, which is right to within a few percent near the surface in every
+    direction; V6 needs it because its mesh is placed a known depth inside the tool surface."""
+    q = np.sqrt((u / hd) ** 2 + (w / hw) ** 2)
+    lower = (q - 1.0) * np.minimum(hd, hw)
+    if not accurate:
+        return lower
+    grad = np.sqrt(u ** 2 / hd ** 4 + w ** 2 / hw ** 4) / np.maximum(q, 1e-9)
+    return np.where(q > 0.35, (q - 1.0) / np.maximum(grad, 1e-9), lower)
+
+
+def sd_tube(P, a, b, hd, hw, accurate=False):
     """Elliptical tube with axis a->b in the xy-plane, half-depth hd (in plane), half-width hw (z). Flat ends."""
     a3 = np.array([a[0], a[1]]); ab = np.array([b[0] - a[0], b[1] - a[1]]); L = np.linalg.norm(ab); t = ab / L
     n = np.array([-t[1], t[0]])
@@ -49,8 +63,7 @@ def sd_tube(P, a, b, hd, hw):
         hd = hd[0] + (hd[1] - hd[0]) * f
     if np.ndim(hw) > 0:
         hw = hw[0] + (hw[1] - hw[0]) * f
-    q = np.sqrt((u / hd) ** 2 + (w / hw) ** 2)
-    d_rad = (q - 1.0) * np.minimum(hd, hw)
+    d_rad = ellipse_dist(u, w, hd, hw, accurate)
     d_end = np.maximum(-s, s - L)
     return np.maximum(d_rad, d_end)
 
@@ -78,7 +91,18 @@ def primitives(d, g):
         rocker=dict(kind="zcyl", c=pts["R"], r=15.0, hz=33.0),
         shock=dict(kind="zcyl", c=pts["M"], r=15.0, hz=22.0),
     )
-    cuts = dict(ht_top=(T, -ax), ht_bot=(B, ax), bb=44.5 - 3.0, pivot=49.0 - 3.0, rocker=33.0 - 3.0, mast_top=m1)
+    cuts = dict(ht_top=(T, -ax), ht_bot=(B, ax), bb=44.5 - 3.0, pivot=49.0 - 3.0, rocker=33.0 - 3.0, mast_top=m1, pivot_r=24.5)
+    if d.get("rev6"):
+        # V6: no forward core bulge (it sat in the shock's space); the lower mast widens toward the BB instead,
+        # and the main-pivot boss is a slim sleeve boss because the bushes live in the swingarm eyes.
+        tm = (m1 - m0) / np.linalg.norm(m1 - m0)
+        prim["core"] = dict(kind="tube", a=m0 + tm * (-78.0 / tm[1]), b=m0 + tm * (40.0 / tm[1]), hd=d["seat_mast_depth"] / 2, hw=(36.0, sec.get("sm_hw", 28.0)))
+        prim["pivot"] = dict(kind="zcyl", c=pts["P"], r=18.0, hz=32.0)
+        prim["rocker"] = dict(kind="zcyl", c=pts["R"], r=sec.get("rocker_r", 15.0), hz=34.0)
+        cuts.update(pivot=29.0, pivot_r=16.5, rocker=31.0)
+    if d.get("shell_inset"):
+        for p in prim.values():
+            p["acc"] = True
     return prim, cuts
 
 
@@ -86,7 +110,7 @@ def make_sdf(prim, blend=9.0):
     def sdf(P):
         d = None
         for name, p in prim.items():
-            v = sd_tube(P, p["a"], p["b"], p["hd"], p["hw"]) if p["kind"] == "tube" else sd_zcyl(P, p["c"], p["r"], p["hz"])
+            v = sd_tube(P, p["a"], p["b"], p["hd"], p["hw"], p.get("acc", False)) if p["kind"] == "tube" else sd_zcyl(P, p["c"], p["r"], p["hz"])
             d = v if d is None else smin(d, v, blend)
         return d
     return sdf
@@ -94,14 +118,27 @@ def make_sdf(prim, blend=9.0):
 
 def owner_fields(prim, P):
     names = list(prim.keys())
-    D = np.stack([sd_tube(P, p["a"], p["b"], p["hd"], p["hw"]) if p["kind"] == "tube" else sd_zcyl(P, p["c"], p["r"], p["hz"])
+    D = np.stack([sd_tube(P, p["a"], p["b"], p["hd"], p["hw"], p.get("acc", False)) if p["kind"] == "tube" else sd_zcyl(P, p["c"], p["r"], p["hz"])
                   for p in prim.values()], 1)
     return names, D
 
 
-def build_mesh(d, g, h):
+def build_mesh(d, g, h, layups=None, inset=None):
+    """Triangulated shell reference surface.
+
+    inset=None follows d["shell_inset"]. With "half_thickness" the solid-model surface is treated as the tool
+    (outer) surface and the mesh is placed half a local laminate thickness inside it, i.e. on the laminate mid-plane."""
     prim, cuts = primitives(d, g)
     sdf = make_sdf(prim)
+    inset = d.get("shell_inset") if inset is None else inset
+    offset, s_ref = None, 0.0
+    if inset == "half_thickness":
+        lay = layups or d.get("layups") or base_layups()
+        half = {z: 0.5 * lam.thickness(lay[z]) for z in lay}
+        s_ref = half["boss"]
+        def offset(P):
+            zone = classify_points(d, g, P, prim)[0]
+            return np.array([half[z] for z in zone])
     T, B = g["HT_top"], g["HT_bot"]; ax = g["steer_axis"]
     m1 = np.asarray(d["seat_mast"][1], float); m0 = np.asarray(d["seat_mast"][0], float)
     tm = (m1 - m0) / np.linalg.norm(m1 - m0)
@@ -114,25 +151,28 @@ def build_mesh(d, g, h):
         on_ht = (r_ax < 46.0) & (np.abs(V[:, 2]) < 46.0)
         k &= ~(on_ht & (((xy - T) @ (-ax)) > 0.0))                         # above head-tube top
         k &= ~(on_ht & (((xy - B) @ ax) > 0.0))                            # below head-tube bottom
-        k &= ~((np.hypot(xy[:, 0], xy[:, 1]) < 27.5) & (np.abs(V[:, 2]) > cuts["bb"]))
-        k &= ~((np.hypot(*(xy - P_).T) < 24.5) & (np.abs(V[:, 2]) > cuts["pivot"]))
-        k &= ~((np.hypot(*(xy - R_).T) < 13.5) & (np.abs(V[:, 2]) > cuts["rocker"]))
+        k &= ~((np.hypot(xy[:, 0], xy[:, 1]) < 27.5 - s_ref) & (np.abs(V[:, 2]) > cuts["bb"] - s_ref))
+        k &= ~((np.hypot(*(xy - P_).T) < cuts["pivot_r"] - s_ref) & (np.abs(V[:, 2]) > cuts["pivot"] - s_ref))
+        k &= ~((np.hypot(*(xy - R_).T) < prim["rocker"]["r"] - 1.5 - s_ref) & (np.abs(V[:, 2]) > cuts["rocker"] - s_ref))
         r_m = np.abs((xy - m1) @ np.array([-tm[1], tm[0]]))
         k &= ~((r_m < 40.0) & (((xy - m1) @ tm) > 0.0))                    # above seat-mast top
         return k
     lo = np.array([-140.0, -80.0, -56.0]); hi = np.array([g["HT_bot"][0] + 60.0, g["HT_top"][1] + 45.0, 56.0])
-    V, F = mesh_from_sdf(sdf, (lo, hi), h, clip=keep)
+    V, F = mesh_from_sdf(sdf, (lo, hi), h, clip=keep, offset=offset)
     return V, F, prim
 
 
 def classify(d, g, V, F, prim):
     """Zone per element and laminate 0-degree direction."""
-    c = V[F].mean(1)
+    return classify_points(d, g, V[F].mean(1), prim)
+
+
+def classify_points(d, g, c, prim):
     names, D = owner_fields(prim, c)
     own = np.array(names)[D.argmin(1)]
     T, B = g["HT_top"], g["HT_bot"]; ax = g["steer_axis"]
-    zone = np.empty(len(F), dtype=object)
-    xmat = np.zeros((len(F), 3))
+    zone = np.empty(len(c), dtype=object)
+    xmat = np.zeros((len(c), 3))
     dirs = {}
     for n, p in prim.items():
         if p["kind"] == "tube":
@@ -156,6 +196,9 @@ def classify(d, g, V, F, prim):
         zone[m] = "boss"
     m = (np.hypot(xy[:, 0], xy[:, 1]) < 46.0)
     zone[m] = "boss"
+    if d.get("mast_pad"):                                # V6: extra plies on the mast walls around the rocker boss
+        Rp = np.asarray(d["pts"]["R"], float)
+        zone[(np.hypot(*(xy - Rp).T) < d["mast_pad"]) & (own != "rocker")] = "mast_pad"
     # seat-mast / top-tube junction region uses the core laminate
     tt0 = np.asarray(d["top_tube_end"], float)
     m = (np.hypot(*(xy - tt0).T) < 55.0) & np.isin(zone, ["top_tube", "seat_mast"])
@@ -164,9 +207,9 @@ def classify(d, g, V, F, prim):
 
 
 def build_model(d, g, h, layups=None):
-    V, F, prim = build_mesh(d, g, h)
-    zone, xmat, own = classify(d, g, V, F, prim)
     layups = layups or d.get("layups") or base_layups()
+    V, F, prim = build_mesh(d, g, h, layups)
+    zone, xmat, own = classify(d, g, V, F, prim)
     order = list(layups.keys())
     props = [lam.shellprop(layups[z]) for z in order]
     idx = np.array([order.index(z) for z in zone])
@@ -179,7 +222,7 @@ def build_model(d, g, h, layups=None):
     xy = V[:, :2]
     def near(pt, r, nodes):
         return nodes[np.hypot(*(xy[nodes] - pt).T) < r]
-    rings = dict(HTU=near(T, 45.0, b), HTL=near(B, 45.0, b), BB=near(np.zeros(2), 33.0, b), PIV=near(P_, 30.0, b), ROCK=near(R_, 19.0, b))
+    rings = dict(HTU=near(T, 45.0, b), HTL=near(B, 45.0, b), BB=near(np.zeros(2), 33.0, b), PIV=near(P_, 22.0 if d.get("rev6") else 30.0, b), ROCK=near(R_, prim["rocker"]["r"] + 4.0, b))
     allv = np.arange(len(V))
     lug = allv[(np.hypot(*(xy - M_).T) < 13.0)]
     rings["SHK"] = lug

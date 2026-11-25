@@ -88,10 +88,10 @@ def _fi(name, key, h=7.0):
     return m, fi * ULT
 
 
-def fig_fi():
+def fig_fi(names=("v2", "v5"), out="front_triangle_strain_index.png"):
     fig, axs = plt.subplots(2, 2, figsize=(14, 11.5), dpi=110)
     for j, key in enumerate(("LC3", "LC2d")):
-        for i, name in enumerate(("v2", designs.FINAL)):
+        for i, name in enumerate(names):
             m, fi = _fi(name, key)
             V, F = m.V, m.F
             side = V[F].mean(1)[:, 2] < 0
@@ -100,12 +100,12 @@ def fig_fi():
             a.set_aspect("equal"); a.set_xlabel("x (mm)"); a.set_ylabel("y (mm)")
             a.set_title(f"{name.upper()} — {key}: strain index at ultimate load (1.0 = design limit), right-hand side", loc="left", fontsize=9.5)
             cb = fig.colorbar(tp, ax=a, shrink=0.55); cb.ax.axhline(1.0, color="white", lw=1.5)
-    fig.tight_layout(); fig.savefig(os.path.join(FIG, "front_triangle_strain_index.png")); plt.close(fig)
+    fig.tight_layout(); fig.savefig(os.path.join(FIG, out)); plt.close(fig)
 
 
-def fig_swingarm():
+def fig_swingarm(names=("v3", "v5"), out="swingarm_strain_index.png"):
     fig, axs = plt.subplots(2, 1, figsize=(12, 8.2), dpi=110)
-    for a, name in zip(axs, ("v3", designs.FINAL)):
+    for a, name in zip(axs, names):
         d = getattr(designs, name)(); g = frame_geometry(d); d["pts"]["A"] = tuple(g["rear_axle"]); sw = Linkage(d["pts"], 75).sweep()
         m = SW.build(d, g, 4.5)
         L, info = SW.case_loads(d, g, sw, [c for c in CASES if c["key"] == "LC3"][0])
@@ -122,7 +122,7 @@ def fig_swingarm():
         a.set_aspect("equal"); a.set_xlabel("x (mm)"); a.set_ylabel("z (mm, left +)")
         a.set_title(f"Swingarm {name.upper()} — sideways landing (LC3): strain index at ultimate load, plan view", loc="left", fontsize=9.5)
         fig.colorbar(tp, ax=a, shrink=0.8)
-    fig.tight_layout(); fig.savefig(os.path.join(FIG, "swingarm_strain_index.png")); plt.close(fig)
+    fig.tight_layout(); fig.savefig(os.path.join(FIG, out)); plt.close(fig)
 
 
 def fig_revisions(summary):
@@ -137,6 +137,9 @@ def fig_revisions(summary):
     ax[0].bar(x - w, ft, w, color=INK, label="front triangle"); ax[0].bar(x, sa, w, color=C3, label="swingarm"); ax[0].bar(x + w, jm, w, color=ACCENT, label="worst joint")
     ax[0].axhline(1.0, color=MUTED, lw=1, ls="--"); ax[0].set_xticks(x, names); ax[0].set_ylim(0, 2.2)
     ax[0].set_ylabel("demand ÷ capacity at ultimate (≤ 1 passes)"); ax[0].set_title("Worst structural utilisation", loc="left"); ax[0].legend(frameon=False, fontsize=8)
+    if "V6" in names:
+        ax[0].text(0.02, 0.02, "V1–V5: idealised model (side view only, shell on the modelled surface)\nV6: 3-D packaged, shell on the laminate mid-plane",
+                   transform=ax[0].transAxes, fontsize=7.5, color=MUTED, va="bottom")
     for xi, v in zip(x + w, jm):
         if v > 2.2:
             ax[0].text(xi, 2.1, f"{v:.1f}", ha="center", fontsize=8, color=ACCENT)
@@ -174,6 +177,9 @@ def cad_exports():
     travel = sw["travel"][-1]
     states = [("top-out", 0.0), ("sag (25 %)", 0.25 * travel), ("bottom-out", travel)]
     zlat = dict(BB=0, P=38, R=36, M=0, S=50, L=50, K=0, A=78.5)
+    v6 = bool(d.get("rev6"))
+    zv6 = dict(P="-38.75 (drive-side eye centre) / +46.5 (non-drive)", R="±36.0 (rocker plate centres)", S="±51.0 (link centres)", L="±51.0 (link centres)",
+               A="±78.5 (dropout inner faces)")
     rows = [["point", "description", "state", "x_mm", "y_mm", "z_mm (half-spacing; 0 = on centre plane)"]]
     desc = dict(BB="bottom-bracket centre (origin)", P="main pivot axis", R="rocker pivot axis", M="shock eye on front triangle",
                 S="push-link eye on swingarm", L="push-link eye on rocker", K="shock eye on rocker", A="rear axle")
@@ -181,7 +187,7 @@ def cad_exports():
         q = interp_pose(sw, z)
         cur = dict(BB=np.zeros(2), P=np.array(d["pts"]["P"]), R=np.array(d["pts"]["R"]), M=np.array(d["pts"]["M"]), S=q["S"], L=q["L"], K=q["K"], A=q["A"])
         for k in ("BB", "P", "R", "M", "S", "L", "K", "A"):
-            rows.append([k, desc[k], st, f"{cur[k][0]:.1f}", f"{cur[k][1]:.1f}", f"±{zlat[k]:.1f}" if zlat[k] else "0.0"])
+            rows.append([k, desc[k], st, f"{cur[k][0]:.1f}", f"{cur[k][1]:.1f}", zv6[k] if (v6 and k in zv6) else (f"±{zlat[k]:.1f}" if zlat[k] else "0.0")])
     fixed = [("HT_top", "head-tube top centre (stack/reach point)", g["HT_top"]), ("HT_bottom", "head-tube bottom centre", g["HT_bot"]),
              ("crown_race", "fork crown-race seat", g["crown_race"]), ("front_axle", "front axle, fork at top-out", g["front_axle"]),
              ("idler", "idler sprocket centre (14 T)", np.array(d["idler"]["centre"])),
@@ -199,7 +205,8 @@ def cad_exports():
     msp = doc.modelspace()
     for lay, col in (("FRAME", 7), ("SWINGARM_TOPOUT", 5), ("SWINGARM_SAG", 3), ("SWINGARM_BOTTOMOUT", 1), ("WHEELS", 8), ("FORK", 7), ("POINTS", 2), ("GROUND", 8)):
         doc.layers.add(lay, color=col)
-    for nm, depth in (("down_tube", d["down_tube_depth"]), ("top_tube", d["top_tube_depth"]), ("seat_mast", d["seat_mast_depth"]), ("head_tube", 66.0)):
+    for nm, depth in (("down_tube", d["down_tube_depth"]), ("top_tube", d["top_tube_depth"]), ("seat_mast", d["seat_mast_depth"]),
+                      ("head_tube", 2 * d.get("sections", {}).get("ht_r", 33.0))):
         a, b = L[nm]
         poly = tube_poly(a, b, depth)
         msp.add_lwpolyline([tuple(p) for p in poly], close=True, dxfattribs=dict(layer="FRAME"))
@@ -232,8 +239,9 @@ def cad_exports():
             fh.write(b"DH frame study - idealised analysis surface, mm".ljust(80, b" ")); fh.write(struct.pack("<I", len(F)))
             for i in range(len(F)):
                 fh.write(struct.pack("<12fH", *n[i], *V[F[i, 0]], *V[F[i, 1]], *V[F[i, 2]], 0))
-    V, F, _ = FE.build_mesh(d, g, 8.0); stl(os.path.join(CAD, f"front_triangle_surface_{d['name']}.stl"), V, F)
-    m = SW.build(d, g, 6.0); stl(os.path.join(CAD, f"swingarm_surface_{d['name']}.stl"), m.V, m.F)
+    kind = "analysis_midplane" if d.get("shell_inset") else "surface"      # V6: the solids are in cad/V6; these are the analysed mid-planes
+    V, F, _ = FE.build_mesh(d, g, 8.0); stl(os.path.join(CAD, f"front_triangle_{kind}_{d['name']}.stl"), V, F)
+    m = SW.build(d, g, 6.0); stl(os.path.join(CAD, f"swingarm_{kind}_{d['name']}.stl"), m.V, m.F)
     draw_side(d, g, sw, os.path.join(FIG, f"side_view_{d['name']}.png"))
     import shutil
     shutil.copy(os.path.join(ROOT, "results", d["name"], "suspension_curves.png"), os.path.join(FIG, f"suspension_curves_{d['name']}.png"))
@@ -245,5 +253,9 @@ if __name__ == "__main__":
     ld = fig_loads(); json.dump(ld, open(os.path.join(ROOT, "results", "landing_simulation.json"), "w"), indent=1); print("loads")
     fig_revisions(summary); fig_convergence(); print("rev/conv")
     cad_exports(); print("cad")
-    fig_fi(); print("fi")
-    fig_swingarm(); print("swingarm")
+    if designs.FINAL == "v5":
+        fig_fi(); fig_swingarm()
+    else:                                    # the V2/V5 and V3/V5 figures of the main report stay as they are
+        fig_fi(("v5", designs.FINAL), f"front_triangle_strain_index_{designs.FINAL.upper()}.png")
+        fig_swingarm(("v5", designs.FINAL), f"swingarm_strain_index_{designs.FINAL.upper()}.png")
+    print("strain-index figures")

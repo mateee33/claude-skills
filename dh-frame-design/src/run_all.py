@@ -24,8 +24,13 @@ def main(h_ft=6.0, h_sw=4.0):
         json.dump(so, open(os.path.join(od, "swingarm_h%.1f.json" % h_sw), "w"), indent=1, default=float)
         np.savez(os.path.join(od, "_swingarm_mesh.npz"), V=ms.V, F=ms.F, zone=np.array(ms.zone, dtype=str))
         mx = LC.interface_maxima(st, so)
-        rows = LC.checks(mx, d.get("shock_mount", "bonded"))
-        items, total = LC.mass_budget(st["mass_total"], so["mass_total"], d.get("shock_mount", "bonded"))
+        if d.get("rev6"):
+            cad = json.load(open(os.path.join(od, "clearance_3d.json")))["info"]["masses_kg"]
+            rows = LC.checks_v6(mx, getattr(designs, name)())
+            items, total = LC.mass_budget_v6(st["mass_total"], so["mass_total"], cad)
+        else:
+            rows = LC.checks(mx, d.get("shock_mount", "bonded"))
+            items, total = LC.mass_budget(st["mass_total"], so["mass_total"], d.get("shock_mount", "bonded"))
         ft = {k: c["governing"] for k, c in st["cases"].items()}
         sa = {k: c["governing"] for k, c in so["cases"].items()}
         worst_ft = max(ft.items(), key=lambda kv: kv[1]["fi"]); worst_sa = max(sa.items(), key=lambda kv: kv[1]["fi"])
@@ -54,7 +59,7 @@ def main(h_ft=6.0, h_sw=4.0):
     # benchmarks: G1 (estimated curves) and G3 (geometry)
     bm = RSu.benchmark_g1()
     summary["benchmarks_g1"] = {k: {kk: (vv if not isinstance(vv, np.ndarray) else None) for kk, vv in v.items() if kk not in ("z", "f")} for k, v in bm.items()}
-    d = designs.v5(); from geometry import frame_geometry; g = frame_geometry(d)
+    d = getattr(designs, designs.FINAL)(); from geometry import frame_geometry; g = frame_geometry(d)
     summary["g3"] = dict(custom=Ld.g3_metric(d["head_angle"], d["fork_axle_to_crown"], d["fork_offset"], g["head_tube_len"]),
                          sender=Ld.g3_metric(B.SENDER["head_angle"], B.SENDER["fork_a2c"], B.SENDER["fork_offset"], B.SENDER["head_tube"]),
                          supreme=Ld.g3_metric(B.SUPREME["head_angle"], B.SUPREME["fork_a2c"], B.SUPREME["fork_offset"], B.SUPREME["head_tube"]),

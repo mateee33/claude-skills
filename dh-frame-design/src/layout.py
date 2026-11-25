@@ -7,7 +7,7 @@ from geometry import frame_geometry
 def structure_lines(d, g):
     ax = g["steer_axis"]
     T, B = g["HT_top"], g["HT_bot"]
-    dt_top = B - 38.0 * ax            # down-tube axis meets the head tube 38 mm above its lower end
+    dt_top = B - d.get("dt_ht_offset", 38.0) * ax   # down-tube axis meets the steering axis this far above the head-tube bottom
     tt_top = T + 30.0 * ax            # top-tube axis meets the head tube 30 mm below its upper end
     return dict(head_tube=(T, B),
                 down_tube=(np.array(d["down_tube_end"], float), dt_top),

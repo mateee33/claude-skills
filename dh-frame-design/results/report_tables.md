@@ -79,12 +79,13 @@ Index = largest ply strain ÷ design strain limit, at 1.5 × limit load, average
 | V3 | 3.48 → 2.17 | 229 psi / 15.8 bar (69% of max) | 2.31 | 8.08 | 0.439 m | 19.9 kN | 0.84 (LC2d, boss) | 1.07 (LC3) | -79% | 4.37 kg | FAIL |
 | V4 | 3.48 → 2.17 | 229 psi / 15.8 bar (69% of max) | 2.31 | 8.08 | 0.439 m | 19.9 kN | 0.84 (LC2d, boss) | 0.72 (LC3) | -79% | 4.59 kg | FAIL |
 | V5 | 3.48 → 2.17 | 229 psi / 15.8 bar (69% of max) | 2.31 | 8.08 | 0.439 m | 19.9 kN | 0.84 (LC2d, boss) | 0.72 (LC3) | +17% | 4.61 kg | pass |
+| V6 | 3.48 → 2.17 | 229 psi / 15.8 bar (69% of max) | 2.31 | 8.08 | 0.439 m | 19.9 kN | 0.82 (LC2d, ht_junction) | 0.69 (LC3) | +17% | 4.77 kg | pass |
 
 ### Table F. Goal G1 with the same shock model and rule (25 % sag, 68 kg)
 
 | Bike | Leverage curve used | Tokens | Pressure | a. Force at 60 % ÷ W (2.3–2.8) | b. Force at 100 % ÷ W (≥ 6.5) | c. Spring drop height (≥ 0.50 m) | d. Pressure ÷ max (≤ 75 %) |
 |---|---|---|---|---|---|---|---|
-| Custom V5 | simulated from the hard points, 3.48 → 2.17 | 2 | 229 psi | 2.31 | 8.08 | 0.439 | 69% |
+| Custom V5 and V6 (same linkage) | simulated from the hard points, 3.48 → 2.17 | 2 | 229 psi | 2.31 | 8.08 | 0.439 | 69% |
 | Sender CFR, 32.7 % chip | estimated, 3.23 → 2.17 | 0 | 214 psi | 2.11 | 7.44 | 0.400 | 65% |
 | Sender CFR, 37 % chip | estimated, 3.33 → 2.10 | 0 | 222 psi | 2.17 | 7.88 | 0.414 | 67% |
 | Supreme DH V5 | estimated, 3.45 → 2.60 | 0 | 231 psi | 2.02 | 5.52 | 0.403 | 70% |

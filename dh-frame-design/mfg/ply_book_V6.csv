@@ -1,0 +1,319 @@
+part,zone,zone description,ply no. (1 = bladder side),material,"orientation (deg, 0 = along the member axis; fabric laid at +/-45)",cured ply thickness mm,cumulative thickness mm
+FT-001 front triangle,down_tube,"Down tube, between the head-tube junction and the BB core",1,"Toray T700S-12K/2510 plain weave, 190 g/m2, 0.218 mm cured",+/-45,0.218,0.218
+FT-001 front triangle,down_tube,"Down tube, between the head-tube junction and the BB core",2,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,0.370
+FT-001 front triangle,down_tube,"Down tube, between the head-tube junction and the BB core",3,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,0.522
+FT-001 front triangle,down_tube,"Down tube, between the head-tube junction and the BB core",4,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+45,0.152,0.674
+FT-001 front triangle,down_tube,"Down tube, between the head-tube junction and the BB core",5,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",-45,0.152,0.826
+FT-001 front triangle,down_tube,"Down tube, between the head-tube junction and the BB core",6,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,0.978
+FT-001 front triangle,down_tube,"Down tube, between the head-tube junction and the BB core",7,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,1.130
+FT-001 front triangle,down_tube,"Down tube, between the head-tube junction and the BB core",8,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+45,0.152,1.282
+FT-001 front triangle,down_tube,"Down tube, between the head-tube junction and the BB core",9,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",-45,0.152,1.434
+FT-001 front triangle,down_tube,"Down tube, between the head-tube junction and the BB core",10,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+90,0.152,1.586
+FT-001 front triangle,down_tube,"Down tube, between the head-tube junction and the BB core",11,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+90,0.152,1.738
+FT-001 front triangle,down_tube,"Down tube, between the head-tube junction and the BB core",12,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",-45,0.152,1.890
+FT-001 front triangle,down_tube,"Down tube, between the head-tube junction and the BB core",13,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+45,0.152,2.042
+FT-001 front triangle,down_tube,"Down tube, between the head-tube junction and the BB core",14,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,2.194
+FT-001 front triangle,down_tube,"Down tube, between the head-tube junction and the BB core",15,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,2.346
+FT-001 front triangle,down_tube,"Down tube, between the head-tube junction and the BB core",16,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",-45,0.152,2.498
+FT-001 front triangle,down_tube,"Down tube, between the head-tube junction and the BB core",17,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+45,0.152,2.650
+FT-001 front triangle,down_tube,"Down tube, between the head-tube junction and the BB core",18,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,2.802
+FT-001 front triangle,down_tube,"Down tube, between the head-tube junction and the BB core",19,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,2.954
+FT-001 front triangle,down_tube,"Down tube, between the head-tube junction and the BB core",20,"Toray T700S-12K/2510 plain weave, 190 g/m2, 0.218 mm cured",+/-45,0.218,3.172
+FT-001 front triangle,top_tube,"Top tube, between the head-tube junction and the seat-mast junction",1,"Toray T700S-12K/2510 plain weave, 190 g/m2, 0.218 mm cured",+/-45,0.218,0.218
+FT-001 front triangle,top_tube,"Top tube, between the head-tube junction and the seat-mast junction",2,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,0.370
+FT-001 front triangle,top_tube,"Top tube, between the head-tube junction and the seat-mast junction",3,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,0.522
+FT-001 front triangle,top_tube,"Top tube, between the head-tube junction and the seat-mast junction",4,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+45,0.152,0.674
+FT-001 front triangle,top_tube,"Top tube, between the head-tube junction and the seat-mast junction",5,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",-45,0.152,0.826
+FT-001 front triangle,top_tube,"Top tube, between the head-tube junction and the seat-mast junction",6,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,0.978
+FT-001 front triangle,top_tube,"Top tube, between the head-tube junction and the seat-mast junction",7,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,1.130
+FT-001 front triangle,top_tube,"Top tube, between the head-tube junction and the seat-mast junction",8,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+90,0.152,1.282
+FT-001 front triangle,top_tube,"Top tube, between the head-tube junction and the seat-mast junction",9,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+90,0.152,1.434
+FT-001 front triangle,top_tube,"Top tube, between the head-tube junction and the seat-mast junction",10,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,1.586
+FT-001 front triangle,top_tube,"Top tube, between the head-tube junction and the seat-mast junction",11,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,1.738
+FT-001 front triangle,top_tube,"Top tube, between the head-tube junction and the seat-mast junction",12,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",-45,0.152,1.890
+FT-001 front triangle,top_tube,"Top tube, between the head-tube junction and the seat-mast junction",13,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+45,0.152,2.042
+FT-001 front triangle,top_tube,"Top tube, between the head-tube junction and the seat-mast junction",14,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,2.194
+FT-001 front triangle,top_tube,"Top tube, between the head-tube junction and the seat-mast junction",15,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,2.346
+FT-001 front triangle,top_tube,"Top tube, between the head-tube junction and the seat-mast junction",16,"Toray T700S-12K/2510 plain weave, 190 g/m2, 0.218 mm cured",+/-45,0.218,2.564
+FT-001 front triangle,seat_mast,"Seat mast, between the rocker boss and the BB core",1,"Toray T700S-12K/2510 plain weave, 190 g/m2, 0.218 mm cured",+/-45,0.218,0.218
+FT-001 front triangle,seat_mast,"Seat mast, between the rocker boss and the BB core",2,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,0.370
+FT-001 front triangle,seat_mast,"Seat mast, between the rocker boss and the BB core",3,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,0.522
+FT-001 front triangle,seat_mast,"Seat mast, between the rocker boss and the BB core",4,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+45,0.152,0.674
+FT-001 front triangle,seat_mast,"Seat mast, between the rocker boss and the BB core",5,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",-45,0.152,0.826
+FT-001 front triangle,seat_mast,"Seat mast, between the rocker boss and the BB core",6,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,0.978
+FT-001 front triangle,seat_mast,"Seat mast, between the rocker boss and the BB core",7,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+90,0.152,1.130
+FT-001 front triangle,seat_mast,"Seat mast, between the rocker boss and the BB core",8,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+45,0.152,1.282
+FT-001 front triangle,seat_mast,"Seat mast, between the rocker boss and the BB core",9,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",-45,0.152,1.434
+FT-001 front triangle,seat_mast,"Seat mast, between the rocker boss and the BB core",10,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,1.586
+FT-001 front triangle,seat_mast,"Seat mast, between the rocker boss and the BB core",11,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,1.738
+FT-001 front triangle,seat_mast,"Seat mast, between the rocker boss and the BB core",12,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",-45,0.152,1.890
+FT-001 front triangle,seat_mast,"Seat mast, between the rocker boss and the BB core",13,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+45,0.152,2.042
+FT-001 front triangle,seat_mast,"Seat mast, between the rocker boss and the BB core",14,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+90,0.152,2.194
+FT-001 front triangle,seat_mast,"Seat mast, between the rocker boss and the BB core",15,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,2.346
+FT-001 front triangle,seat_mast,"Seat mast, between the rocker boss and the BB core",16,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",-45,0.152,2.498
+FT-001 front triangle,seat_mast,"Seat mast, between the rocker boss and the BB core",17,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+45,0.152,2.650
+FT-001 front triangle,seat_mast,"Seat mast, between the rocker boss and the BB core",18,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,2.802
+FT-001 front triangle,seat_mast,"Seat mast, between the rocker boss and the BB core",19,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,2.954
+FT-001 front triangle,seat_mast,"Seat mast, between the rocker boss and the BB core",20,"Toray T700S-12K/2510 plain weave, 190 g/m2, 0.218 mm cured",+/-45,0.218,3.172
+FT-001 front triangle,head_tube,Head tube barrel,1,"Toray T700S-12K/2510 plain weave, 190 g/m2, 0.218 mm cured",+/-45,0.218,0.218
+FT-001 front triangle,head_tube,Head tube barrel,2,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,0.370
+FT-001 front triangle,head_tube,Head tube barrel,3,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+90,0.152,0.522
+FT-001 front triangle,head_tube,Head tube barrel,4,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+45,0.152,0.674
+FT-001 front triangle,head_tube,Head tube barrel,5,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",-45,0.152,0.826
+FT-001 front triangle,head_tube,Head tube barrel,6,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,0.978
+FT-001 front triangle,head_tube,Head tube barrel,7,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+90,0.152,1.130
+FT-001 front triangle,head_tube,Head tube barrel,8,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+45,0.152,1.282
+FT-001 front triangle,head_tube,Head tube barrel,9,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",-45,0.152,1.434
+FT-001 front triangle,head_tube,Head tube barrel,10,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,1.586
+FT-001 front triangle,head_tube,Head tube barrel,11,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+90,0.152,1.738
+FT-001 front triangle,head_tube,Head tube barrel,12,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+45,0.152,1.890
+FT-001 front triangle,head_tube,Head tube barrel,13,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",-45,0.152,2.042
+FT-001 front triangle,head_tube,Head tube barrel,14,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,2.194
+FT-001 front triangle,head_tube,Head tube barrel,15,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+90,0.152,2.346
+FT-001 front triangle,head_tube,Head tube barrel,16,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+45,0.152,2.498
+FT-001 front triangle,head_tube,Head tube barrel,17,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",-45,0.152,2.650
+FT-001 front triangle,head_tube,Head tube barrel,18,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,2.802
+FT-001 front triangle,head_tube,Head tube barrel,19,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+90,0.152,2.954
+FT-001 front triangle,head_tube,Head tube barrel,20,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+45,0.152,3.106
+FT-001 front triangle,head_tube,Head tube barrel,21,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",-45,0.152,3.258
+FT-001 front triangle,head_tube,Head tube barrel,22,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,3.410
+FT-001 front triangle,head_tube,Head tube barrel,23,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+90,0.152,3.562
+FT-001 front triangle,head_tube,Head tube barrel,24,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,3.714
+FT-001 front triangle,head_tube,Head tube barrel,25,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,3.866
+FT-001 front triangle,head_tube,Head tube barrel,26,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+90,0.152,4.018
+FT-001 front triangle,head_tube,Head tube barrel,27,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,4.170
+FT-001 front triangle,head_tube,Head tube barrel,28,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",-45,0.152,4.322
+FT-001 front triangle,head_tube,Head tube barrel,29,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+45,0.152,4.474
+FT-001 front triangle,head_tube,Head tube barrel,30,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+90,0.152,4.626
+FT-001 front triangle,head_tube,Head tube barrel,31,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,4.778
+FT-001 front triangle,head_tube,Head tube barrel,32,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",-45,0.152,4.930
+FT-001 front triangle,head_tube,Head tube barrel,33,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+45,0.152,5.082
+FT-001 front triangle,head_tube,Head tube barrel,34,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+90,0.152,5.234
+FT-001 front triangle,head_tube,Head tube barrel,35,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,5.386
+FT-001 front triangle,head_tube,Head tube barrel,36,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",-45,0.152,5.538
+FT-001 front triangle,head_tube,Head tube barrel,37,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+45,0.152,5.690
+FT-001 front triangle,head_tube,Head tube barrel,38,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+90,0.152,5.842
+FT-001 front triangle,head_tube,Head tube barrel,39,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,5.994
+FT-001 front triangle,head_tube,Head tube barrel,40,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",-45,0.152,6.146
+FT-001 front triangle,head_tube,Head tube barrel,41,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+45,0.152,6.298
+FT-001 front triangle,head_tube,Head tube barrel,42,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+90,0.152,6.450
+FT-001 front triangle,head_tube,Head tube barrel,43,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,6.602
+FT-001 front triangle,head_tube,Head tube barrel,44,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",-45,0.152,6.754
+FT-001 front triangle,head_tube,Head tube barrel,45,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+45,0.152,6.906
+FT-001 front triangle,head_tube,Head tube barrel,46,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+90,0.152,7.058
+FT-001 front triangle,head_tube,Head tube barrel,47,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,7.210
+FT-001 front triangle,head_tube,Head tube barrel,48,"Toray T700S-12K/2510 plain weave, 190 g/m2, 0.218 mm cured",+/-45,0.218,7.428
+FT-001 front triangle,ht_junction,Top- and down-tube walls within 140 mm of the steering axis,1,"Toray T700S-12K/2510 plain weave, 190 g/m2, 0.218 mm cured",+/-45,0.218,0.218
+FT-001 front triangle,ht_junction,Top- and down-tube walls within 140 mm of the steering axis,2,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,0.370
+FT-001 front triangle,ht_junction,Top- and down-tube walls within 140 mm of the steering axis,3,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,0.522
+FT-001 front triangle,ht_junction,Top- and down-tube walls within 140 mm of the steering axis,4,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+45,0.152,0.674
+FT-001 front triangle,ht_junction,Top- and down-tube walls within 140 mm of the steering axis,5,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",-45,0.152,0.826
+FT-001 front triangle,ht_junction,Top- and down-tube walls within 140 mm of the steering axis,6,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,0.978
+FT-001 front triangle,ht_junction,Top- and down-tube walls within 140 mm of the steering axis,7,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+90,0.152,1.130
+FT-001 front triangle,ht_junction,Top- and down-tube walls within 140 mm of the steering axis,8,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+45,0.152,1.282
+FT-001 front triangle,ht_junction,Top- and down-tube walls within 140 mm of the steering axis,9,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",-45,0.152,1.434
+FT-001 front triangle,ht_junction,Top- and down-tube walls within 140 mm of the steering axis,10,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,1.586
+FT-001 front triangle,ht_junction,Top- and down-tube walls within 140 mm of the steering axis,11,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,1.738
+FT-001 front triangle,ht_junction,Top- and down-tube walls within 140 mm of the steering axis,12,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+45,0.152,1.890
+FT-001 front triangle,ht_junction,Top- and down-tube walls within 140 mm of the steering axis,13,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",-45,0.152,2.042
+FT-001 front triangle,ht_junction,Top- and down-tube walls within 140 mm of the steering axis,14,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,2.194
+FT-001 front triangle,ht_junction,Top- and down-tube walls within 140 mm of the steering axis,15,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+90,0.152,2.346
+FT-001 front triangle,ht_junction,Top- and down-tube walls within 140 mm of the steering axis,16,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+45,0.152,2.498
+FT-001 front triangle,ht_junction,Top- and down-tube walls within 140 mm of the steering axis,17,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",-45,0.152,2.650
+FT-001 front triangle,ht_junction,Top- and down-tube walls within 140 mm of the steering axis,18,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,2.802
+FT-001 front triangle,ht_junction,Top- and down-tube walls within 140 mm of the steering axis,19,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,2.954
+FT-001 front triangle,ht_junction,Top- and down-tube walls within 140 mm of the steering axis,20,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,3.106
+FT-001 front triangle,ht_junction,Top- and down-tube walls within 140 mm of the steering axis,21,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,3.258
+FT-001 front triangle,ht_junction,Top- and down-tube walls within 140 mm of the steering axis,22,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",-45,0.152,3.410
+FT-001 front triangle,ht_junction,Top- and down-tube walls within 140 mm of the steering axis,23,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+45,0.152,3.562
+FT-001 front triangle,ht_junction,Top- and down-tube walls within 140 mm of the steering axis,24,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+90,0.152,3.714
+FT-001 front triangle,ht_junction,Top- and down-tube walls within 140 mm of the steering axis,25,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,3.866
+FT-001 front triangle,ht_junction,Top- and down-tube walls within 140 mm of the steering axis,26,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",-45,0.152,4.018
+FT-001 front triangle,ht_junction,Top- and down-tube walls within 140 mm of the steering axis,27,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+45,0.152,4.170
+FT-001 front triangle,ht_junction,Top- and down-tube walls within 140 mm of the steering axis,28,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,4.322
+FT-001 front triangle,ht_junction,Top- and down-tube walls within 140 mm of the steering axis,29,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,4.474
+FT-001 front triangle,ht_junction,Top- and down-tube walls within 140 mm of the steering axis,30,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",-45,0.152,4.626
+FT-001 front triangle,ht_junction,Top- and down-tube walls within 140 mm of the steering axis,31,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+45,0.152,4.778
+FT-001 front triangle,ht_junction,Top- and down-tube walls within 140 mm of the steering axis,32,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+90,0.152,4.930
+FT-001 front triangle,ht_junction,Top- and down-tube walls within 140 mm of the steering axis,33,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,5.082
+FT-001 front triangle,ht_junction,Top- and down-tube walls within 140 mm of the steering axis,34,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",-45,0.152,5.234
+FT-001 front triangle,ht_junction,Top- and down-tube walls within 140 mm of the steering axis,35,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+45,0.152,5.386
+FT-001 front triangle,ht_junction,Top- and down-tube walls within 140 mm of the steering axis,36,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,5.538
+FT-001 front triangle,ht_junction,Top- and down-tube walls within 140 mm of the steering axis,37,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,5.690
+FT-001 front triangle,ht_junction,Top- and down-tube walls within 140 mm of the steering axis,38,"Toray T700S-12K/2510 plain weave, 190 g/m2, 0.218 mm cured",+/-45,0.218,5.908
+FT-001 front triangle,core,Seat-mast / top-tube junction and lower mast,1,"Toray T700S-12K/2510 plain weave, 190 g/m2, 0.218 mm cured",+/-45,0.218,0.218
+FT-001 front triangle,core,Seat-mast / top-tube junction and lower mast,2,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,0.370
+FT-001 front triangle,core,Seat-mast / top-tube junction and lower mast,3,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+90,0.152,0.522
+FT-001 front triangle,core,Seat-mast / top-tube junction and lower mast,4,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+45,0.152,0.674
+FT-001 front triangle,core,Seat-mast / top-tube junction and lower mast,5,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",-45,0.152,0.826
+FT-001 front triangle,core,Seat-mast / top-tube junction and lower mast,6,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,0.978
+FT-001 front triangle,core,Seat-mast / top-tube junction and lower mast,7,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+90,0.152,1.130
+FT-001 front triangle,core,Seat-mast / top-tube junction and lower mast,8,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+45,0.152,1.282
+FT-001 front triangle,core,Seat-mast / top-tube junction and lower mast,9,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",-45,0.152,1.434
+FT-001 front triangle,core,Seat-mast / top-tube junction and lower mast,10,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,1.586
+FT-001 front triangle,core,Seat-mast / top-tube junction and lower mast,11,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+90,0.152,1.738
+FT-001 front triangle,core,Seat-mast / top-tube junction and lower mast,12,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+90,0.152,1.890
+FT-001 front triangle,core,Seat-mast / top-tube junction and lower mast,13,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,2.042
+FT-001 front triangle,core,Seat-mast / top-tube junction and lower mast,14,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",-45,0.152,2.194
+FT-001 front triangle,core,Seat-mast / top-tube junction and lower mast,15,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+45,0.152,2.346
+FT-001 front triangle,core,Seat-mast / top-tube junction and lower mast,16,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+90,0.152,2.498
+FT-001 front triangle,core,Seat-mast / top-tube junction and lower mast,17,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,2.650
+FT-001 front triangle,core,Seat-mast / top-tube junction and lower mast,18,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",-45,0.152,2.802
+FT-001 front triangle,core,Seat-mast / top-tube junction and lower mast,19,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+45,0.152,2.954
+FT-001 front triangle,core,Seat-mast / top-tube junction and lower mast,20,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+90,0.152,3.106
+FT-001 front triangle,core,Seat-mast / top-tube junction and lower mast,21,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,3.258
+FT-001 front triangle,core,Seat-mast / top-tube junction and lower mast,22,"Toray T700S-12K/2510 plain weave, 190 g/m2, 0.218 mm cured",+/-45,0.218,3.476
+FT-001 front triangle,boss,"BB shell, main-pivot boss, rocker boss, shock-fitting seat (local build-up)",1,"Toray T700S-12K/2510 plain weave, 190 g/m2, 0.218 mm cured",+/-45,0.218,0.218
+FT-001 front triangle,boss,"BB shell, main-pivot boss, rocker boss, shock-fitting seat (local build-up)",2,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,0.370
+FT-001 front triangle,boss,"BB shell, main-pivot boss, rocker boss, shock-fitting seat (local build-up)",3,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+90,0.152,0.522
+FT-001 front triangle,boss,"BB shell, main-pivot boss, rocker boss, shock-fitting seat (local build-up)",4,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+45,0.152,0.674
+FT-001 front triangle,boss,"BB shell, main-pivot boss, rocker boss, shock-fitting seat (local build-up)",5,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",-45,0.152,0.826
+FT-001 front triangle,boss,"BB shell, main-pivot boss, rocker boss, shock-fitting seat (local build-up)",6,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,0.978
+FT-001 front triangle,boss,"BB shell, main-pivot boss, rocker boss, shock-fitting seat (local build-up)",7,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+90,0.152,1.130
+FT-001 front triangle,boss,"BB shell, main-pivot boss, rocker boss, shock-fitting seat (local build-up)",8,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+45,0.152,1.282
+FT-001 front triangle,boss,"BB shell, main-pivot boss, rocker boss, shock-fitting seat (local build-up)",9,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",-45,0.152,1.434
+FT-001 front triangle,boss,"BB shell, main-pivot boss, rocker boss, shock-fitting seat (local build-up)",10,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,1.586
+FT-001 front triangle,boss,"BB shell, main-pivot boss, rocker boss, shock-fitting seat (local build-up)",11,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+90,0.152,1.738
+FT-001 front triangle,boss,"BB shell, main-pivot boss, rocker boss, shock-fitting seat (local build-up)",12,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+45,0.152,1.890
+FT-001 front triangle,boss,"BB shell, main-pivot boss, rocker boss, shock-fitting seat (local build-up)",13,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",-45,0.152,2.042
+FT-001 front triangle,boss,"BB shell, main-pivot boss, rocker boss, shock-fitting seat (local build-up)",14,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,2.194
+FT-001 front triangle,boss,"BB shell, main-pivot boss, rocker boss, shock-fitting seat (local build-up)",15,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+90,0.152,2.346
+FT-001 front triangle,boss,"BB shell, main-pivot boss, rocker boss, shock-fitting seat (local build-up)",16,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+90,0.152,2.498
+FT-001 front triangle,boss,"BB shell, main-pivot boss, rocker boss, shock-fitting seat (local build-up)",17,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,2.650
+FT-001 front triangle,boss,"BB shell, main-pivot boss, rocker boss, shock-fitting seat (local build-up)",18,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",-45,0.152,2.802
+FT-001 front triangle,boss,"BB shell, main-pivot boss, rocker boss, shock-fitting seat (local build-up)",19,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+45,0.152,2.954
+FT-001 front triangle,boss,"BB shell, main-pivot boss, rocker boss, shock-fitting seat (local build-up)",20,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+90,0.152,3.106
+FT-001 front triangle,boss,"BB shell, main-pivot boss, rocker boss, shock-fitting seat (local build-up)",21,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,3.258
+FT-001 front triangle,boss,"BB shell, main-pivot boss, rocker boss, shock-fitting seat (local build-up)",22,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",-45,0.152,3.410
+FT-001 front triangle,boss,"BB shell, main-pivot boss, rocker boss, shock-fitting seat (local build-up)",23,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+45,0.152,3.562
+FT-001 front triangle,boss,"BB shell, main-pivot boss, rocker boss, shock-fitting seat (local build-up)",24,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+90,0.152,3.714
+FT-001 front triangle,boss,"BB shell, main-pivot boss, rocker boss, shock-fitting seat (local build-up)",25,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,3.866
+FT-001 front triangle,boss,"BB shell, main-pivot boss, rocker boss, shock-fitting seat (local build-up)",26,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",-45,0.152,4.018
+FT-001 front triangle,boss,"BB shell, main-pivot boss, rocker boss, shock-fitting seat (local build-up)",27,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+45,0.152,4.170
+FT-001 front triangle,boss,"BB shell, main-pivot boss, rocker boss, shock-fitting seat (local build-up)",28,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+90,0.152,4.322
+FT-001 front triangle,boss,"BB shell, main-pivot boss, rocker boss, shock-fitting seat (local build-up)",29,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,4.474
+FT-001 front triangle,boss,"BB shell, main-pivot boss, rocker boss, shock-fitting seat (local build-up)",30,"Toray T700S-12K/2510 plain weave, 190 g/m2, 0.218 mm cured",+/-45,0.218,4.692
+SA-001 swingarm,spar,Swingarm lower and upper spars and upright,1,"Toray T700S-12K/2510 plain weave, 190 g/m2, 0.218 mm cured",+/-45,0.218,0.218
+SA-001 swingarm,spar,Swingarm lower and upper spars and upright,2,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,0.370
+SA-001 swingarm,spar,Swingarm lower and upper spars and upright,3,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,0.522
+SA-001 swingarm,spar,Swingarm lower and upper spars and upright,4,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+45,0.152,0.674
+SA-001 swingarm,spar,Swingarm lower and upper spars and upright,5,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",-45,0.152,0.826
+SA-001 swingarm,spar,Swingarm lower and upper spars and upright,6,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,0.978
+SA-001 swingarm,spar,Swingarm lower and upper spars and upright,7,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,1.130
+SA-001 swingarm,spar,Swingarm lower and upper spars and upright,8,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+90,0.152,1.282
+SA-001 swingarm,spar,Swingarm lower and upper spars and upright,9,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,1.434
+SA-001 swingarm,spar,Swingarm lower and upper spars and upright,10,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+45,0.152,1.586
+SA-001 swingarm,spar,Swingarm lower and upper spars and upright,11,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",-45,0.152,1.738
+SA-001 swingarm,spar,Swingarm lower and upper spars and upright,12,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",-45,0.152,1.890
+SA-001 swingarm,spar,Swingarm lower and upper spars and upright,13,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+45,0.152,2.042
+SA-001 swingarm,spar,Swingarm lower and upper spars and upright,14,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,2.194
+SA-001 swingarm,spar,Swingarm lower and upper spars and upright,15,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+90,0.152,2.346
+SA-001 swingarm,spar,Swingarm lower and upper spars and upright,16,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,2.498
+SA-001 swingarm,spar,Swingarm lower and upper spars and upright,17,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,2.650
+SA-001 swingarm,spar,Swingarm lower and upper spars and upright,18,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",-45,0.152,2.802
+SA-001 swingarm,spar,Swingarm lower and upper spars and upright,19,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+45,0.152,2.954
+SA-001 swingarm,spar,Swingarm lower and upper spars and upright,20,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,3.106
+SA-001 swingarm,spar,Swingarm lower and upper spars and upright,21,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,3.258
+SA-001 swingarm,spar,Swingarm lower and upper spars and upright,22,"Toray T700S-12K/2510 plain weave, 190 g/m2, 0.218 mm cured",+/-45,0.218,3.476
+SA-001 swingarm,node,"Pivot eyes, link lugs, dropouts",1,"Toray T700S-12K/2510 plain weave, 190 g/m2, 0.218 mm cured",+/-45,0.218,0.218
+SA-001 swingarm,node,"Pivot eyes, link lugs, dropouts",2,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,0.370
+SA-001 swingarm,node,"Pivot eyes, link lugs, dropouts",3,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,0.522
+SA-001 swingarm,node,"Pivot eyes, link lugs, dropouts",4,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+45,0.152,0.674
+SA-001 swingarm,node,"Pivot eyes, link lugs, dropouts",5,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",-45,0.152,0.826
+SA-001 swingarm,node,"Pivot eyes, link lugs, dropouts",6,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,0.978
+SA-001 swingarm,node,"Pivot eyes, link lugs, dropouts",7,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+90,0.152,1.130
+SA-001 swingarm,node,"Pivot eyes, link lugs, dropouts",8,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+45,0.152,1.282
+SA-001 swingarm,node,"Pivot eyes, link lugs, dropouts",9,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",-45,0.152,1.434
+SA-001 swingarm,node,"Pivot eyes, link lugs, dropouts",10,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,1.586
+SA-001 swingarm,node,"Pivot eyes, link lugs, dropouts",11,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,1.738
+SA-001 swingarm,node,"Pivot eyes, link lugs, dropouts",12,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+90,0.152,1.890
+SA-001 swingarm,node,"Pivot eyes, link lugs, dropouts",13,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,2.042
+SA-001 swingarm,node,"Pivot eyes, link lugs, dropouts",14,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+45,0.152,2.194
+SA-001 swingarm,node,"Pivot eyes, link lugs, dropouts",15,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",-45,0.152,2.346
+SA-001 swingarm,node,"Pivot eyes, link lugs, dropouts",16,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,2.498
+SA-001 swingarm,node,"Pivot eyes, link lugs, dropouts",17,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,2.650
+SA-001 swingarm,node,"Pivot eyes, link lugs, dropouts",18,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",-45,0.152,2.802
+SA-001 swingarm,node,"Pivot eyes, link lugs, dropouts",19,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+45,0.152,2.954
+SA-001 swingarm,node,"Pivot eyes, link lugs, dropouts",20,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,3.106
+SA-001 swingarm,node,"Pivot eyes, link lugs, dropouts",21,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+90,0.152,3.258
+SA-001 swingarm,node,"Pivot eyes, link lugs, dropouts",22,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,3.410
+SA-001 swingarm,node,"Pivot eyes, link lugs, dropouts",23,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,3.562
+SA-001 swingarm,node,"Pivot eyes, link lugs, dropouts",24,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",-45,0.152,3.714
+SA-001 swingarm,node,"Pivot eyes, link lugs, dropouts",25,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+45,0.152,3.866
+SA-001 swingarm,node,"Pivot eyes, link lugs, dropouts",26,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+90,0.152,4.018
+SA-001 swingarm,node,"Pivot eyes, link lugs, dropouts",27,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,4.170
+SA-001 swingarm,node,"Pivot eyes, link lugs, dropouts",28,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",-45,0.152,4.322
+SA-001 swingarm,node,"Pivot eyes, link lugs, dropouts",29,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+45,0.152,4.474
+SA-001 swingarm,node,"Pivot eyes, link lugs, dropouts",30,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,4.626
+SA-001 swingarm,node,"Pivot eyes, link lugs, dropouts",31,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,4.778
+SA-001 swingarm,node,"Pivot eyes, link lugs, dropouts",32,"Toray T700S-12K/2510 plain weave, 190 g/m2, 0.218 mm cured",+/-45,0.218,4.996
+SA-001 swingarm,knee,Lower spar and strut within 50 mm of the yoke junction,1,"Toray T700S-12K/2510 plain weave, 190 g/m2, 0.218 mm cured",+/-45,0.218,0.218
+SA-001 swingarm,knee,Lower spar and strut within 50 mm of the yoke junction,2,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,0.370
+SA-001 swingarm,knee,Lower spar and strut within 50 mm of the yoke junction,3,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,0.522
+SA-001 swingarm,knee,Lower spar and strut within 50 mm of the yoke junction,4,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+45,0.152,0.674
+SA-001 swingarm,knee,Lower spar and strut within 50 mm of the yoke junction,5,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",-45,0.152,0.826
+SA-001 swingarm,knee,Lower spar and strut within 50 mm of the yoke junction,6,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,0.978
+SA-001 swingarm,knee,Lower spar and strut within 50 mm of the yoke junction,7,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+90,0.152,1.130
+SA-001 swingarm,knee,Lower spar and strut within 50 mm of the yoke junction,8,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+45,0.152,1.282
+SA-001 swingarm,knee,Lower spar and strut within 50 mm of the yoke junction,9,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",-45,0.152,1.434
+SA-001 swingarm,knee,Lower spar and strut within 50 mm of the yoke junction,10,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,1.586
+SA-001 swingarm,knee,Lower spar and strut within 50 mm of the yoke junction,11,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,1.738
+SA-001 swingarm,knee,Lower spar and strut within 50 mm of the yoke junction,12,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+90,0.152,1.890
+SA-001 swingarm,knee,Lower spar and strut within 50 mm of the yoke junction,13,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+45,0.152,2.042
+SA-001 swingarm,knee,Lower spar and strut within 50 mm of the yoke junction,14,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",-45,0.152,2.194
+SA-001 swingarm,knee,Lower spar and strut within 50 mm of the yoke junction,15,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,2.346
+SA-001 swingarm,knee,Lower spar and strut within 50 mm of the yoke junction,16,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,2.498
+SA-001 swingarm,knee,Lower spar and strut within 50 mm of the yoke junction,17,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+45,0.152,2.650
+SA-001 swingarm,knee,Lower spar and strut within 50 mm of the yoke junction,18,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",-45,0.152,2.802
+SA-001 swingarm,knee,Lower spar and strut within 50 mm of the yoke junction,19,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",-45,0.152,2.954
+SA-001 swingarm,knee,Lower spar and strut within 50 mm of the yoke junction,20,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+45,0.152,3.106
+SA-001 swingarm,knee,Lower spar and strut within 50 mm of the yoke junction,21,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,3.258
+SA-001 swingarm,knee,Lower spar and strut within 50 mm of the yoke junction,22,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,3.410
+SA-001 swingarm,knee,Lower spar and strut within 50 mm of the yoke junction,23,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",-45,0.152,3.562
+SA-001 swingarm,knee,Lower spar and strut within 50 mm of the yoke junction,24,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+45,0.152,3.714
+SA-001 swingarm,knee,Lower spar and strut within 50 mm of the yoke junction,25,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+90,0.152,3.866
+SA-001 swingarm,knee,Lower spar and strut within 50 mm of the yoke junction,26,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,4.018
+SA-001 swingarm,knee,Lower spar and strut within 50 mm of the yoke junction,27,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,4.170
+SA-001 swingarm,knee,Lower spar and strut within 50 mm of the yoke junction,28,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",-45,0.152,4.322
+SA-001 swingarm,knee,Lower spar and strut within 50 mm of the yoke junction,29,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+45,0.152,4.474
+SA-001 swingarm,knee,Lower spar and strut within 50 mm of the yoke junction,30,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+90,0.152,4.626
+SA-001 swingarm,knee,Lower spar and strut within 50 mm of the yoke junction,31,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,4.778
+SA-001 swingarm,knee,Lower spar and strut within 50 mm of the yoke junction,32,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",-45,0.152,4.930
+SA-001 swingarm,knee,Lower spar and strut within 50 mm of the yoke junction,33,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+45,0.152,5.082
+SA-001 swingarm,knee,Lower spar and strut within 50 mm of the yoke junction,34,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,5.234
+SA-001 swingarm,knee,Lower spar and strut within 50 mm of the yoke junction,35,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,5.386
+SA-001 swingarm,knee,Lower spar and strut within 50 mm of the yoke junction,36,"Toray T700S-12K/2510 plain weave, 190 g/m2, 0.218 mm cured",+/-45,0.218,5.604
+SA-001 swingarm,yoke,Full-width yoke box,1,"Toray T700S-12K/2510 plain weave, 190 g/m2, 0.218 mm cured",+/-45,0.218,0.218
+SA-001 swingarm,yoke,Full-width yoke box,2,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+45,0.152,0.370
+SA-001 swingarm,yoke,Full-width yoke box,3,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",-45,0.152,0.522
+SA-001 swingarm,yoke,Full-width yoke box,4,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,0.674
+SA-001 swingarm,yoke,Full-width yoke box,5,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+90,0.152,0.826
+SA-001 swingarm,yoke,Full-width yoke box,6,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+45,0.152,0.978
+SA-001 swingarm,yoke,Full-width yoke box,7,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",-45,0.152,1.130
+SA-001 swingarm,yoke,Full-width yoke box,8,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,1.282
+SA-001 swingarm,yoke,Full-width yoke box,9,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+90,0.152,1.434
+SA-001 swingarm,yoke,Full-width yoke box,10,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+45,0.152,1.586
+SA-001 swingarm,yoke,Full-width yoke box,11,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",-45,0.152,1.738
+SA-001 swingarm,yoke,Full-width yoke box,12,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,1.890
+SA-001 swingarm,yoke,Full-width yoke box,13,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+90,0.152,2.042
+SA-001 swingarm,yoke,Full-width yoke box,14,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+45,0.152,2.194
+SA-001 swingarm,yoke,Full-width yoke box,15,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",-45,0.152,2.346
+SA-001 swingarm,yoke,Full-width yoke box,16,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,2.498
+SA-001 swingarm,yoke,Full-width yoke box,17,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+90,0.152,2.650
+SA-001 swingarm,yoke,Full-width yoke box,18,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+90,0.152,2.802
+SA-001 swingarm,yoke,Full-width yoke box,19,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,2.954
+SA-001 swingarm,yoke,Full-width yoke box,20,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",-45,0.152,3.106
+SA-001 swingarm,yoke,Full-width yoke box,21,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+45,0.152,3.258
+SA-001 swingarm,yoke,Full-width yoke box,22,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+90,0.152,3.410
+SA-001 swingarm,yoke,Full-width yoke box,23,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,3.562
+SA-001 swingarm,yoke,Full-width yoke box,24,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",-45,0.152,3.714
+SA-001 swingarm,yoke,Full-width yoke box,25,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+45,0.152,3.866
+SA-001 swingarm,yoke,Full-width yoke box,26,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+90,0.152,4.018
+SA-001 swingarm,yoke,Full-width yoke box,27,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,4.170
+SA-001 swingarm,yoke,Full-width yoke box,28,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",-45,0.152,4.322
+SA-001 swingarm,yoke,Full-width yoke box,29,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+45,0.152,4.474
+SA-001 swingarm,yoke,Full-width yoke box,30,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+90,0.152,4.626
+SA-001 swingarm,yoke,Full-width yoke box,31,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+0,0.152,4.778
+SA-001 swingarm,yoke,Full-width yoke box,32,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",-45,0.152,4.930
+SA-001 swingarm,yoke,Full-width yoke box,33,"Toray T700G/2510 UD tape, 150 g/m2, 0.152 mm cured",+45,0.152,5.082
+SA-001 swingarm,yoke,Full-width yoke box,34,"Toray T700S-12K/2510 plain weave, 190 g/m2, 0.218 mm cured",+/-45,0.218,5.300

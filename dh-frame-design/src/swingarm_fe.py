@@ -11,7 +11,7 @@ from kinematics import Linkage, interp_pose
 from shellfe import mesh_from_sdf, ShellModel, boundary_nodes, buckling
 import laminate as lam
 import loads as Ld
-from frame_fe import smin, sd_zcyl
+from frame_fe import smin, sd_zcyl, ellipse_dist
 from cases import CASES, ULT, balance
 
 F_, U_ = "F", "U"
@@ -26,15 +26,19 @@ def sw_layups():
     }
 
 
-def sd_tube3(P, a, b, hd, hw):
+def sd_tube3(P, a, b, hd, hw, accurate=False):
     a, b = np.asarray(a, float), np.asarray(b, float)
     t = (b - a); L = np.linalg.norm(t); t /= L
     n = np.array([-t[1], t[0], 0.0]); n /= np.linalg.norm(n)
     bv = np.cross(t, n)
     r = P - a
     s = r @ t; u = r @ n; w = r @ bv
-    q = np.sqrt((u / hd) ** 2 + (w / hw) ** 2)
-    return np.maximum((q - 1.0) * min(hd, hw), np.maximum(-s, s - L))
+    f = np.clip(s / L, 0, 1)
+    if np.ndim(hd) > 0:
+        hd = hd[0] + (hd[1] - hd[0]) * f
+    if np.ndim(hw) > 0:
+        hw = hw[0] + (hw[1] - hw[0]) * f
+    return np.maximum(ellipse_dist(u, w, hd, hw, accurate), np.maximum(-s, s - L))
 
 
 def sd_zcyl_off(P, c, r, z0, z1):
@@ -48,7 +52,38 @@ def sd_box(P, lo, hi):
     return np.linalg.norm(np.clip(q, 0, None), axis=1) + np.minimum(q.max(1), 0)
 
 
+def side(v, sgn):
+    """A swingarm dimension may be one value for both sides or dict(L=non-drive side (+z), R=drive side (-z))."""
+    return v["L" if sgn > 0 else "R"] if isinstance(v, dict) else v
+
+
+def sw_geometry_v6(d, g):
+    """V6: swingarm packaged in 3-D. Spars are poly-lines of (x, y, |z|, half-depth, half-width) stations:
+    they stay outboard of the rotor and cassette near the axle, run below the chain and between tyre and crank arms,
+    and meet a full-width box yoke ahead of the tyre and below pivot height; short struts reach the pivot eyes."""
+    A = np.asarray(d["pts"]["A"], float); P = np.asarray(d["pts"]["P"], float); S = np.asarray(d["pts"]["S"], float)
+    s = d["swingarm"]
+    ybox = s["yoke_box"]
+    prim = []
+    for sgn in (1.0, -1.0):
+        eye, lug, drop = side(s["eye_z"], sgn), side(s["lug_z"], sgn), side(s["drop_z"], sgn)
+        for name, label in (("lower_path", "spar"), ("upper_path", "spar"), ("upright_path", "spar"), ("strut_path", "strut")):
+            path = side(s[name], sgn)
+            for (x0, y0, z0, hd0, hw0), (x1, y1, z1, hd1, hw1) in zip(path[:-1], path[1:]):
+                prim.append(("tube", np.array([x0, y0, sgn * z0]), np.array([x1, y1, sgn * z1]), (hd0, hd1), (hw0, hw1), label,
+                             bool(d.get("shell_inset"))))
+        prim += [("zcyl", P, s["eye_r"], min(sgn * eye[0], sgn * eye[1]), max(sgn * eye[0], sgn * eye[1]), "node"),
+                 ("zcyl", S, s["lug_r"], min(sgn * lug[0], sgn * lug[1]), max(sgn * lug[0], sgn * lug[1]), "node"),
+                 ("zcyl", A, s["drop_r"], min(sgn * drop[0], sgn * drop[1]), max(sgn * drop[0], sgn * drop[1]), "node")]
+    zlo, zhi = (ybox[4] if np.ndim(ybox[4]) else (-ybox[4], ybox[4]))
+    prim.append(("box", np.array([ybox[0], ybox[2], zlo]), np.array([ybox[1], ybox[3], zhi]), None, None, "yoke"))
+    return prim, dict(A=A, P=P, S=S, eye=s["eye_z"], lug=s["lug_z"], drop=s["drop_z"],
+                      eye_r=s["eye_r"], lug_r=s["lug_r"], drop_r=s["drop_r"])
+
+
 def sw_geometry(d, g):
+    if d.get("swingarm", {}).get("layout") == "v6":
+        return sw_geometry_v6(d, g)
     A = np.asarray(d["pts"]["A"], float); P = np.asarray(d["pts"]["P"], float); S = np.asarray(d["pts"]["S"], float)
     s = d.get("swingarm", {})
     zA, zP, zS = s.get("z_axle", 86.0), s.get("z_pivot", 38.0), s.get("z_link", 50.0)
@@ -75,7 +110,7 @@ def sw_geometry(d, g):
 
 def prim_sd(P, p):
     if p[0] == "tube":
-        return sd_tube3(P, p[1], p[2], p[3], p[4])
+        return sd_tube3(P, p[1], p[2], p[3], p[4], len(p) > 6 and p[6])
     if p[0] == "zcyl":
         return sd_zcyl_off(P, p[1], p[2], p[3], p[4])
     return sd_box(P, p[1], p[2])
@@ -91,42 +126,61 @@ def build(d, g, h=5.0, layups=None):
         return v
     A, P_, S = ref["A"], ref["P"], ref["S"]
 
-    def keep(V):
-        xy = V[:, :2]; az = np.abs(V[:, 2])
-        k = np.ones(len(V), bool)
-        k &= ~((np.hypot(*(xy - P_).T) < 22.5) & ((az < 28.0 + 2.5) | (az > 48.0 - 2.5)))
-        k &= ~((np.hypot(*(xy - S).T) < 13.5) & ((az < 40.0 + 2.5) | (az > 60.0 - 2.5)))
-        k &= ~((np.hypot(*(xy - A).T) < 17.5) & ((az < 78.5 + 2.5) | (az > 96.0 - 2.5)))
-        return k
-    lo = np.array([A[0] - 30.0, min(A[1], P_[1]) - 60.0, -102.0]); hi = np.array([P_[0] + 34.0, S[1] + 30.0, 102.0])
-    V, F = mesh_from_sdf(sdf, (lo, hi), h, clip=keep)
-    cen = V[F].mean(1)
-    D = np.stack([prim_sd(cen, p) for p in prim], 1)
-    own = D.argmin(1)
-    zone = np.array([prim[i][5] for i in own], dtype=object)
-    xmat = np.zeros((len(F), 3))
-    for i, p in enumerate(prim):
-        m_ = own == i
-        if p[0] == "tube":
-            t = (p[2] - p[1]) / np.linalg.norm(p[2] - p[1]); xmat[m_] = t
-        elif p[0] == "zcyl":
-            xmat[m_] = [0, 0, 1.0]
-        else:
-            xmat[m_] = [0, 0, 1.0]
-    # node reinforcement near the hard points
+    eye = ref.get("eye", (28.0, 48.0)); lug = ref.get("lug", (40.0, 60.0)); drop = ref.get("drop", (78.5, 96.0))
+    er, lr_, dr = ref.get("eye_r", 24.0), ref.get("lug_r", 15.0), ref.get("drop_r", 19.0)
+
+    layups = layups or d.get("sw_layups") or sw_layups()
     tA = (P_ - A) / np.linalg.norm(P_ - A)
     knee = A + tA * (np.linalg.norm(P_ - A) - 62.0)
-    layups = layups or d.get("sw_layups") or sw_layups()
-    for pt, rad in ((P_, 46.0), (S, 34.0), (A, 40.0)):
-        zone[(np.hypot(*(cen[:, :2] - pt).T) < rad) & (zone != "web")] = "node"
-    kr = d.get("swingarm", {}).get("knee_patch", 0.0)
-    if kr and "knee" in layups:                       # local build-up where the lower spar turns inward
-        zone[(np.hypot(*(cen[:, :2] - knee).T) < kr) & (zone == "spar")] = "knee"
+
+    def zones_at(cen):
+        """Laminate zone, 0-degree direction and owning primitive at points."""
+        D = np.stack([prim_sd(cen, p) for p in prim], 1)
+        own = D.argmin(1)
+        zone = np.array([prim[i][5] for i in own], dtype=object)
+        xmat = np.zeros((len(cen), 3))
+        for i, p in enumerate(prim):
+            m_ = own == i
+            if p[0] == "tube":
+                t = (p[2] - p[1]) / np.linalg.norm(p[2] - p[1]); xmat[m_] = t
+            else:
+                xmat[m_] = [0, 0, 1.0]
+        # node reinforcement near the hard points
+        for pt, rad in ((P_, 46.0), (S, 34.0), (A, 40.0)):
+            zone[(np.hypot(*(cen[:, :2] - pt).T) < rad) & (zone != "web")] = "node"
+        for pt, rad in d.get("swingarm", {}).get("node_patches", []):
+            zone[(np.hypot(*(cen[:, :2] - np.asarray(pt)).T) < rad) & np.isin(zone, ["spar", "strut"])] = "node"
+        for pt, rad in d.get("swingarm", {}).get("knee_patches", []):
+            if "knee" in layups:
+                zone[(np.hypot(*(cen[:, :2] - np.asarray(pt)).T) < rad) & np.isin(zone, ["spar", "strut", "node"])] = "knee"
+        kr = d.get("swingarm", {}).get("knee_patch", 0.0)
+        if kr and "knee" in layups:                       # local build-up where the lower spar turns inward
+            zone[(np.hypot(*(cen[:, :2] - knee).T) < kr) & (zone == "spar")] = "knee"
+        return zone, xmat
+
+    offset, s_ref = None, 0.0
+    if d.get("shell_inset") == "half_thickness":      # mesh on the laminate mid-plane, inside the tool surface
+        half = {z: 0.5 * lam.thickness(layups[z]) for z in layups}
+        s_ref = half["node"]
+        offset = lambda Pq: np.array([half[z] for z in zones_at(Pq)[0]])
+
+    def keep(V):
+        xy = V[:, :2]
+        k = np.ones(len(V), bool)
+        for sg in (1.0, -1.0):                         # open the bores of the eyes, lugs and dropouts on each side
+            az = sg * V[:, 2]; on = az > 0
+            for c, rad, rng in ((P_, er, side(eye, sg)), (S, lr_, side(lug, sg)), (A, dr, side(drop, sg))):
+                k &= ~(on & (np.hypot(*(xy - c).T) < rad - 1.5 - s_ref) & ((az < rng[0] + 2.5 + s_ref) | (az > rng[1] - 2.5 - s_ref)))
+        return k
+    lo = np.array([A[0] - 30.0, min(A[1], P_[1]) - 60.0, -102.0]); hi = np.array([P_[0] + 34.0, S[1] + 30.0, 102.0])
+    # the mid-plane of the narrow drive-side members is under 10 mm wide: sample finely enough to keep them connected
+    V, F = mesh_from_sdf(sdf, (lo, hi), h, clip=keep, offset=offset, grid=min(0.6 * h, 1.5) if offset is not None else None)
+    zone, xmat = zones_at(V[F].mean(1))
     order = list(layups.keys())
     m = ShellModel(V, F)
     m.set_properties([lam.shellprop(layups[z]) for z in order], np.array([order.index(z) for z in zone]), xmat)
     b = boundary_nodes(F); xy = V[:, :2]
-    rings = dict(PIV=b[np.hypot(*(xy[b] - P_).T) < 28.0], LINK=b[np.hypot(*(xy[b] - S).T) < 18.0], AXLE=b[np.hypot(*(xy[b] - A).T) < 22.0])
+    rings = dict(PIV=b[np.hypot(*(xy[b] - P_).T) < er + 4.0], LINK=b[np.hypot(*(xy[b] - S).T) < lr_ + 3.0], AXLE=b[np.hypot(*(xy[b] - A).T) < dr + 3.0])
     for name, c in (("PIV", P_), ("LINK", S), ("AXLE", A)):
         assert len(rings[name]) >= 12, (name, len(rings[name]))
         m.add_spider(name, rings[name], [c[0], c[1], 0.0])
@@ -164,8 +218,14 @@ def run(d, h=5.0, verbose=True, layups=None):
     valid = dist > 10.0
     area = 0.5 * np.linalg.norm(np.cross(m.V[m.F[:, 1]] - m.V[m.F[:, 0]], m.V[m.F[:, 2]] - m.V[m.F[:, 0]]), axis=1)
     out = dict(h=h, nodes=len(m.V), cases={})
-    for case in CASES:
+    todo = [(c, 1.0) for c in CASES]
+    if any(isinstance(v, dict) for v in d.get("swingarm", {}).values()):
+        # an asymmetric swingarm has to take the side load from either side
+        todo.append((dict(next(c for c in CASES if c["key"] == "LC3"), key="LC3m"), -1.0))
+    for case, mirror in todo:
         L, info = case_loads(d, g, sw, case)
+        if mirror < 0:
+            L = {k: np.asarray(v, float) * np.array([1, 1, -1, -1, -1, 1.0]) for k, v in L.items()}
         u, reac, ur = m.solve(L)
         Rp = m.reaction_at(reac, "PIV")
         e0, kp = m.strains(u)

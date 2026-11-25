@@ -17,7 +17,7 @@ from pyfe3d.shellprop_utils import laminated_plate
 
 
 # ---------------------------------------------------------------- meshing
-def mesh_from_sdf(sdf, bounds, h, clip=None, iters=12, grid=None):
+def mesh_from_sdf(sdf, bounds, h, clip=None, iters=12, grid=None, offset=None, offset_sigma=8.0):
     """Triangulate the zero level set of sdf(points[N,3]) inside bounds=(lo,hi).
 
     clip : optional function(points)->bool array; triangles whose three vertices are
@@ -37,6 +37,14 @@ def mesh_from_sdf(sdf, bounds, h, clip=None, iters=12, grid=None):
         vals[i:i + step] = sdf(P[i:i + step])
     vol = vals.reshape(X.shape)
     spacing = tuple((hi - lo) / (n - 1))
+    if offset is not None:
+        # move the meshed surface inward by offset(points) (mm), smoothed over offset_sigma so that
+        # a step in laminate thickness becomes a ramp instead of a ledge
+        from scipy.ndimage import gaussian_filter
+        off = np.empty(len(P))
+        for i in range(0, len(P), step):
+            off[i:i + step] = offset(P[i:i + step])
+        vol = vol + gaussian_filter(off.reshape(X.shape), sigma=[offset_sigma / sp for sp in spacing], mode="nearest")
     V, F, _, _ = measure.marching_cubes(vol, 0.0, spacing=spacing)
     V = V + lo
     V, F = gpy.remesh_botsch(V.astype(np.float64), F.astype(np.int32), iters, h, True)

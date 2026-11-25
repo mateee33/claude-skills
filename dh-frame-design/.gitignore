@@ -1,0 +1,2 @@
+# mesh caches written by src/run_all.py
+results/*/_*.npz

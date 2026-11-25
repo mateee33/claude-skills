@@ -1,0 +1,92 @@
+{
+ "surface": {
+  "swingarm": {
+   "LC1": 0.141,
+   "LC2a": 0.447,
+   "LC2b": 0.496,
+   "LC2c": 0.496,
+   "LC2d": 0.365,
+   "LC3": 0.751,
+   "LC4": 0.314
+  },
+  "swingarm_lateral_stiffness": 408,
+  "swingarm_laminate_kg": 0.869,
+  "front_triangle": {
+   "LC1": [
+    "boss",
+    0.296
+   ],
+   "LC2a": [
+    "boss",
+    0.64
+   ],
+   "LC2b": [
+    "boss",
+    0.715
+   ],
+   "LC2c": [
+    "boss",
+    0.708
+   ],
+   "LC2d": [
+    "boss",
+    0.856
+   ],
+   "LC3": [
+    "boss",
+    0.662
+   ],
+   "LC4": [
+    "core",
+    0.241
+   ]
+  },
+  "front_triangle_laminate_kg": 2.008,
+  "head_tube_zone_LC2d": 0.749
+ },
+ "midplane": {
+  "swingarm": {
+   "LC1": 0.273,
+   "LC2a": 0.91,
+   "LC2b": 1.008,
+   "LC2c": 1.008,
+   "LC2d": 0.706,
+   "LC3": 1.241,
+   "LC4": 0.474
+  },
+  "swingarm_lateral_stiffness": 208,
+  "swingarm_laminate_kg": 0.768,
+  "front_triangle": {
+   "LC1": [
+    "down_tube",
+    0.296
+   ],
+   "LC2a": [
+    "down_tube",
+    0.652
+   ],
+   "LC2b": [
+    "down_tube",
+    0.704
+   ],
+   "LC2c": [
+    "boss",
+    0.736
+   ],
+   "LC2d": [
+    "head_tube",
+    1.033
+   ],
+   "LC3": [
+    "boss",
+    0.808
+   ],
+   "LC4": [
+    "core",
+    0.257
+   ]
+  },
+  "front_triangle_laminate_kg": 1.904,
+  "head_tube_zone_LC2d": 1.033
+ }
+}

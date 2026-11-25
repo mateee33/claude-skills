@@ -1,0 +1,438 @@
+{
+ "travel": {
+  "0": {
+   "rear_wheel - front_triangle": 45.20622116156081,
+   "swingarm - front_triangle": 6.223998341396323,
+   "swingarm - crank_sweep": 6.349908791481016,
+   "swingarm - chainring": 5.094601355106897,
+   "swingarm - idler": 10.120373412517749,
+   "swingarm - chain_10T": 4.400000000000006,
+   "swingarm - chain_24T": 3.864722958240749,
+   "swingarm - shock": 17.32886469089045,
+   "rocker - front_triangle": 4.277904091051973,
+   "rocker - shock": 4.9999999999998375,
+   "rocker - rear_wheel": 82.25259377829076,
+   "links - front_triangle": 38.88325967360209,
+   "links - rear_wheel": 13.5,
+   "links - crank_sweep": 84.99322065326454,
+   "links - swingarm": 6.329256149631045,
+   "links - rocker": 8.952574338732015,
+   "links - shock": 100.40399647685551,
+   "shock - front_triangle": 5.665499088816672,
+   "shock - crank_sweep": 47.8,
+   "shock - idler": 22.89666983112246,
+   "rocker - crank_sweep": 82.03417666323084,
+   "swingarm - idler_stub": 28.51278313805343,
+   "swingarm - idler_carrier": 22.35451996203893,
+   "shock - idler_carrier": 12.902825845053993,
+   "swingarm - main_axle": 3.9999999711359897
+  },
+  "25": {
+   "rear_wheel - front_triangle": 46.12959081899662,
+   "swingarm - front_triangle": 7.244575365797945,
+   "swingarm - crank_sweep": 6.49841188453429,
+   "swingarm - chainring": 9.05793996955174,
+   "swingarm - idler": 10.120373412517749,
+   "swingarm - chain_10T": 4.400000000000006,
+   "swingarm - chain_24T": 4.391055766742289,
+   "swingarm - shock": 18.02067165210748,
+   "rocker - front_triangle": 8.16684363363299,
+   "rocker - shock": 5.000000000000393,
+   "rocker - rear_wheel": 80.42962937067833,
+   "links - front_triangle": 33.2095289717442,
+   "links - rear_wheel": 13.5,
+   "links - crank_sweep": 88.45515591236068,
+   "links - swingarm": 6.792144926310665,
+   "links - rocker": 7.624699167474562,
+   "links - shock": 102.41873639525197,
+   "shock - front_triangle": 6.422927102616084,
+   "shock - crank_sweep": 47.8,
+   "shock - idler": 22.932590470313976,
+   "rocker - crank_sweep": 82.03417666323075,
+   "swingarm - idler_stub": 28.512783138053425,
+   "swingarm - idler_carrier": 22.35451996203893,
+   "shock - idler_carrier": 12.948534096331944,
+   "swingarm - main_axle": 3.999999971136025
+  },
+  "50": {
+   "rear_wheel - front_triangle": 45.534361531428694,
+   "swingarm - front_triangle": 7.793109785092053,
+   "swingarm - crank_sweep": 6.554656494316229,
+   "swingarm - chainring": 13.066686253359006,
+   "swingarm - idler": 10.120373412517749,
+   "swingarm - chain_10T": 4.400000000000006,
+   "swingarm - chain_24T": 4.3976413546225945,
+   "swingarm - shock": 18.5944119904471,
+   "rocker - front_triangle": 8.558621384311435,
+   "rocker - shock": 4.999999999999886,
+   "rocker - rear_wheel": 78.6513380738105,
+   "links - front_triangle": 27.677059482834817,
+   "links - rear_wheel": 13.5,
+   "links - crank_sweep": 91.65197574054844,
+   "links - swingarm": 7.287492377480237,
+   "links - rocker": 6.085905598108623,
+   "links - shock": 104.71443004860123,
+   "shock - front_triangle": 7.0404410191874485,
+   "shock - crank_sweep": 47.8,
+   "shock - idler": 22.965618130912386,
+   "rocker - crank_sweep": 82.03417666323078,
+   "swingarm - idler_stub": 28.512783138053425,
+   "swingarm - idler_carrier": 22.35451996203893,
+   "shock - idler_carrier": 12.990784158023219,
+   "swingarm - main_axle": 3.999999971136011
+  },
+  "75": {
+   "rear_wheel - front_triangle": 43.46558401886109,
+   "swingarm - front_triangle": 7.366137265867456,
+   "swingarm - crank_sweep": 6.608347839855097,
+   "swingarm - chainring": 17.108280639897252,
+   "swingarm - idler": 10.12037341251775,
+   "swingarm - chain_10T": 4.400000000000006,
+   "swingarm - chain_24T": 4.390952430584924,
+   "swingarm - shock": 19.037165827279182,
+   "rocker - front_triangle": 8.558621384311955,
+   "rocker - shock": 4.99999999999951,
+   "rocker - rear_wheel": 76.23649127908631,
+   "links - front_triangle": 22.920789051889503,
+   "links - rear_wheel": 13.5,
+   "links - crank_sweep": 94.59730631190672,
+   "links - swingarm": 7.77349360460436,
+   "links - rocker": 4.378991601429764,
+   "links - shock": 106.166628705543,
+   "shock - front_triangle": 6.684332329302263,
+   "shock - crank_sweep": 47.8,
+   "shock - idler": 22.99324702080621,
+   "rocker - crank_sweep": 82.03417666323084,
+   "swingarm - idler_stub": 28.512783138053432,
+   "swingarm - idler_carrier": 22.354519962038925,
+   "shock - idler_carrier": 13.026267859542758,
+   "swingarm - main_axle": 3.999999971136025
+  },
+  "100": {
+   "rear_wheel - front_triangle": 39.95137393591089,
+   "swingarm - front_triangle": 6.97854205655609,
+   "swingarm - crank_sweep": 6.65961169049023,
+   "swingarm - chainring": 21.174615478275392,
+   "swingarm - idler": 10.120373412517747,
+   "swingarm - chain_10T": 4.400000000000006,
+   "swingarm - chain_24T": 4.394945017818853,
+   "swingarm - shock": 19.323618282531463,
+   "rocker - front_triangle": 8.558621384311463,
+   "rocker - shock": 5.000000000000349,
+   "rocker - rear_wheel": 69.4705574566924,
+   "links - front_triangle": 18.76422755596917,
+   "links - rear_wheel": 13.5,
+   "links - crank_sweep": 97.30152996301194,
+   "links - swingarm": 8.015594477272119,
+   "links - rocker": 2.566312045228685,
+   "links - shock": 106.16663635072244,
+   "shock - front_triangle": 6.452805608175444,
+   "shock - crank_sweep": 47.8,
+   "shock - idler": 23.012167911029852,
+   "rocker - crank_sweep": 82.03417666323084,
+   "swingarm - idler_stub": 28.512783138053432,
+   "swingarm - idler_carrier": 22.35451996203893,
+   "shock - idler_carrier": 13.050632709725356,
+   "swingarm - main_axle": 3.9999999711360017
+  },
+  "125": {
+   "rear_wheel - front_triangle": 35.00442977877343,
+   "swingarm - front_triangle": 6.629452549226657,
+   "swingarm - crank_sweep": 6.708573139621304,
+   "swingarm - chainring": 25.26093666724799,
+   "swingarm - idler": 10.12037341251775,
+   "swingarm - chain_10T": 4.400000000000006,
+   "swingarm - chain_24T": 4.4109658864130585,
+   "swingarm - shock": 19.409294496367608,
+   "rocker - front_triangle": 8.55862138431147,
+   "rocker - shock": 4.999999999999569,
+   "rocker - rear_wheel": 60.86391437484475,
+   "links - front_triangle": 15.693648994545947,
+   "links - rear_wheel": 13.5,
+   "links - crank_sweep": 99.77205500196398,
+   "links - swingarm": 8.015598470501187,
+   "links - rocker": 1.0503046817399613,
+   "links - shock": 106.16665888097258,
+   "shock - front_triangle": 6.383374220320354,
+   "shock - crank_sweep": 47.8,
+   "shock - idler": 23.017991832541785,
+   "rocker - crank_sweep": 82.03417666323081,
+   "swingarm - idler_stub": 28.512783138053432,
+   "swingarm - idler_carrier": 22.354519962038932,
+   "shock - idler_carrier": 13.05814208058519,
+   "swingarm - main_axle": 3.999999971136017
+  },
+  "150": {
+   "rear_wheel - front_triangle": 28.622696977092097,
+   "swingarm - front_triangle": 6.31831015700281,
+   "swingarm - crank_sweep": 6.755357090343575,
+   "swingarm - chainring": 28.494027917853042,
+   "swingarm - idler": 10.120373412517749,
+   "swingarm - chain_10T": 4.400000000000006,
+   "swingarm - chain_24T": 4.441664653556935,
+   "swingarm - shock": 19.217455921100708,
+   "rocker - front_triangle": 8.558621384311373,
+   "rocker - shock": 5.000000000000251,
+   "rocker - rear_wheel": 52.260613082024406,
+   "links - front_triangle": 15.49999999999999,
+   "links - rear_wheel": 13.5,
+   "links - crank_sweep": 102.0135165442694,
+   "links - swingarm": 8.015597598654493,
+   "links - rocker": 1.0,
+   "links - shock": 106.16663736155513,
+   "shock - front_triangle": 6.538720360744043,
+   "shock - crank_sweep": 47.8,
+   "shock - idler": 23.005057447630463,
+   "rocker - crank_sweep": 82.03417666323084,
+   "swingarm - idler_stub": 28.512783138053432,
+   "swingarm - idler_carrier": 22.354519962038925,
+   "shock - idler_carrier": 13.04147059828141,
+   "swingarm - main_axle": 3.9999999711360035
+  },
+  "175": {
+   "rear_wheel - front_triangle": 20.789264627463144,
+   "swingarm - front_triangle": 6.044922886254078,
+   "swingarm - crank_sweep": 6.8000885309088,
+   "swingarm - chainring": 28.49402791785303,
+   "swingarm - idler": 10.120373412517749,
+   "swingarm - chain_10T": 4.400000000000006,
+   "swingarm - chain_24T": 4.396402205657992,
+   "swingarm - shock": 18.613889190291616,
+   "rocker - front_triangle": 8.558621384311552,
+   "rocker - shock": 4.999999999999582,
+   "rocker - rear_wheel": 43.69690898809033,
+   "links - front_triangle": 15.49999999999999,
+   "links - rear_wheel": 13.5,
+   "links - crank_sweep": 104.02791394197165,
+   "links - swingarm": 8.01560896756095,
+   "links - rocker": 1.0,
+   "links - shock": 105.91662551656688,
+   "shock - front_triangle": 7.024817793228275,
+   "shock - crank_sweep": 47.8,
+   "shock - idler": 22.966793423281633,
+   "rocker - crank_sweep": 81.68139510858494,
+   "swingarm - idler_stub": 28.512783138053425,
+   "swingarm - idler_carrier": 22.35451996203893,
+   "shock - idler_carrier": 12.992291128424254,
+   "swingarm - main_axle": 3.9999999711360106
+  },
+  "200": {
+   "rear_wheel - front_triangle": 11.476822034600753,
+   "swingarm - front_triangle": 5.809633815230038,
+   "swingarm - crank_sweep": 6.842870578777646,
+   "swingarm - chainring": 28.49402791785302,
+   "swingarm - idler": 10.12037341251775,
+   "swingarm - chain_10T": 4.400000000000006,
+   "swingarm - chain_24T": 4.332217232652264,
+   "swingarm - shock": 17.360200614356522,
+   "rocker - front_triangle": 8.558621384311472,
+   "rocker - shock": 4.99999999999969,
+   "rocker - rear_wheel": 35.23642817192278,
+   "links - front_triangle": 15.49999999999999,
+   "links - rear_wheel": 13.5,
+   "links - crank_sweep": 105.81354620392362,
+   "links - swingarm": 8.015609770940742,
+   "links - rocker": 1.0,
+   "links - shock": 102.0153160849246,
+   "shock - front_triangle": 5.699496626697816,
+   "shock - crank_sweep": 47.8,
+   "shock - idler": 22.898208800747852,
+   "rocker - crank_sweep": 72.84711826385836,
+   "swingarm - idler_stub": 28.512783138053432,
+   "swingarm - idler_carrier": 22.354519962038925,
+   "shock - idler_carrier": 12.904778344044004,
+   "swingarm - main_axle": 3.999999971136013
+  }
+ },
+ "static": {
+  "rear_wheel - swingarm": 6.035577203767363,
+  "rotor - swingarm": 4.922837757226251,
+  "cassette - swingarm": 3.85837295099387,
+  "crank_sweep - front_triangle": 21.700000000000003,
+  "crank_sweep - idler": 14.799999999999997,
+  "chainring - front_triangle": 10.899999999999999,
+  "idler - front_triangle": 27.833702412137214,
+  "idler_carrier - chainring": 2.8999999999999986,
+  "idler_carrier - crank_sweep": 13.700000000000003,
+  "idler_carrier - front_triangle": 7.937758816275088
+ },
+ "steering": {
+  "fork travel 0, steer 0": {
+   "fork_upper": 5.999999999999808,
+   "fork_lower": 287.29959420725606,
+   "front_wheel": 222.02341505032666
+  },
+  "fork travel 0, steer 20": {
+   "fork_upper": 5.999999999999807,
+   "fork_lower": 275.5329878500341,
+   "front_wheel": 225.4162783576371
+  },
+  "fork travel 0, steer 40": {
+   "fork_upper": 1.1402811076374633,
+   "fork_lower": 262.9846408244725,
+   "front_wheel": 231.27860385543423
+  },
+  "fork travel 200, steer 0": {
+   "fork_upper": 5.999999999999808,
+   "fork_lower": 92.15757221584438,
+   "front_wheel": 34.09480898878939
+  },
+  "fork travel 200, steer 20": {
+   "fork_upper": 5.999999999999807,
+   "fork_lower": 92.15757219635643,
+   "front_wheel": 34.09480898857844
+  },
+  "fork travel 200, steer 40": {
+   "fork_upper": 1.1402811076374633,
+   "fork_lower": 87.40418883813851,
+   "front_wheel": 34.09480898947274
+  }
+ },
+ "travel_min": {
+  "rear_wheel - front_triangle": {
+   "min": 11.476822034600753,
+   "at": "200"
+  },
+  "swingarm - front_triangle": {
+   "min": 5.809633815230038,
+   "at": "200"
+  },
+  "swingarm - crank_sweep": {
+   "min": 6.349908791481016,
+   "at": "0"
+  },
+  "swingarm - chainring": {
+   "min": 5.094601355106897,
+   "at": "0"
+  },
+  "swingarm - idler": {
+   "min": 10.120373412517747,
+   "at": "100"
+  },
+  "swingarm - chain_10T": {
+   "min": 4.400000000000006,
+   "at": "0"
+  },
+  "swingarm - chain_24T": {
+   "min": 3.864722958240749,
+   "at": "0"
+  },
+  "swingarm - shock": {
+   "min": 17.32886469089045,
+   "at": "0"
+  },
+  "rocker - front_triangle": {
+   "min": 4.277904091051973,
+   "at": "0"
+  },
+  "rocker - shock": {
+   "min": 4.99999999999951,
+   "at": "75"
+  },
+  "rocker - rear_wheel": {
+   "min": 35.23642817192278,
+   "at": "200"
+  },
+  "links - front_triangle": {
+   "min": 15.49999999999999,
+   "at": "150"
+  },
+  "links - rear_wheel": {
+   "min": 13.5,
+   "at": "0"
+  },
+  "links - crank_sweep": {
+   "min": 84.99322065326454,
+   "at": "0"
+  },
+  "links - swingarm": {
+   "min": 6.329256149631045,
+   "at": "0"
+  },
+  "links - rocker": {
+   "min": 1.0,
+   "at": "150"
+  },
+  "links - shock": {
+   "min": 100.40399647685551,
+   "at": "0"
+  },
+  "shock - front_triangle": {
+   "min": 5.665499088816672,
+   "at": "0"
+  },
+  "shock - crank_sweep": {
+   "min": 47.8,
+   "at": "0"
+  },
+  "shock - idler": {
+   "min": 22.89666983112246,
+   "at": "0"
+  },
+  "rocker - crank_sweep": {
+   "min": 72.84711826385836,
+   "at": "200"
+  },
+  "swingarm - idler_stub": {
+   "min": 28.512783138053425,
+   "at": "25"
+  },
+  "swingarm - idler_carrier": {
+   "min": 22.354519962038925,
+   "at": "75"
+  },
+  "shock - idler_carrier": {
+   "min": 12.902825845053993,
+   "at": "0"
+  },
+  "swingarm - main_axle": {
+   "min": 3.9999999711359897,
+   "at": "0"
+  }
+ },
+ "info": {
+  "fillets_modelled": {
+   "down_tube": 10.0,
+   "top_tube": 8.0,
+   "seat_mast": 0.0,
+   "core": 0.0,
+   "bb": 0.0,
+   "pivot": 0.0,
+   "rocker": 3.0,
+   "shock": 3.0
+  },
+  "volumes_cm3": {
+   "front_triangle": 5415.066749417953,
+   "swingarm": 1290.1551638855922,
+   "rocker": 98.9106304596333,
+   "links": 51.23806969141538,
+   "shock_fitting": 41.15768395446053,
+   "main_axle": 18.185109075304513,
+   "rocker_axle": 11.875220230569427,
+   "idler": 11.015150781914866,
+   "idler_stub": 3.6191147369354417,
+   "bb_sleeve": 39.65593955761563,
+   "idler_carrier": 35.48975279677746
+  },
+  "masses_kg": {
+   "rocker": 0.27793887159156955,
+   "links": 0.14397897583287722,
+   "shock_fitting": 0.1156530919120341,
+   "main_axle": 0.08056003320359899,
+   "rocker_axle": 0.05260722562142256,
+   "idler": 0.030952573697180772,
+   "idler_stub": 0.016032678284624007,
+   "bb_sleeve": 0.11143319015689993,
+   "idler_carrier": 0.09972620535894466
+  },
+  "surface_deviation_mm": {
+   "nodes": 10973,
+   "median": 0.5003408272312441,
+   "p90": 1.0642977469246524,
+   "p99": 2.2680108806315733,
+   "max": 10.335120627776666,
+   "within_1mm": 0.883896837692518,
+   "within_3mm": 0.996536954342477
+  }
+ }
+}
