@@ -856,6 +856,7 @@ When I correct you, or you catch yourself making a mistake: before continuing ad
 - Test plugin updates against a GitHub-ref marketplace, never a local directory: a local marketplace reads files live and hides an unbumped version.
 - A plugin command or agent runs from the user's project, so every script it invokes must start with `${CLAUDE_PLUGIN_ROOT}/`; a repo-relative path only works inside a clone of this repo (G1 enforces it).
 - A marketplace install copies only the plugin's own directory, so `../../other-plugin/...` paths break once installed. To reuse another plugin's scripts or references, add a relative symlink under the plugin's `vendor/` (Claude Code dereferences in-marketplace symlinks into the cache) and reference it as `${CLAUDE_PLUGIN_ROOT}/vendor/...`, which `check_paths.py` now verifies.
+- Before trusting an analysis model, state which physical thing each modelled surface represents and check one section by hand: in `dh-frame-design/` a shell placed on the tool surface instead of the laminate mid-plane overstated narrow sections about twofold in bending and went unnoticed for five revisions.
 
 ## Additional Resources
 
